@@ -1,0 +1,23 @@
+# model,pretrained -- verified with open_clip_torch 3.3.0
+ViT-B-32,metaclip_400m
+ViT-B-32,metaclip_fullcc
+ViT-B-16,metaclip_400m
+ViT-B-16,metaclip_fullcc
+ViT-L-14,metaclip_400m
+ViT-L-14,metaclip_fullcc
+ViT-H-14,metaclip_fullcc
+ViT-H-14,metaclip_altogether
+ViT-bigG-14,metaclip_fullcc
+ViT-H-14-worldwide,metaclip2_worldwide
+ViT-H-14-worldwide-378,metaclip2_worldwide
+ViT-bigG-14-worldwide,metaclip2_worldwide
+ViT-bigG-14-worldwide-378,metaclip2_worldwide
+ViT-B-16-SigLIP,webli
+ViT-B-16-SigLIP-256,webli
+ViT-B-16-SigLIP-384,webli
+ViT-B-16-SigLIP-512,webli
+ViT-L-16-SigLIP-256,webli
+ViT-L-16-SigLIP-384,webli
+ViT-SO400M-14-SigLIP,webli
+ViT-SO400M-14-SigLIP-378,webli
+ViT-SO400M-14-SigLIP-384,webli
