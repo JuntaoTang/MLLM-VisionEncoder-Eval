@@ -1,0 +1,9 @@
+numpy==1.26.4
+Pillow
+torch==2.6.0
+torchvision==0.21.0
+faiss-cpu
+transformers==5.15.0
+open_clip_torch==3.3.0
+huggingface-hub==1.24.0
+
