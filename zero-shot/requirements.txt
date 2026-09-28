@@ -7,4 +7,3 @@ open_clip_torch==3.3.0
 clip-benchmark==1.6.2
 huggingface-hub==1.24.0
 sentencepiece
-
