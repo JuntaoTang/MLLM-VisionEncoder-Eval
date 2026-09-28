@@ -21,3 +21,4 @@ ViT-L-16-SigLIP-384,webli
 ViT-SO400M-14-SigLIP,webli
 ViT-SO400M-14-SigLIP-378,webli
 ViT-SO400M-14-SigLIP-384,webli
+
