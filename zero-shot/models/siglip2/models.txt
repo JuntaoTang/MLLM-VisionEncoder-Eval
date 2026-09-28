@@ -1,0 +1,16 @@
+# model,pretrained -- verified with open_clip_torch 3.3.0
+ViT-B-32-SigLIP2-256,webli
+ViT-B-16-SigLIP2,webli
+ViT-B-16-SigLIP2-256,webli
+ViT-B-16-SigLIP2-384,webli
+ViT-B-16-SigLIP2-512,webli
+ViT-L-16-SigLIP2-256	,webli
+ViT-L-16-SigLIP2-384	,webli
+ViT-L-16-SigLIP2-512	,webli
+ViT-SO400M-14-SigLIP2,webli
+ViT-SO400M-14-SigLIP2-378,webli
+ViT-SO400M-16-SigLIP2-256,webli
+ViT-SO400M-16-SigLIP2-384,webli
+ViT-SO400M-16-SigLIP2-512,webli
+ViT-gopt-16-SigLIP2-256,webli
+ViT-gopt-16-SigLIP2-384,webli
