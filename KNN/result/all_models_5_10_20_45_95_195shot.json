@@ -1,0 +1,4223 @@
+{
+  "metadata": {
+    "protocol": "seed42, 195 train pool + fixed 5 query/class, nested shots",
+    "shots": [
+      5,
+      10,
+      20,
+      45,
+      95,
+      195
+    ],
+    "k": 20,
+    "temperature": 0.07,
+    "normalization": "L2",
+    "faiss": "GPU IndexFlatIP float32 cuda:0",
+    "feature_root": "{FEATURE_EXPORT_ROOT}",
+    "model_count": 70,
+    "elapsed_seconds": 497.75435829907656,
+    "completed_models": 70
+  },
+  "results": [
+    {
+      "Model": "OpenAI-CLIP-L14-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "59.20%",
+      "TFLOPs": 1620.30657536,
+      "Tokenizer": "clip_openai__l14",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.07346958667039871
+    },
+    {
+      "Model": "OpenAI-CLIP-L14-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "65.10%",
+      "TFLOPs": 2430.48546304,
+      "Tokenizer": "clip_openai__l14",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.014040999114513397
+    },
+    {
+      "Model": "OpenAI-CLIP-L14-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "70.02%",
+      "TFLOPs": 4050.8432384,
+      "Tokenizer": "clip_openai__l14",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.01699906587600708
+    },
+    {
+      "Model": "OpenAI-CLIP-L14-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "73.62%",
+      "TFLOPs": 8101.7376768,
+      "Tokenizer": "clip_openai__l14",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03422267735004425
+    },
+    {
+      "Model": "OpenAI-CLIP-L14-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "76.18%",
+      "TFLOPs": 16203.5265536,
+      "Tokenizer": "clip_openai__l14",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06885726004838943
+    },
+    {
+      "Model": "OpenAI-CLIP-L14-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "78.62%",
+      "TFLOPs": 32407.1043072,
+      "Tokenizer": "clip_openai__l14",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.1894534006714821
+    },
+    {
+      "Model": "DINO-ViT-B16",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "59.84%",
+      "TFLOPs": 351.33800448,
+      "Tokenizer": "dino_vitb16",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009269312024116516
+    },
+    {
+      "Model": "DINO-ViT-B16",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "63.48%",
+      "TFLOPs": 527.04540672,
+      "Tokenizer": "dino_vitb16",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014326050877571106
+    },
+    {
+      "Model": "DINO-ViT-B16",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "67.30%",
+      "TFLOPs": 878.4602112,
+      "Tokenizer": "dino_vitb16",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.02502252161502838
+    },
+    {
+      "Model": "DINO-ViT-B16",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "70.18%",
+      "TFLOPs": 1756.9972224,
+      "Tokenizer": "dino_vitb16",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.049984097480773926
+    },
+    {
+      "Model": "DINO-ViT-B16",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "71.94%",
+      "TFLOPs": 3514.0712448,
+      "Tokenizer": "dino_vitb16",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.09839151799678802
+    },
+    {
+      "Model": "DINO-ViT-B16",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "74.16%",
+      "TFLOPs": 7028.2192896,
+      "Tokenizer": "dino_vitb16",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.18876535445451736
+    },
+    {
+      "Model": "DINO-ViT-B8",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "62.38%",
+      "TFLOPs": 1563.02819328,
+      "Tokenizer": "dino_vitb8",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009120456874370575
+    },
+    {
+      "Model": "DINO-ViT-B8",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "66.32%",
+      "TFLOPs": 2344.58068992,
+      "Tokenizer": "dino_vitb8",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014230825006961823
+    },
+    {
+      "Model": "DINO-ViT-B8",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "68.84%",
+      "TFLOPs": 3907.6856832,
+      "Tokenizer": "dino_vitb8",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.024777621030807495
+    },
+    {
+      "Model": "DINO-ViT-B8",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "72.08%",
+      "TFLOPs": 7815.4481664,
+      "Tokenizer": "dino_vitb8",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.049801409244537354
+    },
+    {
+      "Model": "DINO-ViT-B8",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "73.80%",
+      "TFLOPs": 15630.9731328,
+      "Tokenizer": "dino_vitb8",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.09277323633432388
+    },
+    {
+      "Model": "DINO-ViT-B8",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "75.70%",
+      "TFLOPs": 31262.0230656,
+      "Tokenizer": "dino_vitb8",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.17386633157730103
+    },
+    {
+      "Model": "DINO-ViT-S16",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "57.32%",
+      "TFLOPs": 92.00836608,
+      "Tokenizer": "dino_vits16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004780277609825134
+    },
+    {
+      "Model": "DINO-ViT-S16",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "60.78%",
+      "TFLOPs": 138.03174912,
+      "Tokenizer": "dino_vits16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.00777338445186615
+    },
+    {
+      "Model": "DINO-ViT-S16",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "65.06%",
+      "TFLOPs": 230.0785152,
+      "Tokenizer": "dino_vits16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013126805424690247
+    },
+    {
+      "Model": "DINO-ViT-S16",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "68.54%",
+      "TFLOPs": 460.1954304,
+      "Tokenizer": "dino_vits16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0262584388256073
+    },
+    {
+      "Model": "DINO-ViT-S16",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "70.42%",
+      "TFLOPs": 920.4292608,
+      "Tokenizer": "dino_vits16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05222160369157791
+    },
+    {
+      "Model": "DINO-ViT-S16",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "73.16%",
+      "TFLOPs": 1840.8969216,
+      "Tokenizer": "dino_vits16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.21846242994070053
+    },
+    {
+      "Model": "DINO-ViT-S8",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.42%",
+      "TFLOPs": 448.14557184,
+      "Tokenizer": "dino_vits8",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0044991448521614075
+    },
+    {
+      "Model": "DINO-ViT-S8",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "68.10%",
+      "TFLOPs": 672.23755776,
+      "Tokenizer": "dino_vits8",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007754556834697723
+    },
+    {
+      "Model": "DINO-ViT-S8",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "71.20%",
+      "TFLOPs": 1120.4215296,
+      "Tokenizer": "dino_vits8",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013003885746002197
+    },
+    {
+      "Model": "DINO-ViT-S8",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "73.44%",
+      "TFLOPs": 2240.8814592,
+      "Tokenizer": "dino_vits8",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026058882474899292
+    },
+    {
+      "Model": "DINO-ViT-S8",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "75.16%",
+      "TFLOPs": 4481.8013184,
+      "Tokenizer": "dino_vits8",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052181221544742584
+    },
+    {
+      "Model": "DINO-ViT-S8",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "77.44%",
+      "TFLOPs": 8963.6410368,
+      "Tokenizer": "dino_vits8",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.1530977040529251
+    },
+    {
+      "Model": "DINOv2-Base",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "69.50%",
+      "TFLOPs": 3031.55116032,
+      "Tokenizer": "dinov2_base",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.008994065225124359
+    },
+    {
+      "Model": "DINOv2-Base",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.40%",
+      "TFLOPs": 4547.36514048,
+      "Tokenizer": "dinov2_base",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014039412140846252
+    },
+    {
+      "Model": "DINOv2-Base",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "75.08%",
+      "TFLOPs": 7578.9931008,
+      "Tokenizer": "dinov2_base",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.03039393573999405
+    },
+    {
+      "Model": "DINOv2-Base",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "77.90%",
+      "TFLOPs": 15158.0630016,
+      "Tokenizer": "dinov2_base",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.049944087862968445
+    },
+    {
+      "Model": "DINOv2-Base",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "79.42%",
+      "TFLOPs": 30316.2028032,
+      "Tokenizer": "dinov2_base",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.096926249563694
+    },
+    {
+      "Model": "DINOv2-Base",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "81.20%",
+      "TFLOPs": 60632.4824064,
+      "Tokenizer": "dinov2_base",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.16765786707401276
+    },
+    {
+      "Model": "DINOv2-Giant",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "74.10%",
+      "TFLOPs": 35667.01277184,
+      "Tokenizer": "dinov2_giant",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.01678677648305893
+    },
+    {
+      "Model": "DINOv2-Giant",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "75.50%",
+      "TFLOPs": 53500.59595776,
+      "Tokenizer": "dinov2_giant",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.03867459297180176
+    },
+    {
+      "Model": "DINOv2-Giant",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "76.88%",
+      "TFLOPs": 89167.7623296,
+      "Tokenizer": "dinov2_giant",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.048160672187805176
+    },
+    {
+      "Model": "DINOv2-Giant",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "78.92%",
+      "TFLOPs": 178335.6782592,
+      "Tokenizer": "dinov2_giant",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.11057127267122269
+    },
+    {
+      "Model": "DINOv2-Giant",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "80.70%",
+      "TFLOPs": 356671.5101184,
+      "Tokenizer": "dinov2_giant",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.186955027282238
+    },
+    {
+      "Model": "DINOv2-Giant",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.02%",
+      "TFLOPs": 713343.1738368,
+      "Tokenizer": "dinov2_giant",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.34840624779462814
+    },
+    {
+      "Model": "DINOv2-Large",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "73.40%",
+      "TFLOPs": 10136.17893376,
+      "Tokenizer": "dinov2_large",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.011817552149295807
+    },
+    {
+      "Model": "DINOv2-Large",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "75.76%",
+      "TFLOPs": 15204.31960064,
+      "Tokenizer": "dinov2_large",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.018308639526367188
+    },
+    {
+      "Model": "DINOv2-Large",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "77.70%",
+      "TFLOPs": 25340.6009344,
+      "Tokenizer": "dinov2_large",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.04004751890897751
+    },
+    {
+      "Model": "DINOv2-Large",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "79.98%",
+      "TFLOPs": 50681.3042688,
+      "Tokenizer": "dinov2_large",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.06621415168046951
+    },
+    {
+      "Model": "DINOv2-Large",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "81.60%",
+      "TFLOPs": 101362.7109376,
+      "Tokenizer": "dinov2_large",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.11047277599573135
+    },
+    {
+      "Model": "DINOv2-Large",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.72%",
+      "TFLOPs": 202725.5242752,
+      "Tokenizer": "dinov2_large",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.2551048994064331
+    },
+    {
+      "Model": "DINOv2-Small",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "59.86%",
+      "TFLOPs": 933.97318656,
+      "Tokenizer": "dinov2_small",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004801250994205475
+    },
+    {
+      "Model": "DINOv2-Small",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "65.00%",
+      "TFLOPs": 1400.97897984,
+      "Tokenizer": "dinov2_small",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007702194154262543
+    },
+    {
+      "Model": "DINOv2-Small",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "68.44%",
+      "TFLOPs": 2334.9905664,
+      "Tokenizer": "dinov2_small",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012898467481136322
+    },
+    {
+      "Model": "DINOv2-Small",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "72.22%",
+      "TFLOPs": 4670.0195328,
+      "Tokenizer": "dinov2_small",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026168063282966614
+    },
+    {
+      "Model": "DINOv2-Small",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "75.08%",
+      "TFLOPs": 9340.0774656,
+      "Tokenizer": "dinov2_small",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052161797881126404
+    },
+    {
+      "Model": "DINOv2-Small",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "77.02%",
+      "TFLOPs": 18680.1933312,
+      "Tokenizer": "dinov2_small",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.09596166759729385
+    },
+    {
+      "Model": "DINOv3-ViT-L16-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "75.80%",
+      "TFLOPs": 1231.17617152,
+      "Tokenizer": "dinov3_vitl16",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.01927734911441803
+    },
+    {
+      "Model": "DINOv3-ViT-L16-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "78.86%",
+      "TFLOPs": 1846.81545728,
+      "Tokenizer": "dinov3_vitl16",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.018514566123485565
+    },
+    {
+      "Model": "DINOv3-ViT-L16-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "80.82%",
+      "TFLOPs": 3078.0940288,
+      "Tokenizer": "dinov3_vitl16",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.03275199234485626
+    },
+    {
+      "Model": "DINOv3-ViT-L16-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "83.24%",
+      "TFLOPs": 6156.2904576,
+      "Tokenizer": "dinov3_vitl16",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.07344955950975418
+    },
+    {
+      "Model": "DINOv3-ViT-L16-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "84.06%",
+      "TFLOPs": 12312.6833152,
+      "Tokenizer": "dinov3_vitl16",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.12662528455257416
+    },
+    {
+      "Model": "DINOv3-ViT-L16-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "85.34%",
+      "TFLOPs": 24625.4690304,
+      "Tokenizer": "dinov3_vitl16",
+      "FeatureDim": 2048,
+      "SearchSeconds": 0.36961863934993744
+    },
+    {
+      "Model": "TokLIP-L-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "45.64%",
+      "TFLOPs": 5158.56393216,
+      "Tokenizer": "toklip_l_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.0070419833064079285
+    },
+    {
+      "Model": "TokLIP-L-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "53.96%",
+      "TFLOPs": 7737.87469824,
+      "Tokenizer": "toklip_l_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.015248879790306091
+    },
+    {
+      "Model": "TokLIP-L-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "59.44%",
+      "TFLOPs": 12896.4962304,
+      "Tokenizer": "toklip_l_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.018762782216072083
+    },
+    {
+      "Model": "TokLIP-L-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "64.84%",
+      "TFLOPs": 25793.0500608,
+      "Tokenizer": "toklip_l_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.04244402050971985
+    },
+    {
+      "Model": "TokLIP-L-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "68.80%",
+      "TFLOPs": 51586.1577216,
+      "Tokenizer": "toklip_l_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07663470506668091
+    },
+    {
+      "Model": "TokLIP-L-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "71.64%",
+      "TFLOPs": 103172.3730432,
+      "Tokenizer": "toklip_l_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.158451110124588
+    },
+    {
+      "Model": "TokLIP-S-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "43.74%",
+      "TFLOPs": 2190.80549376,
+      "Tokenizer": "toklip_s_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.007118500769138336
+    },
+    {
+      "Model": "TokLIP-S-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "51.02%",
+      "TFLOPs": 3286.23704064,
+      "Tokenizer": "toklip_s_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.010796703398227692
+    },
+    {
+      "Model": "TokLIP-S-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "56.52%",
+      "TFLOPs": 5477.1001344,
+      "Tokenizer": "toklip_s_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.01863338053226471
+    },
+    {
+      "Model": "TokLIP-S-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "61.60%",
+      "TFLOPs": 10954.2578688,
+      "Tokenizer": "toklip_s_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.03796806186437607
+    },
+    {
+      "Model": "TokLIP-S-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "65.34%",
+      "TFLOPs": 21908.5733376,
+      "Tokenizer": "toklip_s_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07648202776908875
+    },
+    {
+      "Model": "TokLIP-S-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "68.96%",
+      "TFLOPs": 43817.2042752,
+      "Tokenizer": "toklip_s_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.14231617003679276
+    },
+    {
+      "Model": "UniAR-BSQ",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "32.26%",
+      "TFLOPs": 2513.57173271,
+      "Tokenizer": "uniar_bsq",
+      "FeatureDim": 4096,
+      "SearchSeconds": 0.022138290107250214
+    },
+    {
+      "Model": "UniAR-BSQ",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "40.96%",
+      "TFLOPs": 3770.459999065,
+      "Tokenizer": "uniar_bsq",
+      "FeatureDim": 4096,
+      "SearchSeconds": 0.03593253344297409
+    },
+    {
+      "Model": "UniAR-BSQ",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "48.00%",
+      "TFLOPs": 6284.236531775,
+      "Tokenizer": "uniar_bsq",
+      "FeatureDim": 4096,
+      "SearchSeconds": 0.06276851892471313
+    },
+    {
+      "Model": "UniAR-BSQ",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "53.66%",
+      "TFLOPs": 12568.67786355,
+      "Tokenizer": "uniar_bsq",
+      "FeatureDim": 4096,
+      "SearchSeconds": 0.12311442941427231
+    },
+    {
+      "Model": "UniAR-BSQ",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "58.98%",
+      "TFLOPs": 25137.5605271,
+      "Tokenizer": "uniar_bsq",
+      "FeatureDim": 4096,
+      "SearchSeconds": 0.25366099923849106
+    },
+    {
+      "Model": "UniAR-BSQ",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "62.78%",
+      "TFLOPs": 50275.3258542,
+      "Tokenizer": "uniar_bsq",
+      "FeatureDim": 4096,
+      "SearchSeconds": 0.6317738741636276
+    },
+    {
+      "Model": "UniTok-Attn",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "59.24%",
+      "TFLOPs": 1950.75186688,
+      "Tokenizer": "unitok_attn",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006277658045291901
+    },
+    {
+      "Model": "UniTok-Attn",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "64.26%",
+      "TFLOPs": 2926.15340032,
+      "Tokenizer": "unitok_attn",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010226190090179443
+    },
+    {
+      "Model": "UniTok-Attn",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "69.50%",
+      "TFLOPs": 4876.9564672,
+      "Tokenizer": "unitok_attn",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.01695825904607773
+    },
+    {
+      "Model": "UniTok-Attn",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "71.94%",
+      "TFLOPs": 9753.9641344,
+      "Tokenizer": "unitok_attn",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03845100849866867
+    },
+    {
+      "Model": "UniTok-Attn",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "74.56%",
+      "TFLOPs": 19507.9794688,
+      "Tokenizer": "unitok_attn",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06850498914718628
+    },
+    {
+      "Model": "UniTok-Attn",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "76.66%",
+      "TFLOPs": 39016.0101376,
+      "Tokenizer": "unitok_attn",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.1342352032661438
+    },
+    {
+      "Model": "VILA-U-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "47.58%",
+      "TFLOPs": 1614.95261184,
+      "Tokenizer": "vilau_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006477229297161102
+    },
+    {
+      "Model": "VILA-U-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "55.94%",
+      "TFLOPs": 2422.45451776,
+      "Tokenizer": "vilau_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010311029851436615
+    },
+    {
+      "Model": "VILA-U-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "62.86%",
+      "TFLOPs": 4037.4583296,
+      "Tokenizer": "vilau_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.016870975494384766
+    },
+    {
+      "Model": "VILA-U-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "69.10%",
+      "TFLOPs": 8074.9678592,
+      "Tokenizer": "vilau_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.0340106263756752
+    },
+    {
+      "Model": "VILA-U-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "72.52%",
+      "TFLOPs": 16149.9869184,
+      "Tokenizer": "vilau_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.0726860761642456
+    },
+    {
+      "Model": "VILA-U-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "75.50%",
+      "TFLOPs": 32300.0250368,
+      "Tokenizer": "vilau_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.1301547735929489
+    },
+    {
+      "Model": "EUPE-ConvNeXt-B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "50.78%",
+      "TFLOPs": 401.12758784,
+      "Tokenizer": "eupe_convnext_b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006294518709182739
+    },
+    {
+      "Model": "EUPE-ConvNeXt-B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "56.70%",
+      "TFLOPs": 601.71698176,
+      "Tokenizer": "eupe_convnext_b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.01433052122592926
+    },
+    {
+      "Model": "EUPE-ConvNeXt-B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "60.86%",
+      "TFLOPs": 1002.8957696,
+      "Tokenizer": "eupe_convnext_b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.016849316656589508
+    },
+    {
+      "Model": "EUPE-ConvNeXt-B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "65.70%",
+      "TFLOPs": 2005.8427392,
+      "Tokenizer": "eupe_convnext_b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.034073904156684875
+    },
+    {
+      "Model": "EUPE-ConvNeXt-B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "68.00%",
+      "TFLOPs": 4011.7366784,
+      "Tokenizer": "eupe_convnext_b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.0688716322183609
+    },
+    {
+      "Model": "EUPE-ConvNeXt-B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "71.14%",
+      "TFLOPs": 8023.5245568,
+      "Tokenizer": "eupe_convnext_b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.21250662952661514
+    },
+    {
+      "Model": "EUPE-ViT-B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "72.30%",
+      "TFLOPs": 464.00913408,
+      "Tokenizer": "eupe_vit_b",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.008956409990787506
+    },
+    {
+      "Model": "EUPE-ViT-B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "75.56%",
+      "TFLOPs": 696.05210112,
+      "Tokenizer": "eupe_vit_b",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.11989148706197739
+    },
+    {
+      "Model": "EUPE-ViT-B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "78.16%",
+      "TFLOPs": 1160.1380352,
+      "Tokenizer": "eupe_vit_b",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.02479105442762375
+    },
+    {
+      "Model": "EUPE-ViT-B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "80.10%",
+      "TFLOPs": 2320.3528704,
+      "Tokenizer": "eupe_vit_b",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.04983026534318924
+    },
+    {
+      "Model": "EUPE-ViT-B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "81.78%",
+      "TFLOPs": 4640.7825408,
+      "Tokenizer": "eupe_vit_b",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.10650167614221573
+    },
+    {
+      "Model": "EUPE-ViT-B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.78%",
+      "TFLOPs": 9281.6418816,
+      "Tokenizer": "eupe_vit_b",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.1682582050561905
+    },
+    {
+      "Model": "EUPE-ViT-S",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "60.94%",
+      "TFLOPs": 122.86353408,
+      "Tokenizer": "eupe_vit_s",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.005317531526088715
+    },
+    {
+      "Model": "EUPE-ViT-S",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "65.52%",
+      "TFLOPs": 184.31450112,
+      "Tokenizer": "eupe_vit_s",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007678359746932983
+    },
+    {
+      "Model": "EUPE-ViT-S",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "69.32%",
+      "TFLOPs": 307.2164352,
+      "Tokenizer": "eupe_vit_s",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013083547353744507
+    },
+    {
+      "Model": "EUPE-ViT-S",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "72.70%",
+      "TFLOPs": 614.4712704,
+      "Tokenizer": "eupe_vit_s",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.025989241898059845
+    },
+    {
+      "Model": "EUPE-ViT-S",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "74.58%",
+      "TFLOPs": 1228.9809408,
+      "Tokenizer": "eupe_vit_s",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.055334851145744324
+    },
+    {
+      "Model": "EUPE-ViT-S",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "76.38%",
+      "TFLOPs": 2458.0002816,
+      "Tokenizer": "eupe_vit_s",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.10155349969863892
+    },
+    {
+      "Model": "EUPE-ViT-T",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "34.62%",
+      "TFLOPs": 34.1465088,
+      "Tokenizer": "eupe_vit_t",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.0025722458958625793
+    },
+    {
+      "Model": "EUPE-ViT-T",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "40.44%",
+      "TFLOPs": 51.2293632,
+      "Tokenizer": "eupe_vit_t",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.0038182660937309265
+    },
+    {
+      "Model": "EUPE-ViT-T",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "45.86%",
+      "TFLOPs": 85.395072,
+      "Tokenizer": "eupe_vit_t",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.006239041686058044
+    },
+    {
+      "Model": "EUPE-ViT-T",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "50.86%",
+      "TFLOPs": 170.809344,
+      "Tokenizer": "eupe_vit_t",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.01197659969329834
+    },
+    {
+      "Model": "EUPE-ViT-T",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "54.92%",
+      "TFLOPs": 341.637888,
+      "Tokenizer": "eupe_vit_t",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.02988681197166443
+    },
+    {
+      "Model": "EUPE-ViT-T",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "58.66%",
+      "TFLOPs": 683.294976,
+      "Tokenizer": "eupe_vit_t",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.05659446120262146
+    },
+    {
+      "Model": "I-JEPA-ViT-H-14",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "57.52%",
+      "TFLOPs": 1666.2905856,
+      "Tokenizer": "ijepa_vith14",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.007667087018489838
+    },
+    {
+      "Model": "I-JEPA-ViT-H-14",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "62.00%",
+      "TFLOPs": 2499.4678784,
+      "Tokenizer": "ijepa_vith14",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.012034907937049866
+    },
+    {
+      "Model": "I-JEPA-ViT-H-14",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "65.80%",
+      "TFLOPs": 4165.822464,
+      "Tokenizer": "ijepa_vith14",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.021450169384479523
+    },
+    {
+      "Model": "I-JEPA-ViT-H-14",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "68.98%",
+      "TFLOPs": 8331.708928,
+      "Tokenizer": "ijepa_vith14",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.047544367611408234
+    },
+    {
+      "Model": "I-JEPA-ViT-H-14",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "70.66%",
+      "TFLOPs": 16663.481856,
+      "Tokenizer": "ijepa_vith14",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.08480265736579895
+    },
+    {
+      "Model": "I-JEPA-ViT-H-14",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "72.00%",
+      "TFLOPs": 33327.027712,
+      "Tokenizer": "ijepa_vith14",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.1966639682650566
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-2.5B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "51.72%",
+      "TFLOPs": 351.3074688,
+      "Tokenizer": "mc1_b16_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004665270447731018
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-2.5B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "57.66%",
+      "TFLOPs": 526.9804032,
+      "Tokenizer": "mc1_b16_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0077026113867759705
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-2.5B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "63.06%",
+      "TFLOPs": 878.326272,
+      "Tokenizer": "mc1_b16_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013023145496845245
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-2.5B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "67.64%",
+      "TFLOPs": 1756.690944,
+      "Tokenizer": "mc1_b16_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026088088750839233
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-2.5B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "70.30%",
+      "TFLOPs": 3513.420288,
+      "Tokenizer": "mc1_b16_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052264176309108734
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-2.5B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "73.56%",
+      "TFLOPs": 7026.878976,
+      "Tokenizer": "mc1_b16_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.11028725653886795
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-400M",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "49.68%",
+      "TFLOPs": 351.3074688,
+      "Tokenizer": "mc1_b16_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004589997231960297
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-400M",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "56.12%",
+      "TFLOPs": 526.9804032,
+      "Tokenizer": "mc1_b16_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007757395505905151
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-400M",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "61.18%",
+      "TFLOPs": 878.326272,
+      "Tokenizer": "mc1_b16_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012966521084308624
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-400M",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "65.90%",
+      "TFLOPs": 1756.690944,
+      "Tokenizer": "mc1_b16_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026104368269443512
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-400M",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "69.06%",
+      "TFLOPs": 3513.420288,
+      "Tokenizer": "mc1_b16_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05534487962722778
+    },
+    {
+      "Model": "MetaCLIP1-B16-224-400M",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "71.80%",
+      "TFLOPs": 7026.878976,
+      "Tokenizer": "mc1_b16_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.16756103187799454
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-2.5B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "47.58%",
+      "TFLOPs": 88.2146304,
+      "Tokenizer": "mc1_b32_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004502609372138977
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-2.5B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "52.50%",
+      "TFLOPs": 132.3411456,
+      "Tokenizer": "mc1_b32_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007656849920749664
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-2.5B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "58.46%",
+      "TFLOPs": 220.594176,
+      "Tokenizer": "mc1_b32_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012996360659599304
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-2.5B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "62.80%",
+      "TFLOPs": 441.226752,
+      "Tokenizer": "mc1_b32_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026042312383651733
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-2.5B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "66.20%",
+      "TFLOPs": 882.491904,
+      "Tokenizer": "mc1_b32_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052242547273635864
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-2.5B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "69.28%",
+      "TFLOPs": 1765.022208,
+      "Tokenizer": "mc1_b32_224_2.5b",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.29607105255126953
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-400M",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "46.34%",
+      "TFLOPs": 88.2146304,
+      "Tokenizer": "mc1_b32_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.008369393646717072
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-400M",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "51.96%",
+      "TFLOPs": 132.3411456,
+      "Tokenizer": "mc1_b32_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007663697004318237
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-400M",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "57.10%",
+      "TFLOPs": 220.594176,
+      "Tokenizer": "mc1_b32_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012920446693897247
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-400M",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "61.48%",
+      "TFLOPs": 441.226752,
+      "Tokenizer": "mc1_b32_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026073463261127472
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-400M",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "65.10%",
+      "TFLOPs": 882.491904,
+      "Tokenizer": "mc1_b32_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05520036816596985
+    },
+    {
+      "Model": "MetaCLIP1-B32-224-400M",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "68.42%",
+      "TFLOPs": 1765.022208,
+      "Tokenizer": "mc1_b32_224_400m",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.10100507736206055
+    },
+    {
+      "Model": "MetaCLIP1-G14-224-2.5B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.80%",
+      "TFLOPs": 9675.04352256,
+      "Tokenizer": "mc1_g14_224_2.5b",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.009558536112308502
+    },
+    {
+      "Model": "MetaCLIP1-G14-224-2.5B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "70.58%",
+      "TFLOPs": 14512.60688384,
+      "Tokenizer": "mc1_g14_224_2.5b",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.015198513865470886
+    },
+    {
+      "Model": "MetaCLIP1-G14-224-2.5B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "75.42%",
+      "TFLOPs": 24187.7336064,
+      "Tokenizer": "mc1_g14_224_2.5b",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.03533492982387543
+    },
+    {
+      "Model": "MetaCLIP1-G14-224-2.5B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "78.54%",
+      "TFLOPs": 48375.5504128,
+      "Tokenizer": "mc1_g14_224_2.5b",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.05384792387485504
+    },
+    {
+      "Model": "MetaCLIP1-G14-224-2.5B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "80.78%",
+      "TFLOPs": 96751.1840256,
+      "Tokenizer": "mc1_g14_224_2.5b",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.0948764979839325
+    },
+    {
+      "Model": "MetaCLIP1-G14-224-2.5B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.04%",
+      "TFLOPs": 193502.4512512,
+      "Tokenizer": "mc1_g14_224_2.5b",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.20342792570590973
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-2.5B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "62.26%",
+      "TFLOPs": 3345.9667968,
+      "Tokenizer": "mc1_h14_224_2.5b",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.007756911218166351
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-2.5B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "68.60%",
+      "TFLOPs": 5018.9821952,
+      "Tokenizer": "mc1_h14_224_2.5b",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.011969976127147675
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-2.5B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "73.46%",
+      "TFLOPs": 8365.012992,
+      "Tokenizer": "mc1_h14_224_2.5b",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.020747110247612
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-2.5B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "76.76%",
+      "TFLOPs": 16730.089984,
+      "Tokenizer": "mc1_h14_224_2.5b",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.04728908836841583
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-2.5B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "78.86%",
+      "TFLOPs": 33460.243968,
+      "Tokenizer": "mc1_h14_224_2.5b",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.11342251300811768
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-2.5B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "80.52%",
+      "TFLOPs": 66920.551936,
+      "Tokenizer": "mc1_h14_224_2.5b",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.25792165845632553
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-v1.2",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.48%",
+      "TFLOPs": 3345.9667968,
+      "Tokenizer": "mc1_h14_224_v1.2",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.007583700120449066
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-v1.2",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "70.04%",
+      "TFLOPs": 5018.9821952,
+      "Tokenizer": "mc1_h14_224_v1.2",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.011840611696243286
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-v1.2",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "75.24%",
+      "TFLOPs": 8365.012992,
+      "Tokenizer": "mc1_h14_224_v1.2",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.020693205296993256
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-v1.2",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "78.92%",
+      "TFLOPs": 16730.089984,
+      "Tokenizer": "mc1_h14_224_v1.2",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.04192224144935608
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-v1.2",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "80.80%",
+      "TFLOPs": 33460.243968,
+      "Tokenizer": "mc1_h14_224_v1.2",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.08461474627256393
+    },
+    {
+      "Model": "MetaCLIP1-H14-224-v1.2",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.58%",
+      "TFLOPs": 66920.551936,
+      "Tokenizer": "mc1_h14_224_v1.2",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.15127619355916977
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-2.5B",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "61.12%",
+      "TFLOPs": 1620.30657536,
+      "Tokenizer": "mc1_l14_224_2.5b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.005621060729026794
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-2.5B",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "67.58%",
+      "TFLOPs": 2430.48546304,
+      "Tokenizer": "mc1_l14_224_2.5b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010192535817623138
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-2.5B",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "71.82%",
+      "TFLOPs": 4050.8432384,
+      "Tokenizer": "mc1_l14_224_2.5b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.0168800950050354
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-2.5B",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "75.44%",
+      "TFLOPs": 8101.7376768,
+      "Tokenizer": "mc1_l14_224_2.5b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03403694927692413
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-2.5B",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "77.50%",
+      "TFLOPs": 16203.5265536,
+      "Tokenizer": "mc1_l14_224_2.5b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06860045343637466
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-2.5B",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "79.24%",
+      "TFLOPs": 32407.1043072,
+      "Tokenizer": "mc1_l14_224_2.5b",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.12670984864234924
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-400M",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "59.32%",
+      "TFLOPs": 1620.30657536,
+      "Tokenizer": "mc1_l14_224_400m",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006216995418071747
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-400M",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "64.58%",
+      "TFLOPs": 2430.48546304,
+      "Tokenizer": "mc1_l14_224_400m",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010156571865081787
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-400M",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "69.26%",
+      "TFLOPs": 4050.8432384,
+      "Tokenizer": "mc1_l14_224_400m",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.016858242452144623
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-400M",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "73.70%",
+      "TFLOPs": 8101.7376768,
+      "Tokenizer": "mc1_l14_224_400m",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.04327698051929474
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-400M",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "76.50%",
+      "TFLOPs": 16203.5265536,
+      "Tokenizer": "mc1_l14_224_400m",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06854712218046188
+    },
+    {
+      "Model": "MetaCLIP1-L14-224-400M",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "78.36%",
+      "TFLOPs": 32407.1043072,
+      "Tokenizer": "mc1_l14_224_400m",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.2027091383934021
+    },
+    {
+      "Model": "MetaCLIP2-B16-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "54.16%",
+      "TFLOPs": 351.3074688,
+      "Tokenizer": "mc2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004739105701446533
+    },
+    {
+      "Model": "MetaCLIP2-B16-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "60.46%",
+      "TFLOPs": 526.9804032,
+      "Tokenizer": "mc2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007721424102783203
+    },
+    {
+      "Model": "MetaCLIP2-B16-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "65.40%",
+      "TFLOPs": 878.326272,
+      "Tokenizer": "mc2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.01296619325876236
+    },
+    {
+      "Model": "MetaCLIP2-B16-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "69.80%",
+      "TFLOPs": 1756.690944,
+      "Tokenizer": "mc2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.025943830609321594
+    },
+    {
+      "Model": "MetaCLIP2-B16-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "73.02%",
+      "TFLOPs": 3513.420288,
+      "Tokenizer": "mc2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05217205733060837
+    },
+    {
+      "Model": "MetaCLIP2-B16-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "74.78%",
+      "TFLOPs": 7026.878976,
+      "Tokenizer": "mc2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.10100862383842468
+    },
+    {
+      "Model": "MetaCLIP2-B16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "56.22%",
+      "TFLOPs": 1109.7179136,
+      "Tokenizer": "mc2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0048095956444740295
+    },
+    {
+      "Model": "MetaCLIP2-B16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "62.28%",
+      "TFLOPs": 1664.5960704,
+      "Tokenizer": "mc2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.00775851309299469
+    },
+    {
+      "Model": "MetaCLIP2-B16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "67.34%",
+      "TFLOPs": 2774.352384,
+      "Tokenizer": "mc2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013007156550884247
+    },
+    {
+      "Model": "MetaCLIP2-B16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "71.50%",
+      "TFLOPs": 5548.743168,
+      "Tokenizer": "mc2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.02608797699213028
+    },
+    {
+      "Model": "MetaCLIP2-B16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "74.62%",
+      "TFLOPs": 11097.524736,
+      "Tokenizer": "mc2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05553247779607773
+    },
+    {
+      "Model": "MetaCLIP2-B16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "76.50%",
+      "TFLOPs": 22195.087872,
+      "Tokenizer": "mc2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.20266089588403702
+    },
+    {
+      "Model": "MetaCLIP2-B32-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "49.00%",
+      "TFLOPs": 88.2146304,
+      "Tokenizer": "mc2_b32_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004521332681179047
+    },
+    {
+      "Model": "MetaCLIP2-B32-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "54.10%",
+      "TFLOPs": 132.3411456,
+      "Tokenizer": "mc2_b32_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007652349770069122
+    },
+    {
+      "Model": "MetaCLIP2-B32-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "59.50%",
+      "TFLOPs": 220.594176,
+      "Tokenizer": "mc2_b32_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012981511652469635
+    },
+    {
+      "Model": "MetaCLIP2-B32-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "64.56%",
+      "TFLOPs": 441.226752,
+      "Tokenizer": "mc2_b32_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026141121983528137
+    },
+    {
+      "Model": "MetaCLIP2-B32-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "67.44%",
+      "TFLOPs": 882.491904,
+      "Tokenizer": "mc2_b32_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05224090814590454
+    },
+    {
+      "Model": "MetaCLIP2-B32-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "70.74%",
+      "TFLOPs": 1765.022208,
+      "Tokenizer": "mc2_b32_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.09924609959125519
+    },
+    {
+      "Model": "MetaCLIP2-B32-224-mT5",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "50.56%",
+      "TFLOPs": 88.2146304,
+      "Tokenizer": "mc2_b32_224_mt5",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004493139684200287
+    },
+    {
+      "Model": "MetaCLIP2-B32-224-mT5",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "55.30%",
+      "TFLOPs": 132.3411456,
+      "Tokenizer": "mc2_b32_224_mt5",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0076195597648620605
+    },
+    {
+      "Model": "MetaCLIP2-B32-224-mT5",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "60.74%",
+      "TFLOPs": 220.594176,
+      "Tokenizer": "mc2_b32_224_mt5",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012890495359897614
+    },
+    {
+      "Model": "MetaCLIP2-B32-224-mT5",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "65.44%",
+      "TFLOPs": 441.226752,
+      "Tokenizer": "mc2_b32_224_mt5",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026043452322483063
+    },
+    {
+      "Model": "MetaCLIP2-B32-224-mT5",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "68.26%",
+      "TFLOPs": 882.491904,
+      "Tokenizer": "mc2_b32_224_mt5",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052287228405475616
+    },
+    {
+      "Model": "MetaCLIP2-B32-224-mT5",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "70.88%",
+      "TFLOPs": 1765.022208,
+      "Tokenizer": "mc2_b32_224_mt5",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.33923882246017456
+    },
+    {
+      "Model": "MetaCLIP2-B32-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "50.88%",
+      "TFLOPs": 260.9021952,
+      "Tokenizer": "mc2_b32_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004568777978420258
+    },
+    {
+      "Model": "MetaCLIP2-B32-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "56.72%",
+      "TFLOPs": 391.3724928,
+      "Tokenizer": "mc2_b32_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007949165999889374
+    },
+    {
+      "Model": "MetaCLIP2-B32-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "62.54%",
+      "TFLOPs": 652.313088,
+      "Tokenizer": "mc2_b32_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013090133666992188
+    },
+    {
+      "Model": "MetaCLIP2-B32-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "67.88%",
+      "TFLOPs": 1304.664576,
+      "Tokenizer": "mc2_b32_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.025989718735218048
+    },
+    {
+      "Model": "MetaCLIP2-B32-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "70.66%",
+      "TFLOPs": 2609.367552,
+      "Tokenizer": "mc2_b32_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052255816757678986
+    },
+    {
+      "Model": "MetaCLIP2-B32-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "73.60%",
+      "TFLOPs": 5218.773504,
+      "Tokenizer": "mc2_b32_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0951467901468277
+    },
+    {
+      "Model": "MetaCLIP2-G14-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.48%",
+      "TFLOPs": 9675.04352256,
+      "Tokenizer": "mc2_g14_224",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.009448476135730743
+    },
+    {
+      "Model": "MetaCLIP2-G14-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "71.28%",
+      "TFLOPs": 14512.60688384,
+      "Tokenizer": "mc2_g14_224",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.01500796526670456
+    },
+    {
+      "Model": "MetaCLIP2-G14-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "75.44%",
+      "TFLOPs": 24187.7336064,
+      "Tokenizer": "mc2_g14_224",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.02651623636484146
+    },
+    {
+      "Model": "MetaCLIP2-G14-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "78.84%",
+      "TFLOPs": 48375.5504128,
+      "Tokenizer": "mc2_g14_224",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.053713977336883545
+    },
+    {
+      "Model": "MetaCLIP2-G14-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "80.96%",
+      "TFLOPs": 96751.1840256,
+      "Tokenizer": "mc2_g14_224",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.11494521051645279
+    },
+    {
+      "Model": "MetaCLIP2-G14-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.72%",
+      "TFLOPs": 193502.4512512,
+      "Tokenizer": "mc2_g14_224",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.1811925321817398
+    },
+    {
+      "Model": "MetaCLIP2-G14-378",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "65.84%",
+      "TFLOPs": 28584.60573696,
+      "Tokenizer": "mc2_g14_378",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.01039840281009674
+    },
+    {
+      "Model": "MetaCLIP2-G14-378",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "72.10%",
+      "TFLOPs": 42876.95020544,
+      "Tokenizer": "mc2_g14_378",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.01721813529729843
+    },
+    {
+      "Model": "MetaCLIP2-G14-378",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "76.62%",
+      "TFLOPs": 71461.6391424,
+      "Tokenizer": "mc2_g14_378",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.026934117078781128
+    },
+    {
+      "Model": "MetaCLIP2-G14-378",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "79.94%",
+      "TFLOPs": 142923.3614848,
+      "Tokenizer": "mc2_g14_378",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.05400458723306656
+    },
+    {
+      "Model": "MetaCLIP2-G14-378",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "81.56%",
+      "TFLOPs": 285846.8061696,
+      "Tokenizer": "mc2_g14_378",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.11527026444673538
+    },
+    {
+      "Model": "MetaCLIP2-G14-378",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "83.22%",
+      "TFLOPs": 571693.6955392,
+      "Tokenizer": "mc2_g14_378",
+      "FeatureDim": 1664,
+      "SearchSeconds": 0.18129662424325943
+    },
+    {
+      "Model": "MetaCLIP2-H14-378",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.72%",
+      "TFLOPs": 10069.6928256,
+      "Tokenizer": "mc2_h14_378",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.007748320698738098
+    },
+    {
+      "Model": "MetaCLIP2-H14-378",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "71.28%",
+      "TFLOPs": 15104.5712384,
+      "Tokenizer": "mc2_h14_378",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.012041211128234863
+    },
+    {
+      "Model": "MetaCLIP2-H14-378",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "75.24%",
+      "TFLOPs": 25174.328064,
+      "Tokenizer": "mc2_h14_378",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.020837746560573578
+    },
+    {
+      "Model": "MetaCLIP2-H14-378",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "79.02%",
+      "TFLOPs": 50348.720128,
+      "Tokenizer": "mc2_h14_378",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.0476701483130455
+    },
+    {
+      "Model": "MetaCLIP2-H14-378",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "80.94%",
+      "TFLOPs": 100697.504256,
+      "Tokenizer": "mc2_h14_378",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.08482383191585541
+    },
+    {
+      "Model": "MetaCLIP2-H14-378",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.62%",
+      "TFLOPs": 201395.072512,
+      "Tokenizer": "mc2_h14_378",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.17445576190948486
+    },
+    {
+      "Model": "MetaCLIP2-L14-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "62.84%",
+      "TFLOPs": 1620.30657536,
+      "Tokenizer": "mc2_l14_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006273776292800903
+    },
+    {
+      "Model": "MetaCLIP2-L14-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "68.70%",
+      "TFLOPs": 2430.48546304,
+      "Tokenizer": "mc2_l14_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010341405868530273
+    },
+    {
+      "Model": "MetaCLIP2-L14-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "73.24%",
+      "TFLOPs": 4050.8432384,
+      "Tokenizer": "mc2_l14_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.016845889389514923
+    },
+    {
+      "Model": "MetaCLIP2-L14-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "76.68%",
+      "TFLOPs": 8101.7376768,
+      "Tokenizer": "mc2_l14_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03830506652593613
+    },
+    {
+      "Model": "MetaCLIP2-L14-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "78.66%",
+      "TFLOPs": 16203.5265536,
+      "Tokenizer": "mc2_l14_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06841187179088593
+    },
+    {
+      "Model": "MetaCLIP2-L14-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "80.28%",
+      "TFLOPs": 32407.1043072,
+      "Tokenizer": "mc2_l14_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.1143808513879776
+    },
+    {
+      "Model": "MetaCLIP2-M16-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "48.96%",
+      "TFLOPs": 1231.10985728,
+      "Tokenizer": "mc2_m16_224",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.003308124840259552
+    },
+    {
+      "Model": "MetaCLIP2-M16-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "54.74%",
+      "TFLOPs": 1846.67758592,
+      "Tokenizer": "mc2_m16_224",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.0047287046909332275
+    },
+    {
+      "Model": "MetaCLIP2-M16-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "60.46%",
+      "TFLOPs": 3077.8130432,
+      "Tokenizer": "mc2_m16_224",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.00924200564622879
+    },
+    {
+      "Model": "MetaCLIP2-M16-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "65.18%",
+      "TFLOPs": 6155.6516864,
+      "Tokenizer": "mc2_m16_224",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.01825563609600067
+    },
+    {
+      "Model": "MetaCLIP2-M16-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "68.76%",
+      "TFLOPs": 12311.3289728,
+      "Tokenizer": "mc2_m16_224",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.03841615468263626
+    },
+    {
+      "Model": "MetaCLIP2-M16-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "71.54%",
+      "TFLOPs": 24622.6835456,
+      "Tokenizer": "mc2_m16_224",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.0729687511920929
+    },
+    {
+      "Model": "MetaCLIP2-M16-224-mT5",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "48.58%",
+      "TFLOPs": 1231.10985728,
+      "Tokenizer": "mc2_m16_224_mt5",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.003492012619972229
+    },
+    {
+      "Model": "MetaCLIP2-M16-224-mT5",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "53.36%",
+      "TFLOPs": 1846.67758592,
+      "Tokenizer": "mc2_m16_224_mt5",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.005519889295101166
+    },
+    {
+      "Model": "MetaCLIP2-M16-224-mT5",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "59.32%",
+      "TFLOPs": 3077.8130432,
+      "Tokenizer": "mc2_m16_224_mt5",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.009233005344867706
+    },
+    {
+      "Model": "MetaCLIP2-M16-224-mT5",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "64.18%",
+      "TFLOPs": 6155.6516864,
+      "Tokenizer": "mc2_m16_224_mt5",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.01823282241821289
+    },
+    {
+      "Model": "MetaCLIP2-M16-224-mT5",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "68.20%",
+      "TFLOPs": 12311.3289728,
+      "Tokenizer": "mc2_m16_224_mt5",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.036176346242427826
+    },
+    {
+      "Model": "MetaCLIP2-M16-224-mT5",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "71.34%",
+      "TFLOPs": 24622.6835456,
+      "Tokenizer": "mc2_m16_224_mt5",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.07301020622253418
+    },
+    {
+      "Model": "MetaCLIP2-M16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "50.00%",
+      "TFLOPs": 3821.34161408,
+      "Tokenizer": "mc2_m16_384",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.0032469555735588074
+    },
+    {
+      "Model": "MetaCLIP2-M16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "55.80%",
+      "TFLOPs": 5732.02522112,
+      "Tokenizer": "mc2_m16_384",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.004725195467472076
+    },
+    {
+      "Model": "MetaCLIP2-M16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "61.94%",
+      "TFLOPs": 9553.3924352,
+      "Tokenizer": "mc2_m16_384",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.009262196719646454
+    },
+    {
+      "Model": "MetaCLIP2-M16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "67.34%",
+      "TFLOPs": 19106.8104704,
+      "Tokenizer": "mc2_m16_384",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.018168091773986816
+    },
+    {
+      "Model": "MetaCLIP2-M16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "70.42%",
+      "TFLOPs": 38213.6465408,
+      "Tokenizer": "mc2_m16_384",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.03835499286651611
+    },
+    {
+      "Model": "MetaCLIP2-M16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "72.80%",
+      "TFLOPs": 76427.3186816,
+      "Tokenizer": "mc2_m16_384",
+      "FeatureDim": 512,
+      "SearchSeconds": 0.07299304008483887
+    },
+    {
+      "Model": "MetaCLIP2-S16-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "44.52%",
+      "TFLOPs": 91.9921152,
+      "Tokenizer": "mc2_s16_224",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.002739042043685913
+    },
+    {
+      "Model": "MetaCLIP2-S16-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "50.20%",
+      "TFLOPs": 137.9977728,
+      "Tokenizer": "mc2_s16_224",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.0037802383303642273
+    },
+    {
+      "Model": "MetaCLIP2-S16-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "55.76%",
+      "TFLOPs": 230.009088,
+      "Tokenizer": "mc2_s16_224",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.006186790764331818
+    },
+    {
+      "Model": "MetaCLIP2-S16-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "61.40%",
+      "TFLOPs": 460.037376,
+      "Tokenizer": "mc2_s16_224",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.013418406248092651
+    },
+    {
+      "Model": "MetaCLIP2-S16-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "64.64%",
+      "TFLOPs": 920.093952,
+      "Tokenizer": "mc2_s16_224",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.02799563854932785
+    },
+    {
+      "Model": "MetaCLIP2-S16-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "68.06%",
+      "TFLOPs": 1840.207104,
+      "Tokenizer": "mc2_s16_224",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.056484468281269073
+    },
+    {
+      "Model": "MetaCLIP2-S16-224-mT5",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "43.06%",
+      "TFLOPs": 91.9921152,
+      "Tokenizer": "mc2_s16_224_mt5",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.002805963158607483
+    },
+    {
+      "Model": "MetaCLIP2-S16-224-mT5",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "48.26%",
+      "TFLOPs": 137.9977728,
+      "Tokenizer": "mc2_s16_224_mt5",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.004304096102714539
+    },
+    {
+      "Model": "MetaCLIP2-S16-224-mT5",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "53.84%",
+      "TFLOPs": 230.009088,
+      "Tokenizer": "mc2_s16_224_mt5",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.007327407598495483
+    },
+    {
+      "Model": "MetaCLIP2-S16-224-mT5",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "59.30%",
+      "TFLOPs": 460.037376,
+      "Tokenizer": "mc2_s16_224_mt5",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.014194712042808533
+    },
+    {
+      "Model": "MetaCLIP2-S16-224-mT5",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "62.66%",
+      "TFLOPs": 920.093952,
+      "Tokenizer": "mc2_s16_224_mt5",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.028056271374225616
+    },
+    {
+      "Model": "MetaCLIP2-S16-224-mT5",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "66.16%",
+      "TFLOPs": 1840.207104,
+      "Tokenizer": "mc2_s16_224_mt5",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.25157569348812103
+    },
+    {
+      "Model": "MetaCLIP2-S16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "46.80%",
+      "TFLOPs": 309.8214912,
+      "Tokenizer": "mc2_s16_384",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.0029532164335250854
+    },
+    {
+      "Model": "MetaCLIP2-S16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "53.06%",
+      "TFLOPs": 464.7418368,
+      "Tokenizer": "mc2_s16_384",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.00433359295129776
+    },
+    {
+      "Model": "MetaCLIP2-S16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "58.68%",
+      "TFLOPs": 774.582528,
+      "Tokenizer": "mc2_s16_384",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.007261879742145538
+    },
+    {
+      "Model": "MetaCLIP2-S16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "64.32%",
+      "TFLOPs": 1549.184256,
+      "Tokenizer": "mc2_s16_384",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.014125511050224304
+    },
+    {
+      "Model": "MetaCLIP2-S16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "67.38%",
+      "TFLOPs": 3098.387712,
+      "Tokenizer": "mc2_s16_384",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.0280558243393898
+    },
+    {
+      "Model": "MetaCLIP2-S16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "70.56%",
+      "TFLOPs": 6196.794624,
+      "Tokenizer": "mc2_s16_384",
+      "FeatureDim": 384,
+      "SearchSeconds": 0.056656792759895325
+    },
+    {
+      "Model": "PE-Core-B16-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "60.34%",
+      "TFLOPs": 351.31533312,
+      "Tokenizer": "pe_core_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.005076996982097626
+    },
+    {
+      "Model": "PE-Core-B16-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "65.78%",
+      "TFLOPs": 526.99219968,
+      "Tokenizer": "pe_core_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0077240243554115295
+    },
+    {
+      "Model": "PE-Core-B16-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "70.30%",
+      "TFLOPs": 878.3459328,
+      "Tokenizer": "pe_core_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012999646365642548
+    },
+    {
+      "Model": "PE-Core-B16-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "73.58%",
+      "TFLOPs": 1756.7302656,
+      "Tokenizer": "pe_core_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026073753833770752
+    },
+    {
+      "Model": "PE-Core-B16-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "76.86%",
+      "TFLOPs": 3513.4989312,
+      "Tokenizer": "pe_core_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052188873291015625
+    },
+    {
+      "Model": "PE-Core-B16-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "78.24%",
+      "TFLOPs": 7027.0362624,
+      "Tokenizer": "pe_core_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.10813300311565399
+    },
+    {
+      "Model": "PE-Core-G14-448",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "76.68%",
+      "TFLOPs": 41132.49460224,
+      "Tokenizer": "pe_core_g14_448",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009419433772563934
+    },
+    {
+      "Model": "PE-Core-G14-448",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "80.44%",
+      "TFLOPs": 61698.78030336,
+      "Tokenizer": "pe_core_g14_448",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014024585485458374
+    },
+    {
+      "Model": "PE-Core-G14-448",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "82.84%",
+      "TFLOPs": 102831.3517056,
+      "Tokenizer": "pe_core_g14_448",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.02468939870595932
+    },
+    {
+      "Model": "PE-Core-G14-448",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "84.62%",
+      "TFLOPs": 205662.7802112,
+      "Tokenizer": "pe_core_g14_448",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.04986511170864105
+    },
+    {
+      "Model": "PE-Core-G14-448",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "85.70%",
+      "TFLOPs": 411325.6372224,
+      "Tokenizer": "pe_core_g14_448",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.10687506943941116
+    },
+    {
+      "Model": "PE-Core-G14-448",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "86.98%",
+      "TFLOPs": 822651.3512448,
+      "Tokenizer": "pe_core_g14_448",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.1937505379319191
+    },
+    {
+      "Model": "PE-Lang-L14-448",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "46.58%",
+      "TFLOPs": 7236.00252928,
+      "Tokenizer": "pe_lang_l14_448",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.0065084099769592285
+    },
+    {
+      "Model": "PE-Lang-L14-448",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "52.96%",
+      "TFLOPs": 10854.02939392,
+      "Tokenizer": "pe_lang_l14_448",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010570384562015533
+    },
+    {
+      "Model": "PE-Lang-L14-448",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "58.72%",
+      "TFLOPs": 18090.0831232,
+      "Tokenizer": "pe_lang_l14_448",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.017234988510608673
+    },
+    {
+      "Model": "PE-Lang-L14-448",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "64.46%",
+      "TFLOPs": 36180.2174464,
+      "Tokenizer": "pe_lang_l14_448",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03411097824573517
+    },
+    {
+      "Model": "PE-Lang-L14-448",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "68.42%",
+      "TFLOPs": 72360.4860928,
+      "Tokenizer": "pe_lang_l14_448",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06856859475374222
+    },
+    {
+      "Model": "PE-Lang-L14-448",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "71.28%",
+      "TFLOPs": 144721.0233856,
+      "Tokenizer": "pe_lang_l14_448",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.1312325894832611
+    },
+    {
+      "Model": "PixIO-ViT-B16",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "31.00%",
+      "TFLOPs": 178.62531072,
+      "Tokenizer": "pixio_vitb16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.004487842321395874
+    },
+    {
+      "Model": "PixIO-ViT-B16",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "36.14%",
+      "TFLOPs": 267.95716608,
+      "Tokenizer": "pixio_vitb16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007592871785163879
+    },
+    {
+      "Model": "PixIO-ViT-B16",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "41.14%",
+      "TFLOPs": 446.6208768,
+      "Tokenizer": "pixio_vitb16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012909173965454102
+    },
+    {
+      "Model": "PixIO-ViT-B16",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "47.34%",
+      "TFLOPs": 893.2801536,
+      "Tokenizer": "pixio_vitb16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026025205850601196
+    },
+    {
+      "Model": "PixIO-ViT-B16",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "51.80%",
+      "TFLOPs": 1786.5987072,
+      "Tokenizer": "pixio_vitb16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05221806466579437
+    },
+    {
+      "Model": "PixIO-ViT-B16",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "54.52%",
+      "TFLOPs": 3573.2358144,
+      "Tokenizer": "pixio_vitb16",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.15096063911914825
+    },
+    {
+      "Model": "PixIO-ViT-H16",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "30.44%",
+      "TFLOPs": 1228.3134976,
+      "Tokenizer": "pixio_vith16",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.007554888725280762
+    },
+    {
+      "Model": "PixIO-ViT-H16",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "38.00%",
+      "TFLOPs": 1842.5022464,
+      "Tokenizer": "pixio_vith16",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.011837370693683624
+    },
+    {
+      "Model": "PixIO-ViT-H16",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "43.24%",
+      "TFLOPs": 3070.879744,
+      "Tokenizer": "pixio_vith16",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.02059769630432129
+    },
+    {
+      "Model": "PixIO-ViT-H16",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "49.64%",
+      "TFLOPs": 6141.823488,
+      "Tokenizer": "pixio_vith16",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.042121171951293945
+    },
+    {
+      "Model": "PixIO-ViT-H16",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "53.82%",
+      "TFLOPs": 12283.710976,
+      "Tokenizer": "pixio_vith16",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.08349701762199402
+    },
+    {
+      "Model": "PixIO-ViT-H16",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "58.08%",
+      "TFLOPs": 24567.485952,
+      "Tokenizer": "pixio_vith16",
+      "FeatureDim": 1280,
+      "SearchSeconds": 0.1695009097456932
+    },
+    {
+      "Model": "PixIO-ViT-L16",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "26.48%",
+      "TFLOPs": 605.1319808,
+      "Tokenizer": "pixio_vitl16",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010484002530574799
+    },
+    {
+      "Model": "PixIO-ViT-L16",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "33.52%",
+      "TFLOPs": 907.7235712,
+      "Tokenizer": "pixio_vitl16",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010195329785346985
+    },
+    {
+      "Model": "PixIO-ViT-L16",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "40.00%",
+      "TFLOPs": 1512.906752,
+      "Tokenizer": "pixio_vitl16",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.01721292734146118
+    },
+    {
+      "Model": "PixIO-ViT-L16",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "46.26%",
+      "TFLOPs": 3025.864704,
+      "Tokenizer": "pixio_vitl16",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03406556695699692
+    },
+    {
+      "Model": "PixIO-ViT-L16",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "51.24%",
+      "TFLOPs": 6051.780608,
+      "Tokenizer": "pixio_vitl16",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06850826740264893
+    },
+    {
+      "Model": "PixIO-ViT-L16",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "55.50%",
+      "TFLOPs": 12103.612416,
+      "Tokenizer": "pixio_vitl16",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.11445076018571854
+    },
+    {
+      "Model": "RAEv2-DINOv3-L-K7",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "57.96%",
+      "TFLOPs": 1581.10162948,
+      "Tokenizer": "raev2_dinov3l_k7",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006175629794597626
+    },
+    {
+      "Model": "RAEv2-DINOv3-L-K7",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "63.92%",
+      "TFLOPs": 2371.67804422,
+      "Tokenizer": "raev2_dinov3l_k7",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010107994079589844
+    },
+    {
+      "Model": "RAEv2-DINOv3-L-K7",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "67.98%",
+      "TFLOPs": 3952.8308737,
+      "Tokenizer": "raev2_dinov3l_k7",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.02098684012889862
+    },
+    {
+      "Model": "RAEv2-DINOv3-L-K7",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "71.70%",
+      "TFLOPs": 7905.7129474,
+      "Tokenizer": "raev2_dinov3l_k7",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.034053489565849304
+    },
+    {
+      "Model": "RAEv2-DINOv3-L-K7",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "74.04%",
+      "TFLOPs": 15811.4770948,
+      "Tokenizer": "raev2_dinov3l_k7",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06851214915513992
+    },
+    {
+      "Model": "RAEv2-DINOv3-L-K7",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "75.74%",
+      "TFLOPs": 31623.0053896,
+      "Tokenizer": "raev2_dinov3l_k7",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.13157592713832855
+    },
+    {
+      "Model": "SigLIP2-B16-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "62.64%",
+      "TFLOPs": 351.31140096,
+      "Tokenizer": "siglip2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0045974403619766235
+    },
+    {
+      "Model": "SigLIP2-B16-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "67.88%",
+      "TFLOPs": 526.98630144,
+      "Tokenizer": "siglip2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007706046104431152
+    },
+    {
+      "Model": "SigLIP2-B16-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "72.14%",
+      "TFLOPs": 878.3361024,
+      "Tokenizer": "siglip2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012988343834877014
+    },
+    {
+      "Model": "SigLIP2-B16-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "75.18%",
+      "TFLOPs": 1756.7106048,
+      "Tokenizer": "siglip2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.02949531376361847
+    },
+    {
+      "Model": "SigLIP2-B16-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "77.12%",
+      "TFLOPs": 3513.4596096,
+      "Tokenizer": "siglip2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.052170440554618835
+    },
+    {
+      "Model": "SigLIP2-B16-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "78.78%",
+      "TFLOPs": 7026.9576192,
+      "Tokenizer": "siglip2_b16_224",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.36316152662038803
+    },
+    {
+      "Model": "SigLIP2-B16-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "63.12%",
+      "TFLOPs": 463.98253056,
+      "Tokenizer": "siglip2_b16_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.005095228552818298
+    },
+    {
+      "Model": "SigLIP2-B16-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "68.34%",
+      "TFLOPs": 695.99299584,
+      "Tokenizer": "siglip2_b16_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007731080055236816
+    },
+    {
+      "Model": "SigLIP2-B16-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "73.54%",
+      "TFLOPs": 1160.0139264,
+      "Tokenizer": "siglip2_b16_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012939274311065674
+    },
+    {
+      "Model": "SigLIP2-B16-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "76.02%",
+      "TFLOPs": 2320.0662528,
+      "Tokenizer": "siglip2_b16_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0260414257645607
+    },
+    {
+      "Model": "SigLIP2-B16-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "78.30%",
+      "TFLOPs": 4640.1709056,
+      "Tokenizer": "siglip2_b16_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05556030571460724
+    },
+    {
+      "Model": "SigLIP2-B16-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "79.42%",
+      "TFLOPs": 9280.3802112,
+      "Tokenizer": "siglip2_b16_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0991806834936142
+    },
+    {
+      "Model": "SigLIP2-B16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.48%",
+      "TFLOPs": 1109.72184576,
+      "Tokenizer": "siglip2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.005062893033027649
+    },
+    {
+      "Model": "SigLIP2-B16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "69.18%",
+      "TFLOPs": 1664.60196864,
+      "Tokenizer": "siglip2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007757082581520081
+    },
+    {
+      "Model": "SigLIP2-B16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "74.12%",
+      "TFLOPs": 2774.3622144,
+      "Tokenizer": "siglip2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.012963719666004181
+    },
+    {
+      "Model": "SigLIP2-B16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "77.22%",
+      "TFLOPs": 5548.7628288,
+      "Tokenizer": "siglip2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.029429666697978973
+    },
+    {
+      "Model": "SigLIP2-B16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "78.90%",
+      "TFLOPs": 11097.5640576,
+      "Tokenizer": "siglip2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05231666564941406
+    },
+    {
+      "Model": "SigLIP2-B16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "80.50%",
+      "TFLOPs": 22195.1665152,
+      "Tokenizer": "siglip2_b16_384",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.09419188648462296
+    },
+    {
+      "Model": "SigLIP2-B16-512",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "64.56%",
+      "TFLOPs": 2140.59264,
+      "Tokenizer": "siglip2_b16_512",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.0051839277148246765
+    },
+    {
+      "Model": "SigLIP2-B16-512",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "69.48%",
+      "TFLOPs": 3210.90816,
+      "Tokenizer": "siglip2_b16_512",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007665090262889862
+    },
+    {
+      "Model": "SigLIP2-B16-512",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "73.82%",
+      "TFLOPs": 5351.5392,
+      "Tokenizer": "siglip2_b16_512",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.01312633603811264
+    },
+    {
+      "Model": "SigLIP2-B16-512",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "77.16%",
+      "TFLOPs": 10703.1168,
+      "Tokenizer": "siglip2_b16_512",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026062607765197754
+    },
+    {
+      "Model": "SigLIP2-B16-512",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "79.56%",
+      "TFLOPs": 21406.272,
+      "Tokenizer": "siglip2_b16_512",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05224302411079407
+    },
+    {
+      "Model": "SigLIP2-B16-512",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "81.20%",
+      "TFLOPs": 42812.5824,
+      "Tokenizer": "siglip2_b16_512",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.13954544067382812
+    },
+    {
+      "Model": "SigLIP2-B32-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "57.48%",
+      "TFLOPs": 115.04265216,
+      "Tokenizer": "siglip2_b32_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.00455310195684433
+    },
+    {
+      "Model": "SigLIP2-B32-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "62.72%",
+      "TFLOPs": 172.58317824,
+      "Tokenizer": "siglip2_b32_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.007703676819801331
+    },
+    {
+      "Model": "SigLIP2-B32-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "67.40%",
+      "TFLOPs": 287.6642304,
+      "Tokenizer": "siglip2_b32_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.013033919036388397
+    },
+    {
+      "Model": "SigLIP2-B32-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "70.90%",
+      "TFLOPs": 575.3668608,
+      "Tokenizer": "siglip2_b32_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.026132196187973022
+    },
+    {
+      "Model": "SigLIP2-B32-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "73.60%",
+      "TFLOPs": 1150.7721216,
+      "Tokenizer": "siglip2_b32_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.05224480479955673
+    },
+    {
+      "Model": "SigLIP2-B32-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "74.82%",
+      "TFLOPs": 2301.5826432,
+      "Tokenizer": "siglip2_b32_256",
+      "FeatureDim": 768,
+      "SearchSeconds": 0.10582201927900314
+    },
+    {
+      "Model": "SigLIP2-gopt-16-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "71.14%",
+      "TFLOPs": 5989.34089728,
+      "Tokenizer": "siglip2_g16_256",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009296506643295288
+    },
+    {
+      "Model": "SigLIP2-gopt-16-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "75.16%",
+      "TFLOPs": 8984.04974592,
+      "Tokenizer": "siglip2_g16_256",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014218136668205261
+    },
+    {
+      "Model": "SigLIP2-gopt-16-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "80.14%",
+      "TFLOPs": 14973.4674432,
+      "Tokenizer": "siglip2_g16_256",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.030390962958335876
+    },
+    {
+      "Model": "SigLIP2-gopt-16-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "82.62%",
+      "TFLOPs": 29947.0116864,
+      "Tokenizer": "siglip2_g16_256",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.055665597319602966
+    },
+    {
+      "Model": "SigLIP2-gopt-16-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "83.58%",
+      "TFLOPs": 59894.1001728,
+      "Tokenizer": "siglip2_g16_256",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.09948652237653732
+    },
+    {
+      "Model": "SigLIP2-gopt-16-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "84.96%",
+      "TFLOPs": 119788.2771456,
+      "Tokenizer": "siglip2_g16_256",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.18147778511047363
+    },
+    {
+      "Model": "SigLIP2-gopt-16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "70.90%",
+      "TFLOPs": 13900.53224448,
+      "Tokenizer": "siglip2_g16_384",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009154699742794037
+    },
+    {
+      "Model": "SigLIP2-gopt-16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "75.54%",
+      "TFLOPs": 20850.83676672,
+      "Tokenizer": "siglip2_g16_384",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014121197164058685
+    },
+    {
+      "Model": "SigLIP2-gopt-16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "80.16%",
+      "TFLOPs": 34751.4458112,
+      "Tokenizer": "siglip2_g16_384",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.024523131549358368
+    },
+    {
+      "Model": "SigLIP2-gopt-16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "83.06%",
+      "TFLOPs": 69502.9684224,
+      "Tokenizer": "siglip2_g16_384",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.04969227313995361
+    },
+    {
+      "Model": "SigLIP2-gopt-16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "84.24%",
+      "TFLOPs": 139006.0136448,
+      "Tokenizer": "siglip2_g16_384",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.09866582602262497
+    },
+    {
+      "Model": "SigLIP2-gopt-16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "85.38%",
+      "TFLOPs": 278012.1040896,
+      "Tokenizer": "siglip2_g16_384",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.20908606052398682
+    },
+    {
+      "Model": "SigLIP2-L16-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "67.90%",
+      "TFLOPs": 1621.25553664,
+      "Tokenizer": "siglip2_l16_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006489664316177368
+    },
+    {
+      "Model": "SigLIP2-L16-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.20%",
+      "TFLOPs": 2431.90890496,
+      "Tokenizer": "siglip2_l16_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.01023351401090622
+    },
+    {
+      "Model": "SigLIP2-L16-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "76.92%",
+      "TFLOPs": 4053.2156416,
+      "Tokenizer": "siglip2_l16_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.01720716804265976
+    },
+    {
+      "Model": "SigLIP2-L16-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "79.92%",
+      "TFLOPs": 8106.4824832,
+      "Tokenizer": "siglip2_l16_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.034067653119564056
+    },
+    {
+      "Model": "SigLIP2-L16-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "81.58%",
+      "TFLOPs": 16213.0161664,
+      "Tokenizer": "siglip2_l16_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06877405941486359
+    },
+    {
+      "Model": "SigLIP2-L16-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "82.96%",
+      "TFLOPs": 32426.0835328,
+      "Tokenizer": "siglip2_l16_256",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.25870658457279205
+    },
+    {
+      "Model": "SigLIP2-L16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "68.34%",
+      "TFLOPs": 3821.37769984,
+      "Tokenizer": "siglip2_l16_384",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006434895098209381
+    },
+    {
+      "Model": "SigLIP2-L16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.16%",
+      "TFLOPs": 5732.09214976,
+      "Tokenizer": "siglip2_l16_384",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010315179824829102
+    },
+    {
+      "Model": "SigLIP2-L16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "77.64%",
+      "TFLOPs": 9553.5210496,
+      "Tokenizer": "siglip2_l16_384",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.02101113647222519
+    },
+    {
+      "Model": "SigLIP2-L16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "80.20%",
+      "TFLOPs": 19107.0932992,
+      "Tokenizer": "siglip2_l16_384",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03419347107410431
+    },
+    {
+      "Model": "SigLIP2-L16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "81.92%",
+      "TFLOPs": 38214.2377984,
+      "Tokenizer": "siglip2_l16_384",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06862557679414749
+    },
+    {
+      "Model": "SigLIP2-L16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "83.82%",
+      "TFLOPs": 76428.5267968,
+      "Tokenizer": "siglip2_l16_384",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.1318950206041336
+    },
+    {
+      "Model": "SigLIP2-L16-512",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "68.72%",
+      "TFLOPs": 7239.77740288,
+      "Tokenizer": "siglip2_l16_512",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006323665380477905
+    },
+    {
+      "Model": "SigLIP2-L16-512",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.36%",
+      "TFLOPs": 10859.69170432,
+      "Tokenizer": "siglip2_l16_512",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010320127010345459
+    },
+    {
+      "Model": "SigLIP2-L16-512",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "77.84%",
+      "TFLOPs": 18099.5203072,
+      "Tokenizer": "siglip2_l16_512",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.016962110996246338
+    },
+    {
+      "Model": "SigLIP2-L16-512",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "80.64%",
+      "TFLOPs": 36199.0918144,
+      "Tokenizer": "siglip2_l16_512",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.034311406314373016
+    },
+    {
+      "Model": "SigLIP2-L16-512",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "82.06%",
+      "TFLOPs": 72398.2348288,
+      "Tokenizer": "siglip2_l16_512",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.06862632930278778
+    },
+    {
+      "Model": "SigLIP2-L16-512",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "83.84%",
+      "TFLOPs": 144796.5208576,
+      "Tokenizer": "siglip2_l16_512",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.11832030862569809
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "68.06%",
+      "TFLOPs": 2198.630016,
+      "Tokenizer": "siglip2_sm14_224",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.007027335464954376
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "72.34%",
+      "TFLOPs": 3297.973824,
+      "Tokenizer": "siglip2_sm14_224",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.01536557823419571
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "77.90%",
+      "TFLOPs": 5496.66144,
+      "Tokenizer": "siglip2_sm14_224",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.018866345286369324
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "80.50%",
+      "TFLOPs": 10993.38048,
+      "Tokenizer": "siglip2_sm14_224",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.04236508905887604
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "82.02%",
+      "TFLOPs": 21986.81856,
+      "Tokenizer": "siglip2_sm14_224",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07655492424964905
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "84.00%",
+      "TFLOPs": 43973.69472,
+      "Tokenizer": "siglip2_sm14_224",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.13795892894268036
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-378",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "68.08%",
+      "TFLOPs": 6674.60192256,
+      "Tokenizer": "siglip2_sm14_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.007194846868515015
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-378",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.56%",
+      "TFLOPs": 10011.93168384,
+      "Tokenizer": "siglip2_sm14_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.010958299040794373
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-378",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "78.38%",
+      "TFLOPs": 16686.5912064,
+      "Tokenizer": "siglip2_sm14_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.018796853721141815
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-378",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "81.20%",
+      "TFLOPs": 33373.2400128,
+      "Tokenizer": "siglip2_sm14_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.038134828209877014
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-378",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "83.42%",
+      "TFLOPs": 66746.5376256,
+      "Tokenizer": "siglip2_sm14_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07670605927705765
+    },
+    {
+      "Model": "SigLIP2-SO400M-14-378",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "84.36%",
+      "TFLOPs": 133493.1328512,
+      "Tokenizer": "siglip2_sm14_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.20213734358549118
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-256",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "68.80%",
+      "TFLOPs": 2199.6916992,
+      "Tokenizer": "siglip2_sm16_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.007063388824462891
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-256",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "72.80%",
+      "TFLOPs": 3299.5663488,
+      "Tokenizer": "siglip2_sm16_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.010800868272781372
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-256",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "77.80%",
+      "TFLOPs": 5499.315648,
+      "Tokenizer": "siglip2_sm16_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.018694080412387848
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-256",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "80.48%",
+      "TFLOPs": 10998.688896,
+      "Tokenizer": "siglip2_sm16_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.038050323724746704
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-256",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "82.26%",
+      "TFLOPs": 21997.435392,
+      "Tokenizer": "siglip2_sm16_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07663843035697937
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-256",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "83.92%",
+      "TFLOPs": 43994.928384,
+      "Tokenizer": "siglip2_sm16_256",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.13170558214187622
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-384",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "67.56%",
+      "TFLOPs": 5168.2464,
+      "Tokenizer": "siglip2_sm16_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.007171221077442169
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-384",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.28%",
+      "TFLOPs": 7752.3984,
+      "Tokenizer": "siglip2_sm16_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.01094014197587967
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-384",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "78.32%",
+      "TFLOPs": 12920.7024,
+      "Tokenizer": "siglip2_sm16_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.019083954393863678
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-384",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "81.58%",
+      "TFLOPs": 25841.4624,
+      "Tokenizer": "siglip2_sm16_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.03793077915906906
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-384",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "83.12%",
+      "TFLOPs": 51682.9824,
+      "Tokenizer": "siglip2_sm16_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07652343809604645
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-384",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "84.40%",
+      "TFLOPs": 103366.0224,
+      "Tokenizer": "siglip2_sm16_384",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.3657155856490135
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-512",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "68.16%",
+      "TFLOPs": 9752.29364736,
+      "Tokenizer": "siglip2_sm16_512",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.006983824074268341
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-512",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "73.36%",
+      "TFLOPs": 14628.46927104,
+      "Tokenizer": "siglip2_sm16_512",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.010834865272045135
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-512",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "78.10%",
+      "TFLOPs": 24380.8205184,
+      "Tokenizer": "siglip2_sm16_512",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.018618673086166382
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-512",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "81.66%",
+      "TFLOPs": 48761.6986368,
+      "Tokenizer": "siglip2_sm16_512",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.03797371685504913
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-512",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "83.10%",
+      "TFLOPs": 97523.4548736,
+      "Tokenizer": "siglip2_sm16_512",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.07653599232435226
+    },
+    {
+      "Model": "SigLIP2-SO400M-16-512",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "84.34%",
+      "TFLOPs": 195046.9673472,
+      "Tokenizer": "siglip2_sm16_512",
+      "FeatureDim": 1152,
+      "SearchSeconds": 0.14694297313690186
+    },
+    {
+      "Model": "WebSSL-DINO-1B-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "57.52%",
+      "TFLOPs": 7281.40148736,
+      "Tokenizer": "webssl_dino1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009052649140357971
+    },
+    {
+      "Model": "WebSSL-DINO-1B-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "61.62%",
+      "TFLOPs": 10922.14063104,
+      "Tokenizer": "webssl_dino1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.01990465074777603
+    },
+    {
+      "Model": "WebSSL-DINO-1B-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "66.58%",
+      "TFLOPs": 18203.6189184,
+      "Tokenizer": "webssl_dino1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.024761348962783813
+    },
+    {
+      "Model": "WebSSL-DINO-1B-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "70.52%",
+      "TFLOPs": 36407.3146368,
+      "Tokenizer": "webssl_dino1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.04973950982093811
+    },
+    {
+      "Model": "WebSSL-DINO-1B-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "73.68%",
+      "TFLOPs": 72814.7060736,
+      "Tokenizer": "webssl_dino1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.09411206096410751
+    },
+    {
+      "Model": "WebSSL-DINO-1B-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "75.26%",
+      "TFLOPs": 145629.4889472,
+      "Tokenizer": "webssl_dino1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.1871689036488533
+    },
+    {
+      "Model": "WebSSL-MAE-1B-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "3.60%",
+      "TFLOPs": 5825.9230464,
+      "Tokenizer": "webssl_mae1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.009151488542556763
+    },
+    {
+      "Model": "WebSSL-MAE-1B-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "5.06%",
+      "TFLOPs": 8738.9229696,
+      "Tokenizer": "webssl_mae1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.014125600457191467
+    },
+    {
+      "Model": "WebSSL-MAE-1B-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "6.22%",
+      "TFLOPs": 14564.922816,
+      "Tokenizer": "webssl_mae1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.02487766742706299
+    },
+    {
+      "Model": "WebSSL-MAE-1B-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "8.98%",
+      "TFLOPs": 29129.922432,
+      "Tokenizer": "webssl_mae1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.055847518146038055
+    },
+    {
+      "Model": "WebSSL-MAE-1B-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "11.50%",
+      "TFLOPs": 58259.921664,
+      "Tokenizer": "webssl_mae1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.10682550817728043
+    },
+    {
+      "Model": "WebSSL-MAE-1B-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "14.78%",
+      "TFLOPs": 116519.920128,
+      "Tokenizer": "webssl_mae1b_full2b_224",
+      "FeatureDim": 1536,
+      "SearchSeconds": 0.34102223813533783
+    },
+    {
+      "Model": "WebSSL-MAE-300M-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "6.06%",
+      "TFLOPs": 1193.0939904,
+      "Tokenizer": "webssl_mae300m_full2b_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.006190963089466095
+    },
+    {
+      "Model": "WebSSL-MAE-300M-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "8.02%",
+      "TFLOPs": 1789.6665856,
+      "Tokenizer": "webssl_mae300m_full2b_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.010199867188930511
+    },
+    {
+      "Model": "WebSSL-MAE-300M-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "10.58%",
+      "TFLOPs": 2982.811776,
+      "Tokenizer": "webssl_mae300m_full2b_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.017031557857990265
+    },
+    {
+      "Model": "WebSSL-MAE-300M-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "14.84%",
+      "TFLOPs": 5965.674752,
+      "Tokenizer": "webssl_mae300m_full2b_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.03408481180667877
+    },
+    {
+      "Model": "WebSSL-MAE-300M-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "18.58%",
+      "TFLOPs": 11931.400704,
+      "Tokenizer": "webssl_mae300m_full2b_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.07276526093482971
+    },
+    {
+      "Model": "WebSSL-MAE-300M-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "22.60%",
+      "TFLOPs": 23862.852608,
+      "Tokenizer": "webssl_mae300m_full2b_224",
+      "FeatureDim": 1024,
+      "SearchSeconds": 0.11685348302125931
+    },
+    {
+      "Model": "WebSSL-MAE-3B-224",
+      "Shot": 5,
+      "Train": 5000,
+      "Top1": "4.94%",
+      "TFLOPs": 15144.23245824,
+      "Tokenizer": "webssl_mae3b_full2b_224",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.017168469727039337
+    },
+    {
+      "Model": "WebSSL-MAE-3B-224",
+      "Shot": 10,
+      "Train": 10000,
+      "Top1": "6.48%",
+      "TFLOPs": 22716.42548736,
+      "Tokenizer": "webssl_mae3b_full2b_224",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.038419999182224274
+    },
+    {
+      "Model": "WebSSL-MAE-3B-224",
+      "Shot": 20,
+      "Train": 20000,
+      "Top1": "8.68%",
+      "TFLOPs": 37860.8115456,
+      "Tokenizer": "webssl_mae3b_full2b_224",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.04910152405500412
+    },
+    {
+      "Model": "WebSSL-MAE-3B-224",
+      "Shot": 45,
+      "Train": 45000,
+      "Top1": "11.54%",
+      "TFLOPs": 75721.7766912,
+      "Tokenizer": "webssl_mae3b_full2b_224",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.11102660000324249
+    },
+    {
+      "Model": "WebSSL-MAE-3B-224",
+      "Shot": 95,
+      "Train": 95000,
+      "Top1": "14.68%",
+      "TFLOPs": 151443.7069824,
+      "Tokenizer": "webssl_mae3b_full2b_224",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.20591340959072113
+    },
+    {
+      "Model": "WebSSL-MAE-3B-224",
+      "Shot": 195,
+      "Train": 195000,
+      "Top1": "18.60%",
+      "TFLOPs": 302887.5675648,
+      "Tokenizer": "webssl_mae3b_full2b_224",
+      "FeatureDim": 3072,
+      "SearchSeconds": 0.535228855907917
+    }
+  ]
+}
