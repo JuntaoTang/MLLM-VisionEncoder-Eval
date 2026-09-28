@@ -6,4 +6,3 @@ faiss-cpu
 transformers==5.15.0
 open_clip_torch==3.3.0
 huggingface-hub==1.24.0
-
