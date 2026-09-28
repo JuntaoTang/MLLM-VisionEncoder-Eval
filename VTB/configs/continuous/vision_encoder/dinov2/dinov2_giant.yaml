@@ -1,0 +1,9 @@
+# dinov2 giant (HuggingFace transformers)
+vision_encoder:
+  id: dinov2_giant
+  display_name: "dinov2 giant"
+  type: hf
+  model_name_or_path: /cache/ckpt/download/tokenizer/continuous/dinov2/dinov2-giant
+  select_layer: -1
+  select_feature: patch
+  image_size: 518

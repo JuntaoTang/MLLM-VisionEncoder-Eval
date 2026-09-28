@@ -1,0 +1,12 @@
+tokenizer:
+  id: uniar_bsq
+  type: uniar
+  display_name: "UniAR BSQ"
+  checkpoint_path: /cache/ckpt/download/tokenizer/discrete/uniar/bsq_encoder
+  repo_root: /cache/repos/UniAR
+  image_size: 512
+  num_tokens: 1024
+  embed_dim: 1152
+  post_quant_embed_dim: 4608
+  bsq_only: true
+  fp16: true

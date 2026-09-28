@@ -1,0 +1,24 @@
+# Llama-3.2-1B + dinov2 small
+experiment:
+  description: "Llama-3.2-1B + dinov2 small + mlp2x"
+
+llm: llama3_2_1b
+vision_encoder: dinov2_small
+projector: mlp2x
+
+eval:
+  conv_mode: llava_llama_3
+
+train:
+  pretrain:
+    learning_rate: 1.0e-3
+    warmup_ratio: 0.05
+    max_grad_norm: 1.0
+    gradient_checkpointing: true
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    tf32: true
+    dataloader_drop_last: true
+  finetune:
+    max_grad_norm: 1.0
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    dataloader_drop_last: true

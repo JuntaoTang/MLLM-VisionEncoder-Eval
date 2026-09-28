@@ -1,0 +1,12 @@
+# Perception Encoder PE-Spatial-L14-448
+vision_encoder:
+  id: pe_spatial_l14_448
+  display_name: "PE-Spatial-L14-448"
+  type: pe
+  model_name: PE-Spatial-L14-448
+  pe_config: PE-Spatial-L14-448
+  weights_path: /cache/ckpt/download/tokenizer/continuous/pe/PE-Spatial-L14-448/PE-Spatial-L14-448.pt
+  image_size: 448
+  select_layer: -1
+  select_feature: patch
+  pe_repo: /home/ma-user/work_space/VTB/third_party/perception_models

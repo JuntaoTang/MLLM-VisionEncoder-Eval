@@ -1,0 +1,9 @@
+# I-JEPA ViT-H/14 @224
+vision_encoder:
+  id: ijepa_vith14
+  display_name: "I-JEPA ViT-H/14 @224"
+  type: ijepa
+  weights_path: /cache/ckpt/download/tokenizer/continuous/ijepa/ijepa_vith.pth
+  image_size: 224
+  select_layer: -1
+  select_feature: patch

@@ -1,0 +1,49 @@
+# Default training hyperparameters (LR, scheduler, epochs, …)
+# Per-recipe overrides: configs/continuous/mllm/{llm}/{vision_encoder_id}_mlp2x.yaml
+
+paths:
+  llava_project: third_party/LLaVA-NeXT
+  hf_home: /cache/VTB/data/cache/huggingface
+  pretrained_root: /cache/ckpt/download
+  checkpoints_root: /cache/ckpt/trained/continuous
+
+pretrain:
+  tunable_parts: mm_mlp_adapter
+  learning_rate: 1.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  lr_scheduler_type: cosine
+  num_train_epochs: 1
+  gradient_checkpointing: false
+  model_max_length: 8192
+  save_strategy: epoch
+  save_total_limit: 1
+  logging_steps: 10
+  attn_implementation: sdpa
+  bf16: true
+  lazy_preprocess: true
+  dataloader_drop_last: false
+  report_to: none
+
+finetune:
+  tunable_parts: mm_mlp_adapter,mm_language_model
+  learning_rate: 1.0e-5
+  mm_projector_lr: 1.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  lr_scheduler_type: cosine
+  num_train_epochs: 1
+  gradient_checkpointing: true
+  gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+  model_max_length: 8192
+  save_strategy: epoch
+  save_total_limit: 1
+  logging_steps: 10
+  attn_implementation: sdpa
+  bf16: true
+  tf32: true
+  lazy_preprocess: true
+  dataloader_drop_last: false
+  report_to: none

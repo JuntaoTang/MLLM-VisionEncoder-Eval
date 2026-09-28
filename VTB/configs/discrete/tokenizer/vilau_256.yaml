@@ -1,0 +1,12 @@
+tokenizer:
+  id: vilau_256
+  type: vilau
+  display_name: "VILA-U RQVAESIGLIP @256"
+  checkpoint_path: /cache/ckpt/download/tokenizer/discrete/vilau/vila-u-7b-256/vision_tower
+  codebook_size: 16384
+  embed_dim: 1024
+  post_quant_embed_dim: 1024
+  image_size: 256
+  num_tokens: 256
+  rq_depth: 4
+  fp16: true

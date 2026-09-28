@@ -1,0 +1,33 @@
+# Catalog of eval datasets used by continuous/discrete scoring.
+# Types drive local score_predictions routing (mcq/vqa/yes_no/caption).
+available:
+  - name: MMMU_TEST
+    type: mcq
+  - name: MMMU_DEV_VAL
+    type: mcq
+  - name: MMBench_TEST_EN_V11
+    type: mcq
+  - name: MMBench_DEV_EN_V11
+    type: mcq
+  - name: VQAv2_VAL
+    type: vqa
+  - name: VizWiz
+    type: vqa
+  - name: ScienceQA_VAL
+    type: mcq
+  - name: MME
+    type: yes_no
+  - name: ChartQA_TEST
+    type: vqa
+  - name: DocVQA_VAL
+    type: vqa
+  - name: TextVQA_VAL
+    type: vqa
+  - name: POPE
+    type: yes_no
+  - name: GQA_TestDev_Balanced
+    type: vqa
+  - name: MSCOCO_KARPATHY_TEST
+    type: caption
+  - name: FLICKR30K_KARPATHY_TEST
+    type: caption

@@ -1,0 +1,5 @@
+﻿llm:
+  id: qwen3
+  model_name_or_path: /cache/ckpt/download/llm/Qwen3-1.7B
+  model_version: qwen_3
+  hidden_size: 2048

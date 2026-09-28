@@ -1,0 +1,37 @@
+# Qwen3-1.7B + webssl dino300m full2b 224
+experiment:
+  description: "Qwen3-1.7B + webssl dino300m full2b 224 + mlp2x"
+
+llm: qwen3_1p7b
+vision_encoder: webssl_dino300m_full2b_224
+projector: mlp2x
+
+eval:
+  conv_mode: qwen_3
+
+train:
+  pretrain:
+    learning_rate: 1.0e-3
+    warmup_ratio: 0.05
+    max_grad_norm: 1.0
+    gradient_checkpointing: true
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    tf32: true
+    dataloader_drop_last: true
+  finetune:
+    max_grad_norm: 1.0
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    dataloader_drop_last: true
+batch:
+  pretrain:
+    per_device_train_batch_size: 128
+    gradient_accumulation_steps: 1
+    peak_vram_gb: 79.11
+    probe_note: probed max micro=128; effective=128/GPU; peak_vram=79.11GB; max_steps=2;
+      1xA100
+  finetune:
+    per_device_train_batch_size: 32
+    gradient_accumulation_steps: 1
+    peak_vram_gb: 72.39
+    probe_note: probed max micro=32; effective=32/GPU; peak_vram=72.39GB; max_steps=2;
+      1xA100

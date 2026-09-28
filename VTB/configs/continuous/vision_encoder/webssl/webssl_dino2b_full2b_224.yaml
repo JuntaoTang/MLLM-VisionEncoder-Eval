@@ -1,0 +1,9 @@
+# webssl dino2b full2b 224 (HuggingFace transformers)
+vision_encoder:
+  id: webssl_dino2b_full2b_224
+  display_name: "webssl dino2b full2b 224"
+  type: hf
+  model_name_or_path: /cache/ckpt/download/tokenizer/continuous/webssl/webssl-dino2b-full2b-224
+  select_layer: -1
+  select_feature: patch
+  image_size: 224

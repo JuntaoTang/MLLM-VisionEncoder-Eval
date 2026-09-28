@@ -1,0 +1,24 @@
+# SmolLM2-1.7B-Instruct + dinov3 convnext small pretrain lvd1689m
+experiment:
+  description: "SmolLM2-1.7B-Instruct + dinov3 convnext small pretrain lvd1689m + mlp2x"
+
+llm: smollm2_1p7b
+vision_encoder: dinov3_convnext_small_pretrain_lvd1689m
+projector: mlp2x
+
+eval:
+  conv_mode: smollm2
+
+train:
+  pretrain:
+    learning_rate: 1.0e-3
+    warmup_ratio: 0.05
+    max_grad_norm: 1.0
+    gradient_checkpointing: true
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    tf32: true
+    dataloader_drop_last: true
+  finetune:
+    max_grad_norm: 1.0
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    dataloader_drop_last: true

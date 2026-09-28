@@ -1,0 +1,12 @@
+# MetaCLIP MC2 mc2_s16_384
+vision_encoder:
+  id: mc2_s16_384
+  display_name: "ViT-S-16 @ MetaCLIP MC2 (384px)"
+  type: open_clip_hub
+  model_name: ViT-S-16
+  pretrained: metaclip
+  weights_path: /cache/ckpt/download/tokenizer/continuous/mc2/mc2_s16_384.pt
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  force_quick_gelu: false
+  force_image_size: 384
+  select_layer: -2

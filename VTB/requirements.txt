@@ -1,0 +1,24 @@
+# Pinned from conda env VTB (Python 3.10). PyTorch installed separately by scripts/setup_env.sh (cu124).
+PyYAML>=6.0
+transformers==4.51.3
+accelerate==1.13.0
+deepspeed==0.14.4
+datasets==5.0.0
+einops==0.8.2
+einops-exts==0.0.4
+open_clip_torch==3.3.0
+omegaconf>=2.3.0
+peft==0.19.1
+pillow==12.1.1
+safetensors==0.7.0
+timm==1.0.27
+tokenizers==0.21.4
+tqdm==4.68.1
+tyro==1.0.13
+sentencepiece==0.2.1
+tensorboard==2.20.0
+ftfy==6.3.1
+huggingface_hub==0.36.2
+numpy==2.2.6
+pandas==2.3.3
+pycocoevalcap>=1.2

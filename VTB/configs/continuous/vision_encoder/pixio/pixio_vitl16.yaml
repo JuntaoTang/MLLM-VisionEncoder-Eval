@@ -1,0 +1,11 @@
+# Pixio ViT-L/16 @256
+vision_encoder:
+  id: pixio_vitl16
+  display_name: "Pixio ViT-L/16 @256"
+  type: pixio
+  weights_path: /cache/ckpt/download/tokenizer/continuous/pixio/pixio-vitl16/pixio_vitl16.pth
+  image_size: 256
+  select_layer: -1
+  select_feature: patch
+  pixio_hub: pixio_vitl16
+  pixio_repo: /home/ma-user/work_space/VTB/third_party/pixio

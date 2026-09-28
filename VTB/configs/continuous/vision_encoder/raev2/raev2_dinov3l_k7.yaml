@@ -1,0 +1,11 @@
+# RAEv2 DINOv3-L multi-layer-sum (k=7)
+vision_encoder:
+  id: raev2_dinov3l_k7
+  display_name: "RAEv2 DINOv3-L k7 MLS @256"
+  type: raev2
+  weights_path: /cache/ckpt/download/tokenizer/continuous/dinov3/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth
+  image_size: 256
+  layers: [11, 13, 15, 17, 19, 21, 23]
+  select_layer: -1
+  select_feature: patch
+  dinov3_repo: /home/ma-user/work_space/VTB/third_party/dinov3

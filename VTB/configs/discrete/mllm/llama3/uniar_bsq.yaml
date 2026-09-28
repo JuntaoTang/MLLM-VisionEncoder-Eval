@@ -1,0 +1,9 @@
+# Llama-3.2-1B + UniAR BSQ
+experiment:
+  description: "Llama-3.2-1B + UniAR BSQ + mlp2x projector"
+
+llm: llama3_2_1b
+tokenizer: uniar_bsq
+projector: mlp2x
+arch:
+  vis_mode: uniar

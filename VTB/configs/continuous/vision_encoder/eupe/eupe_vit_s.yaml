@@ -1,0 +1,12 @@
+# EUPE-ViT-S
+vision_encoder:
+  id: eupe_vit_s
+  display_name: "EUPE-ViT-S"
+  type: eupe
+  model_name: EUPE-ViT-S
+  eupe_hub: eupe_vits16
+  weights_path: /cache/ckpt/download/tokenizer/continuous/eupe/EUPE-ViT-S/EUPE-ViT-S.pt
+  image_size: 256
+  select_layer: -1
+  select_feature: patch
+  eupe_repo: /home/ma-user/work_space/VTB/third_party/eupe

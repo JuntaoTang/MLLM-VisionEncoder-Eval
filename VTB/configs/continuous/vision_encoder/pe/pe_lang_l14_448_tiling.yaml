@@ -1,0 +1,12 @@
+# Perception Encoder PE-Lang-L14-448-Tiling
+vision_encoder:
+  id: pe_lang_l14_448_tiling
+  display_name: "PE-Lang-L14-448-Tiling"
+  type: pe
+  model_name: PE-Lang-L14-448-Tiling
+  pe_config: PE-Lang-L14-448-Tiling
+  weights_path: /cache/ckpt/download/tokenizer/continuous/pe/PE-Lang-L14-448-Tiling/PE-Lang-L14-448-Tiling.pt
+  image_size: 448
+  select_layer: -1
+  select_feature: patch
+  pe_repo: /home/ma-user/work_space/VTB/third_party/perception_models

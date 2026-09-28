@@ -1,0 +1,12 @@
+tokenizer:
+  id: toklip_s_256
+  type: toklip
+  display_name: "TokLIP-S @ 256"
+  checkpoint_path: /cache/ckpt/download/tokenizer/discrete/toklip/TokLIP_S_256.pt
+  model_config: ViT-SO400M-16-SigLIP2-256-toklip
+  codebook_size: 16384
+  embed_dim: 8
+  post_quant_embed_dim: 1152
+  image_size: 256
+  fp16: true
+  vqgan_checkpoint: /cache/ckpt/download/tokenizer/discrete/toklip/vq_ds16_t2i.pt
