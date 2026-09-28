@@ -1,0 +1,82 @@
+{
+  "preset": "main",
+  "cm_csv": "artifacts/crossmodal_stats_final_qwen25_full.csv",
+  "cka_pt": "results/rebuild/cka_diverse.pt",
+  "results": {
+    "C+X|pool|qwen3": {
+      "x_cols": [
+        "cm_cka",
+        "cm_r2"
+      ],
+      "learner": "krr",
+      "w_fixed": 2.0,
+      "alpha_fixed": 0.1,
+      "n_pool": 70,
+      "fold_mean_rho": [
+        0.7236655035014798,
+        0.11655613527442744
+      ],
+      "fold_mean_pearson": [
+        0.7140707609997465,
+        0.12092777053024042
+      ],
+      "fold_mean_top1_gt": [
+        47.606,
+        6.386180705241593
+      ],
+      "pooled_rho": 0.7166777479488697,
+      "pooled_pearson": 0.7013268632572232,
+      "pooled_top1": 39.19
+    },
+    "C+X|pool|qwen25": {
+      "x_cols": [
+        "cm_cka",
+        "cm_r2"
+      ],
+      "learner": "krr",
+      "w_fixed": 2.0,
+      "alpha_fixed": 0.1,
+      "n_pool": 70,
+      "fold_mean_rho": [
+        0.8021978021978022,
+        0.15390893538471734
+      ],
+      "fold_mean_pearson": [
+        0.7975704101706497,
+        0.15517535665587437
+      ],
+      "fold_mean_top1_gt": [
+        53.86800000000001,
+        0.6619486384909343
+      ],
+      "pooled_rho": 0.8133567785874927,
+      "pooled_pearson": 0.8102490539582587,
+      "pooled_top1": 54.47
+    },
+    "C+X|pool|smollm2": {
+      "x_cols": [
+        "cm_cka",
+        "cm_r2"
+      ],
+      "learner": "krr",
+      "w_fixed": 2.0,
+      "alpha_fixed": 0.1,
+      "n_pool": 70,
+      "fold_mean_rho": [
+        0.7186813186813187,
+        0.17128198861302935
+      ],
+      "fold_mean_pearson": [
+        0.7373712348451325,
+        0.16104085527692402
+      ],
+      "fold_mean_top1_gt": [
+        39.606,
+        3.630138289376865
+      ],
+      "pooled_rho": 0.7371137629290774,
+      "pooled_pearson": 0.7500369080043758,
+      "pooled_top1": 35.82
+    }
+  }
+}

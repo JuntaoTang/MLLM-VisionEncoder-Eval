@@ -1,0 +1,42 @@
+# =============================================================================
+# CKA-X — dependencies (Linux)
+# =============================================================================
+# Install:  pip install -r requirements.txt
+#
+# Verified stack for the archived numbers: Python 3.10, torch 2.6.0+cu124
+# (CUDA 12.4, 1x A100 80 GB).  On a GPU box install torch with the wheel that
+# matches your driver, e.g.
+#   pip install torch==2.6.0 torchvision --index-url https://download.pytorch.org/whl/cu124
+# =============================================================================
+
+# --- reproduce everything from the frozen artifacts (no GPU needed) ---------
+# `bash run.sh verify | main | learners | sweep | figure`
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0      # the budget figure
+torch>=2.0.0           # descriptor loading / kernel construction (the CKA
+                       # kernel itself is not included: build it with
+                       # `bash run.sh cka`)
+
+# --- rebuild the descriptor from feature matrices (GPU) ---------------------
+# `bash run.sh cka | crossmodal`  -> numpy + torch only
+
+# --- rebuild the features themselves (GPU, hours) ---------------------------
+# `bash run.sh images | features | features-discrete | text`
+tqdm>=4.60.0
+torchvision>=0.15.0
+open_clip_torch>=2.24.0
+transformers>=4.40.0
+datasets>=2.14.0
+pyarrow>=14.0.0        # reads the OCR-VQA arrow files in prepare_images.py
+pillow>=9.0.0
+pyyaml>=6.0
+safetensors>=0.4.0
+
+# --- external, NOT pip-installable: the discrete-tokenizer wrappers ---------
+# extract_discrete_features.py imports
+#   $VTB_ROOT/src/discrete/model/tokenizers/{vilau,toklip,unitok,atoken,
+#                                            bitdance,uniar}/wrapper.py
+# which belong to the upstream VisualTokenizerBench tree (UniTok fork included).
+# The continuous encoders are extracted without them.

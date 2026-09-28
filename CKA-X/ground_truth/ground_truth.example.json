@@ -1,0 +1,25 @@
+{
+  "_comment": "Ground-truth format for CKA-X.  Copy this file to ground_truth.json and fill in the scores of your own encoders.  Top-level keys whose value is not an object (such as this one) are ignored.  `family` is a free-form label for the encoder (we use continuous | discrete).  `scores.<backbone>` is that encoder's mean MLLM benchmark score over the eleven downstream benchmarks, with <backbone> in {qwen3 (Qwen3-1.7B), qwen25 (Qwen2.5-1.5B), smollm2 (SmolLM2-1.7B)}.  An encoder that lacks a backbone's score is simply skipped for that backbone.  Every number below is a placeholder, not a measurement.",
+  "example_tokenizer_a": {
+    "family": "continuous",
+    "scores": {
+      "qwen3": 45.0,
+      "qwen25": 47.0,
+      "smollm2": 43.5
+    }
+  },
+  "example_tokenizer_b": {
+    "family": "discrete",
+    "scores": {
+      "qwen3": 35.0,
+      "qwen25": 37.0,
+      "smollm2": 33.0
+    }
+  },
+  "example_tokenizer_c": {
+    "family": "continuous",
+    "scores": {
+      "qwen25": 41.0
+    }
+  }
+}
