@@ -6,7 +6,7 @@ evaluated B/16 224px baseline. Use ``--include-baseline`` to evaluate all 13.
 Example:
     python zero_shot/zero_shot_metaclip2_imagenet.py \
         --root /path/to/metaclip2/checkpoints \
-        --val /path/to/imagenet/val \
+        --val /path/to/imagenet/val \ 
         --mt5-spm google/mt5-base
 """
 
