@@ -1,0 +1,13 @@
+torch==2.4.0
+torchvision==0.19.0
+numpy==1.26.4
+fvcore>=0.1.5
+iopath>=0.1.10
+omegaconf>=2.3.0
+timm==1.0.8
+transformers==4.46.3
+safetensors==0.4.3
+open_clip_torch>=2.24.0
+Pillow>=9.2.0
+tqdm>=4.30.0
+einops>=0.7.0

@@ -1,0 +1,7 @@
+# directory	repository	commit	used_by
+TokLIP	https://github.com/TencentARC/TokLIP.git	f1f8c60192f2d03c07eab804d2b1277a4cdf047d	linear-probing,TokBench
+UniTok	https://github.com/FoundationVision/UniTok.git	bb8012e8e8d7be66928bedd80506c56a55ea6305	linear-probing,TokBench
+UniAR	https://github.com/ShareLab-SII/UniAR.git	92d8718d4cf282254ae63a4944b07edba0ce7abf	linear-probing
+vila-u	https://github.com/mit-han-lab/vila-u.git	4ea42ead2ce22b035ee74c7966eed245bca3e927	linear-probing,TokBench
+RAEv2	https://github.com/nanovisionx/RAEv2.git	8a0d238f8dc3b261aba98b217f6c79c0182e8e94	linear-probing
+dinov3	https://github.com/facebookresearch/dinov3.git	94a96ac83c2446f15f9bdcfae23cad3c6a9d4988	linear-probing
