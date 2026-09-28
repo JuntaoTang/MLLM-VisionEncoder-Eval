@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 768,
+  "feature_file": "features/005_dino_vits8.npy",
+  "model": "dinov1_vits8",
+  "rank": 5,
+  "representation": "concat(final normalized CLS, mean(final normalized patch tokens)); excludes 0 register token(s)",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "a54d03b13c3f5a6def5710c2817022809441c3d35a8ccccab8b963862a4d7fb6",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/dino_vits8/a54d03b13c3f5a6d/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "dino_vits8"
+}
+

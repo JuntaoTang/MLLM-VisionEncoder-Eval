@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/014_unitok_attn.npy",
+  "model": "unitok",
+  "rank": 14,
+  "representation": "quantize/dequantize -> post_quant_proj -> token mean -> fc_norm, before UniTok projection",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "39dec5b7de7e37b5e061ac41c2ef1b2a059db2e5d2740d7bf8d268e3172e8a21",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/unitok_attn/39dec5b7de7e37b5/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "unitok_attn"
+}
+

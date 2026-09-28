@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 768,
+  "feature_file": "features/048_pixio_vitb16.npy",
+  "model": "pixio_vitb16",
+  "rank": 48,
+  "representation": "mean of the eight final-LayerNorm Pixio CLS tokens",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "9c92f24731bc2123c2dab827cf3dedb8e869036e53ffea54a10f5f47c2556db7",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/pixio_vitb16/9c92f24731bc2123/metadata.json",
+  "source_kind": "exact-200shot-hardlink",
+  "tokenizer": "pixio_vitb16"
+}
+

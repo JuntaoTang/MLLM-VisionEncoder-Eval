@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1536,
+  "feature_file": "features/067_webssl_dino1b_full2b_224.npy",
+  "model": "webssl_dino1b_full2b_224",
+  "rank": 67,
+  "representation": "final normalized WebSSL-DINO encoder CLS token",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "062d2b63fcad254f49f4c83fca5b52dcb4de99565903aa0f42d299ff572e838b",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/webssl_dino1b_full2b_224/062d2b63fcad254f/metadata.json",
+  "source_kind": "exact-200shot-hardlink",
+  "tokenizer": "webssl_dino1b_full2b_224"
+}
+

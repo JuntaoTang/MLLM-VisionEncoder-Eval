@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 3072,
+  "feature_file": "features/070_webssl_mae3b_full2b_224.npy",
+  "model": "webssl_mae3b_full2b_224",
+  "rank": 70,
+  "representation": "final normalized WebSSL-MAE encoder CLS token",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "9b1a2697e008b3f917859b8d69468fa90e5e0996647a67c87efccceddd014097",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/webssl_mae3b_full2b_224/9b1a2697e008b3f9/metadata.json",
+  "source_kind": "exact-200shot-hardlink",
+  "tokenizer": "webssl_mae3b_full2b_224"
+}
+

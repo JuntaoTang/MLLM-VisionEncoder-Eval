@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/016_eupe_convnext_b.npy",
+  "model": "eupe_convnext_b",
+  "rank": 16,
+  "representation": "EUPE ConvNeXt final-stage global average pooling after the released final LayerNorm",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "edda69feb81f0de8253e802d2517f10690c4b8a84b4e3c556aafb408483ab728",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/eupe_convnext_b/edda69feb81f0de8/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "eupe_convnext_b"
+}
+

@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1536,
+  "feature_file": "features/057_siglip2_g16_256.npy",
+  "model": "siglip2_g16_256",
+  "rank": 57,
+  "representation": "native SigLIP 2 model(images) [B,D] output after MAP attention pooling",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "9f41aadb8b78780dad6389a7e5531e57c1c0fdd83a5bfe046a6b7b5fe75a454d",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/siglip2_g16_256/9f41aadb8b78780d/metadata.json",
+  "source_kind": "exact-200shot-hardlink",
+  "tokenizer": "siglip2_g16_256"
+}
+

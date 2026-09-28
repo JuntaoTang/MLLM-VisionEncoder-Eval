@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/015_vilau_256.npy",
+  "model": "vilau",
+  "rank": 15,
+  "representation": "mean of the penultimate VILA-U SigLIP encoder-block tokens",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "7eb888e0e2b97bbbde3b7550a45897995b2281ce0d07e98cb58a940fcb82a292",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/vilau_256/7eb888e0e2b97bbb/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "vilau_256"
+}
+

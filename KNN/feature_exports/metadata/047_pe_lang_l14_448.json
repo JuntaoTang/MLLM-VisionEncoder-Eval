@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/047_pe_lang_l14_448.npy",
+  "model": "pe_lang_l14_448",
+  "rank": 47,
+  "representation": "mean of last-layer Perception Encoder patch tokens, excluding any CLS token",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "244f5700afd2542033bad38300a62d2e188e4219ebff14218c1b08e1d22acbc6",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/pe_lang_l14_448/244f5700afd25420/metadata.json",
+  "source_kind": "exact-200shot-hardlink",
+  "tokenizer": "pe_lang_l14_448"
+}
+
