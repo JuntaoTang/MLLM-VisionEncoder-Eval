@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1152,
+  "feature_file": "features/012_toklip_s_256.npy",
+  "model": "toklip_s",
+  "rank": 12,
+  "representation": "mean of final normalized TokLIP semantic tokens; forward_head is not used",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "14da3b8967e75e43c4b02fb9d0fa19f511ed1fd5100ed109c681e4c8585c3781",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/toklip_s_256/14da3b8967e75e43/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "toklip_s_256"
+}
+

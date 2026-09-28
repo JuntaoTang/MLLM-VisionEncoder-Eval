@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 768,
+  "feature_file": "features/045_pe_core_b16_224.npy",
+  "model": "pe_core_b16_224",
+  "rank": 45,
+  "representation": "PE-Core learned attention-pool output before the released CLIP projection",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "c5182bec0677da9adca5bd2d494a4ec92f6c09b530c485f7e2badaf724d663c6",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/pe_core_b16_224/c5182bec0677da9a/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "pe_core_b16_224"
+}
+

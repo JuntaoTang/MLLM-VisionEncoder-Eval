@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/001_clip_openai__l14.npy",
+  "model": "clip_openai__l14",
+  "rank": 1,
+  "representation": "final post-LayerNorm CLS before the OpenAI CLIP 1024-to-768 visual projection",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "1936cc8df71414558f44b4bb7f4c4c9bb6771ee04824761229d62870d05035e4",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/clip_openai__l14/1936cc8df7141455/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "clip_openai__l14"
+}
+

@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/051_raev2_dinov3l_k7.npy",
+  "model": "raev2_dinov3l_k7",
+  "rank": 51,
+  "representation": "spatial mean of the normalized RAEv2 DINOv3-L/16 K=7 multi-layer tokenizer latent",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "4cfd6d935623960acd1516958dca35e4aced17a053d7a115ceccf1b33da9da60",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/raev2_dinov3l_k7/4cfd6d935623960a/metadata.json",
+  "source_kind": "exact-200shot-hardlink",
+  "tokenizer": "raev2_dinov3l_k7"
+}
+

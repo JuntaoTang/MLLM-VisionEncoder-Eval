@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1280,
+  "feature_file": "features/020_ijepa_vith14.npy",
+  "model": "ijepa",
+  "rank": 20,
+  "representation": "spatial mean of the normalized RAEv2 I-JEPA-H/14 K=1 tokenizer latent",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "7a7402bd9ec806eae6360ae5e1faec0502c82bbfb9fcffb6a3dc112428c4aa7a",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/ijepa_vith14/7a7402bd9ec806ea/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "ijepa_vith14"
+}
+

@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 3072,
+  "feature_file": "features/007_dinov2_giant.npy",
+  "model": "dinov2_giant",
+  "rank": 7,
+  "representation": "concat(final normalized CLS, mean(final normalized patch tokens)); excludes 0 register token(s)",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "9a2745cd85b5c0432bc6e7862286c04d7f517723fabb8ac0cb74600919a7548b",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/dinov2_giant/9a2745cd85b5c043/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "dinov2_giant"
+}
+

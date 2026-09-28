@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 384,
+  "feature_file": "features/019_eupe_vit_t.npy",
+  "model": "eupe_vit_t",
+  "rank": 19,
+  "representation": "concat(final normalized EUPE CLS, mean(final normalized patch tokens)); excludes 4 storage tokens",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "47517b9118ec1ad3cc97edca1762e2ed7811c22fe2e2e371b6f1f3197da84ecb",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/eupe_vit_t/47517b9118ec1ad3/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "eupe_vit_t"
+}
+

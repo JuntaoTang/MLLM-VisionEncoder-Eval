@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 1024,
+  "feature_file": "features/038_mc2_l14_224.npy",
+  "model": "mc2_l14_224",
+  "rank": 38,
+  "representation": "final normalized CLS before the MetaCLIP 2 1024-to-768 projection",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "3a83c35009b693587b0f9c99327857577dfc975135b69358f61db0e3c25e647d",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/mc2_l14_224/3a83c35009b69358/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "mc2_l14_224"
+}
+

@@ -1,0 +1,15 @@
+{
+  "dtype": "float32",
+  "feature_dim": 4096,
+  "feature_file": "features/013_uniar_bsq.npy",
+  "model": "uniar_bsq",
+  "rank": 13,
+  "representation": "mean of UniAR block 27 tokens after 64-bit BSQ quantize/dequantize, BSQ output projection, and the official 2x2 patch merger",
+  "row_order": "shared source_indices.npy (strictly increasing official ImageNet train indices)",
+  "rows": 200000,
+  "source_cache_fingerprint": "c2c1379b3d9730f02a0e84d76a573c011758d7a88c4c0feadd05eaccbe495bed",
+  "source_cache_metadata": "/path/to/VTBenchLab/outputs/vae_linear_probing_flop_sweep_noaug_cached_5epoch_allbn/_feature_cache/uniar_bsq/c2c1379b3d9730f0/metadata.json",
+  "source_kind": "subset-from-full-train-cache",
+  "tokenizer": "uniar_bsq"
+}
+
