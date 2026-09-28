@@ -107,11 +107,8 @@ CSV, JSON and Markdown formats. It contains no feature vectors or private paths.
 ## Pre-exported feature artifact
 
 The approximately 60 GB feature matrices are deliberately not stored in Git.
-`feature_exports/` contains the manifest, per-model metadata, labels and source
-indices required to interpret the external artifact. Download the matrices
-from the dataset artifact named `peked/Probing_KNN_feature`, place them under
-`feature_exports/features/`, and verify them against `manifest.tsv` before
-using `different_shot/run_preexported_features.py`.
+contains the manifest, per-model metadata, labels and source
+indices required to interpret the external artifact.
 
 The official model sources are
 [`facebookresearch/metaclip`](https://github.com/facebookresearch/metaclip) and
