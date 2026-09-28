@@ -27,3 +27,4 @@ clip_benchmark eval \
   --model_type open_clip \
   --pretrained_model "$MODEL_FILE" \
   --output "$OUTPUT_DIR/{dataset}_{model}_{pretrained}_{language}_{task}.json"
+
