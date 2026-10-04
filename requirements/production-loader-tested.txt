@@ -1,0 +1,4 @@
+# Add to model-parity-tested.txt in a separate test environment.
+# Required by the actual LLaVA from_pretrained/device_map route.
+# This is not a lock of VLMEvalKit's full benchmark/API-model environment.
+accelerate==1.10.1

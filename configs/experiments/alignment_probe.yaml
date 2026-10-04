@@ -1,0 +1,24 @@
+schema_version: 1
+experiment: {name: alignment_clip_qwen25, kind: method}
+method: alignment_probe
+dataset: coco2k_seed42_train1600_test400
+required_paths: [datasets, download, trained]
+inputs:
+  coco_tsv: ${paths.datasets}/instructions/test/MSCOCO_KARPATHY_TEST.tsv
+  checkpoints: ${paths.download}
+steps:
+  - worker: alignment.build_data
+    arguments: [--tsv, '${paths.datasets}/instructions/test/MSCOCO_KARPATHY_TEST.tsv', --seed, 42]
+    outputs: ['${workspace}/alignment/data/coco2k.json']
+  - worker: alignment.encode_text
+    arguments: [--llm, qwen25]
+    outputs: ['${workspace}/alignment/cache/text/coco2k/qwen25']
+  - worker: alignment.encode_vision
+    arguments: [--slugs, clip_openai__l14]
+    outputs: ['${workspace}/alignment/cache/vision/coco2k/clip_openai__l14']
+  - worker: alignment.train_align
+    arguments: [--llm, qwen25, --slugs, clip_openai__l14, --loss-reduction, mean, --train-captions, 1, --seed, 42]
+    outputs: ['${workspace}/alignment/results/align/qwen25/clip_openai__l14.json']
+    metrics_adapter: {format: alignment_probe, path: '${workspace}/alignment/results/align/qwen25/clip_openai__l14.json'}
+# train_align preserves BOTH 1-caption and standard 5-caption evaluation outputs.
+# Historical sum_over_n is a separate explicit protocol, never an implicit default.

@@ -1,0 +1,35 @@
+# SmolLM2-1.7B-Instruct + MC2 S16 224
+experiment:
+  description: "SmolLM2-1.7B-Instruct + MC2 S16 224 + mlp2x"
+
+llm: smollm2_1p7b
+vision_encoder: mc2_s16_224
+projector: mlp2x
+
+eval:
+  conv_mode: smollm2
+
+train:
+  pretrain:
+    learning_rate: 1.0e-3
+    warmup_ratio: 0.05
+    max_grad_norm: 1.0
+    gradient_checkpointing: true
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    tf32: true
+    dataloader_drop_last: true
+  finetune:
+    max_grad_norm: 1.0
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    dataloader_drop_last: true
+batch:
+  pretrain:
+    per_device_train_batch_size: 128
+    gradient_accumulation_steps: 1
+    peak_vram_gb: 79.02
+  finetune:
+    per_device_train_batch_size: 8
+    gradient_accumulation_steps: 4
+    visual_tokens: 196
+    probe_note: 'throughput-first: match 07_14_0 regime; effective=32/GPU; drop chars>=8000;
+      no per-step empty_cache'

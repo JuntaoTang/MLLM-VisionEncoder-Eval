@@ -1,0 +1,10 @@
+schema_version: 1
+experiment: {name: knn_fixed, kind: method}
+method: knn
+dataset: imagenet_fixed_seed42
+inputs:
+  database: ${paths.features}/knn/database.npy
+  database_labels: ${paths.features}/knn/database_labels.npy
+  query: ${paths.features}/knn/query.npy
+  query_labels: ${paths.features}/knn/query_labels.npy
+protocol: {k: 20, temperature: 0.07, num_classes: 1000}

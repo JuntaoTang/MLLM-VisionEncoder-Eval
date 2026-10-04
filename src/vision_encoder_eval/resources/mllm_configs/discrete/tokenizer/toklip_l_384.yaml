@@ -1,0 +1,12 @@
+tokenizer:
+  id: toklip_l_384
+  type: toklip
+  display_name: "TokLIP-L @ 384"
+  checkpoint_path: /cache/ckpt/download/tokenizer/discrete/toklip/TokLIP_L_384.pt
+  model_config: ViT-SO400M-16-SigLIP2-384-toklip
+  codebook_size: 16384
+  embed_dim: 8
+  post_quant_embed_dim: 1152
+  image_size: 384
+  fp16: true
+  vqgan_checkpoint: /cache/ckpt/download/tokenizer/discrete/toklip/vq_ds16_t2i.pt

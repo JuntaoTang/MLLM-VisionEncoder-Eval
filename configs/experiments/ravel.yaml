@@ -1,0 +1,19 @@
+schema_version: 1
+experiment:
+  name: ravel_main
+  kind: method
+dataset: lcs_fixed_2000_seed42
+method: ravel
+inputs:
+  visual_features: ${paths.features}/ravel/patches.npy
+  text_features: ${paths.features}/ravel/qwen25_mean.npy
+  visual_manifest: ${paths.features}/ravel/patches.manifest.json
+  text_manifest: ${paths.features}/ravel/qwen25_mean.manifest.json
+protocol:
+  k: 100
+  whitening_eps: 1.0e-4
+  eigenvalue_floor: 1.0e-10
+  device: cuda:0
+runtime:
+  environment: core
+  device: cuda:0

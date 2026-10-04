@@ -1,0 +1,9 @@
+tokenizer:
+  id: unitok_attn
+  type: unitok
+  display_name: "UniTok-Large (attn quant_proj)"
+  checkpoint_path: /cache/ckpt/download/tokenizer/discrete/unitok/unitok_tokenizer.pth
+  quant_proj: attn
+  num_query: 256
+  image_size: 256
+  codebook_size: 32768

@@ -1,0 +1,5 @@
+# Subprocess-only import compatibility for the global VLMEval registry.
+# Do NOT put this ANTLR version in the discrete/OmegaConf model environment.
+math-verify==0.8.0
+latex2sympy2-extended==1.10.2
+antlr4-python3-runtime==4.13.2

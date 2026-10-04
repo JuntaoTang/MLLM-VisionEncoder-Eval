@@ -1,0 +1,11 @@
+# MetaCLIP MC1 mc1_l14_224_2.5b
+vision_encoder:
+  id: mc1_l14_224_2.5b
+  display_name: "ViT-L-14 @ MetaCLIP MC1 (224px)"
+  type: open_clip_hub
+  model_name: ViT-L-14
+  pretrained: metaclip
+  weights_path: /cache/ckpt/download/tokenizer/continuous/mc1/mc1_l14_224_2.5b.pt
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  force_quick_gelu: true
+  select_layer: -2

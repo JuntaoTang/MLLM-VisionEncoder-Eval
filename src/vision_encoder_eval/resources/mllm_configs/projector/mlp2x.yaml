@@ -1,0 +1,6 @@
+# 2-layer MLP projector: vision features -> LLM hidden size
+projector:
+  id: mlp2x
+  type: mlp2x_gelu
+  architecture: mlp2x
+  display_name: "2-layer MLP projector"

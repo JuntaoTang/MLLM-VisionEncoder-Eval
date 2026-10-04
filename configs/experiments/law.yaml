@@ -1,0 +1,22 @@
+schema_version: 1
+experiment: {name: law_ac_continuous, kind: method}
+method: law
+dataset: lcs100_spair71k
+required_paths: [datasets, download, trained]
+inputs:
+  pretrain: ${paths.datasets}/instructions/pretrain/blip_laion_cc_sbu_558k.json
+  spair: ${paths.datasets}/SPair-71k
+  checkpoints: ${paths.trained}/continuous
+  finished_models: ${paths.features}/mllm/finish.json
+steps:
+  - worker: law.compute_a_score
+    arguments: [--n, 100]
+    outputs: ['${workspace}/law/results/a_score_shard0.json']
+    metrics_adapter: {format: law_a, path: '${workspace}/law/results/a_score_shard0.json'}
+  - worker: law.extract_c_features
+    arguments: []
+    outputs: ['${workspace}/law/results/c_extract_shard0.json']
+  - worker: law.compute_c_score
+    arguments: []
+    outputs: ['${workspace}/law/results/c_score_shard0.json']
+    metrics_adapter: {format: law_c, path: '${workspace}/law/results/c_score_shard0.json'}

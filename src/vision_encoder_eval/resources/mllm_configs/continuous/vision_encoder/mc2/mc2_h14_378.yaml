@@ -1,0 +1,12 @@
+# MetaCLIP MC2 mc2_h14_378
+vision_encoder:
+  id: mc2_h14_378
+  display_name: "ViT-H-14 @ MetaCLIP MC2 (378px)"
+  type: open_clip_hub
+  model_name: ViT-H-14-worldwide-378
+  pretrained: metaclip
+  weights_path: /cache/ckpt/download/tokenizer/continuous/mc2/mc2_h14_378.pt
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  force_quick_gelu: false
+  force_image_size: 378
+  select_layer: -2

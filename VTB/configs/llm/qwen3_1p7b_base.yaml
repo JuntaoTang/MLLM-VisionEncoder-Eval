@@ -1,5 +1,0 @@
-llm:
-  id: qwen3base
-  model_name_or_path: /cache/ckpt/download/llm/Qwen3-1.7B-Base
-  model_version: qwen_3
-  hidden_size: 2048

@@ -1,0 +1,5 @@
+llm:
+  id: qwen25
+  model_name_or_path: /cache/ckpt/download/llm/Qwen2.5-1.5B-Instruct
+  model_version: qwen_2_5
+  hidden_size: 1536

@@ -1,0 +1,14 @@
+schema_version: 1
+experiment: {name: zero_shot_mc2, kind: method}
+method: zero_shot
+dataset: imagenet_official_val
+required_paths: [imagenet, download]
+inputs:
+  val: ${paths.imagenet}/val
+  checkpoints: ${paths.download}/tokenizer/continuous/metaclip2
+steps:
+  - worker: zero_shot.metaclip2
+    environment: zero_shot
+    arguments: [--root, '${paths.download}/tokenizer/continuous/metaclip2', --val, '${paths.imagenet}/val', --output-json, '${workspace}/scores.json', --output-csv, '${workspace}/scores.csv']
+    outputs: ['${workspace}/scores.json', '${workspace}/scores.csv']
+    metrics_adapter: {format: metaclip2_zero_shot, path: '${workspace}/scores.json'}

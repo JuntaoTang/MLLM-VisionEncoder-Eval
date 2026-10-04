@@ -1,0 +1,10 @@
+# CPU regression environment used to capture and validate the frozen goldens.
+# GPU workers use separate environments; do not merge their requirements here.
+numpy==2.2.6
+torch==2.6.0
+scipy==1.15.3
+scikit-learn==1.7.2
+faiss-cpu==1.15.1
+PyYAML==6.0.3
+pytest==8.4.2
+tqdm==4.67.3

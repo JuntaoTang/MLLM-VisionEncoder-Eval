@@ -1,0 +1,14 @@
+# Subprocess-only extras, tested with the model/pipeline dependencies.
+# Keep DeepSpeed out of the inference/default regression interpreter.
+# On a host without nvcc build with DS_BUILD_OPS=0 and an executable CUDA
+# version stub; the gate uses regular single-GPU Trainer, not DeepSpeed ops.
+deepspeed==0.16.9
+hjson==3.1.0
+ninja==1.13.0
+py-cpuinfo==9.0.0
+msgpack==1.1.1
+psutil==7.0.0
+tyro==0.9.31
+docstring-parser==0.17.0
+shtab==1.7.2
+typeguard==4.4.4

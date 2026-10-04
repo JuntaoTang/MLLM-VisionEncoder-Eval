@@ -1,0 +1,7 @@
+# Controlled real TokLip/SmolLM2 parity only, not the complete worker environment.
+-r model-parity-tested.txt
+omegaconf==2.3.0
+antlr4-python3-runtime==4.9.3
+ftfy==6.3.1
+wcwidth==0.2.13
+timm==1.0.27

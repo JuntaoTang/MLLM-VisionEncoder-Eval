@@ -1,0 +1,14 @@
+schema_version: 1
+experiment: {name: linear_clip_5shot, kind: method}
+method: linear_probe
+dataset: imagenet_5shot_seed0_val5000_seed42
+required_paths: [imagenet, download]
+inputs:
+  dataset: ${paths.imagenet}
+  checkpoint: ${paths.download}/tokenizer/continuous/clip-vit-large-patch14
+runtime: {cuda_visible_devices: "0"}
+steps:
+  - worker: linear.linear_probe
+    arguments: [--model, clip_openai__l14, --clip-openai-model-path, '${paths.download}/tokenizer/continuous/clip-vit-large-patch14', --data-root, '${paths.imagenet}', --output-root, '${workspace}/linear', --cache-root, '${workspace}/cache', --seed, 0, --support-seed, 0, --validation-seed, 42, --validation-samples, 5000]
+    outputs: ['${workspace}/linear/clip_openai__l14/cap_0005/results_eval_linear.json']
+    metrics_adapter: {format: linear_probe, path: '${workspace}/linear/clip_openai__l14/cap_0005/results_eval_linear.json'}

@@ -1,0 +1,5 @@
+llm:
+  id: smollm2
+  model_name_or_path: /cache/ckpt/download/llm/SmolLM2-1.7B-Instruct
+  model_version: smollm2
+  hidden_size: 2048

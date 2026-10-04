@@ -1,0 +1,14 @@
+schema_version: 1
+experiment: {name: ckax_budget_gbdt_nested_seed0, kind: method}
+method: ckax
+dataset: frozen_calibration_pool
+required_paths: [features, ground_truth]
+inputs:
+  crossmodal: ${paths.features}/ckax/crossmodal_stats_final_qwen25_full.csv
+  kernel: ${paths.features}/ckax/cka_diverse.pt
+  labels: ${paths.ground_truth}
+steps:
+  - worker: ckax.scripts.run_budget_sweep
+    arguments: [--cm_csv, '${paths.features}/ckax/crossmodal_stats_final_qwen25_full.csv', --cka_pt, '${paths.features}/ckax/cka_diverse.pt', --k_sweep, '8,16,24,32,40,48,56,64', --n_splits, 100, --seed, 0, --split_mode, nested, --learner, gbdt, --out_json, '${workspace}/budget.json', --out_csv, '${workspace}/budget.csv', --out_md, '${workspace}/budget.md']
+    outputs: ['${workspace}/budget.json', '${workspace}/budget.csv', '${workspace}/budget.md']
+    metrics_adapter: {format: ckax_budget, path: '${workspace}/budget.json'}

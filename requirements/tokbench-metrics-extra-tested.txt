@@ -1,0 +1,3 @@
+# Isolated OCR/face metric-test layer; model inference is an explicit fixed boundary.
+anyascii==0.3.3
+shapely==2.1.1

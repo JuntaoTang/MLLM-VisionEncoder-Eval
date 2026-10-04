@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-encoder-eval"
+version = "0.1.0"
+description = "Reproducible evaluation framework for vision encoders in multimodal LLMs"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0,<7",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8,<9",
+]
+methods = [
+  "numpy>=1.26,<3",
+  "scipy>=1.10,<2",
+  "scikit-learn>=1.3,<2",
+  "torch==2.6.0",
+  "tqdm>=4.60,<5",
+]
+knn = [
+  "numpy>=1.26,<3",
+  "faiss-cpu>=1.8,<2",
+]
+
+[tool.setuptools.package-data]
+vision_encoder_eval = ["resources/**/*", "workers/**/*.tsv", "workers/**/requirements.txt", "workers/**/LICENSE_NOTE.md", "workers/**/models.txt", "workers/knn/protocols/*.json", "workers/knn/feature_exports/*.json", "workers/knn/feature_exports/metadata/*.json", "workers/ckax/ground_truth/*.json", "mllm/**/*.yaml", "mllm/**/*.json", "mllm/**/*.txt", "mllm/**/*.txt.gz"]
+
+[project.scripts]
+vision-encoder-eval = "vision_encoder_eval.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["vision_encoder_eval*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "unit: dependency-light pure function tests",
+  "contract: configuration, manifest, artifact, and adapter contract tests",
+  "parity: frozen legacy golden comparisons",
+  "integration: small multi-component pipelines",
+  "gpu: tests requiring a local GPU and model weights",
+  "model: optional tests using locally configured real tokenizer/model assets",
+  "full: full-data paper reproduction tests",
+]

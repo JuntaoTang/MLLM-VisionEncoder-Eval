@@ -1,0 +1,12 @@
+# Perception Encoder PE-Core-B16-224
+vision_encoder:
+  id: pe_core_b16_224
+  display_name: "PE-Core-B16-224"
+  type: pe
+  model_name: PE-Core-B16-224
+  pe_config: PE-Core-B16-224
+  weights_path: /cache/ckpt/download/tokenizer/continuous/pe/PE-Core-B16-224/PE-Core-B16-224.pt
+  image_size: 224
+  select_layer: -1
+  select_feature: patch
+  pe_repo: /home/ma-user/work_space/VTB/third_party/perception_models

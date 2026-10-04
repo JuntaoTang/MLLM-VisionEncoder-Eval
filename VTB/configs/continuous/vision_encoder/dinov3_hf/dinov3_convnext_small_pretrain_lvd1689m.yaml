@@ -1,9 +1,0 @@
-# dinov3 convnext small pretrain lvd1689m (HuggingFace transformers)
-vision_encoder:
-  id: dinov3_convnext_small_pretrain_lvd1689m
-  display_name: "dinov3 convnext small pretrain lvd1689m"
-  type: hf
-  model_name_or_path: /cache/ckpt/download/tokenizer/continuous/dinov3_hf/dinov3-convnext-small-pretrain-lvd1689m
-  select_layer: -1
-  select_feature: patch
-  image_size: 224

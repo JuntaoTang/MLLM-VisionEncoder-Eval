@@ -1,0 +1,3 @@
+# Complete original BN five-shot budget loop; extends model-parity-tested.txt.
+torchmetrics==1.7.4
+lightning-utilities==0.15.2

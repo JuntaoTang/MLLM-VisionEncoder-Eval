@@ -1,0 +1,8 @@
+# OpenAI CLIP ViT-L/14 via HuggingFace checkpoint
+vision_encoder:
+  id: clip_openai__l14
+  display_name: "CLIP OpenAI L/14 (HF)"
+  type: hf_clip
+  model_name_or_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  vision_tower: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  select_layer: -2

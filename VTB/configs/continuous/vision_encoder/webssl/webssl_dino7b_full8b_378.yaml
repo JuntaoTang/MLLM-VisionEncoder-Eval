@@ -1,9 +1,0 @@
-# webssl dino7b full8b 378 (HuggingFace transformers)
-vision_encoder:
-  id: webssl_dino7b_full8b_378
-  display_name: "webssl dino7b full8b 378"
-  type: hf
-  model_name_or_path: /cache/ckpt/download/tokenizer/continuous/webssl/webssl-dino7b-full8b-378
-  select_layer: -1
-  select_feature: patch
-  image_size: 378

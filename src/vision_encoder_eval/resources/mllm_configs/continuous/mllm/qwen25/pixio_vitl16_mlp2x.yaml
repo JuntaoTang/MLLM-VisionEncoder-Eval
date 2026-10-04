@@ -1,0 +1,24 @@
+# Qwen2.5-1.5B-Instruct + Pixio ViT-L/16 @256
+experiment:
+  description: "Qwen2.5-1.5B-Instruct + Pixio ViT-L/16 @256 + mlp2x"
+
+llm: qwen2p5_1p5b
+vision_encoder: pixio_vitl16
+projector: mlp2x
+
+eval:
+  conv_mode: qwen_2_5
+
+train:
+  pretrain:
+    learning_rate: 1.0e-3
+    warmup_ratio: 0.05
+    max_grad_norm: 1.0
+    gradient_checkpointing: true
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    tf32: true
+    dataloader_drop_last: true
+  finetune:
+    max_grad_norm: 1.0
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    dataloader_drop_last: true

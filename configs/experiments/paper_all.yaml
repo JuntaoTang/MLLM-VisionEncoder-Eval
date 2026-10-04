@@ -1,0 +1,20 @@
+schema_version: 1
+experiment:
+  name: paper_all
+  kind: suite
+
+# Component recipes, NOT a claim of complete 70-encoder paper reproduction.
+# Historical prompt sources are restored; selected model environments, assets
+# and full scoring must still pass preflight and production acceptance.
+reporting: {format: long_table}
+experiments:
+  - ravel.yaml
+  - knn.yaml
+  - linear_probe.yaml
+  - alignment_probe.yaml
+  - ckax.yaml
+  - zero_shot.yaml
+  - tokbench.yaml
+  - law.yaml
+  - mllm_continuous_train.yaml
+  - mllm_eval.yaml

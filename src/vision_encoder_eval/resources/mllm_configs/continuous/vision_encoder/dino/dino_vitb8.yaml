@@ -1,0 +1,9 @@
+# dino vitb8 (HuggingFace transformers)
+vision_encoder:
+  id: dino_vitb8
+  display_name: "dino vitb8"
+  type: hf
+  model_name_or_path: /cache/ckpt/download/tokenizer/continuous/dino/dino-vitb8
+  select_layer: -1
+  select_feature: patch
+  image_size: 224

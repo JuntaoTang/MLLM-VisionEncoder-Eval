@@ -1,0 +1,5 @@
+# Isolated MetaCLIP2 environment. Never merge with the LLaVA 4.51.3 test layer.
+transformers==4.56.2
+tokenizers==0.22.1
+open_clip_torch==3.1.0
+sentencepiece==0.2.1

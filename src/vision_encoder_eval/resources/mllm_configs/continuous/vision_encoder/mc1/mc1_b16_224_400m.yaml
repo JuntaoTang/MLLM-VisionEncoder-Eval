@@ -1,0 +1,11 @@
+# MetaCLIP MC1 mc1_b16_224_400m
+vision_encoder:
+  id: mc1_b16_224_400m
+  display_name: "ViT-B-16 @ MetaCLIP MC1 (224px)"
+  type: open_clip_hub
+  model_name: ViT-B-16
+  pretrained: metaclip
+  weights_path: /cache/ckpt/download/tokenizer/continuous/mc1/mc1_b16_224_400m.pt
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  force_quick_gelu: true
+  select_layer: -2

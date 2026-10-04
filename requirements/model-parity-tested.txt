@@ -1,0 +1,21 @@
+# Optional real tokenizer / controlled CLIP-Qwen parity environment.
+# This is NOT the full training/VLMEval worker environment.
+-r core-tested.txt
+torchvision==0.21.0
+Pillow==12.1.1
+transformers==4.51.3
+tokenizers==0.21.4
+safetensors==0.7.0
+huggingface-hub==0.36.2
+regex==2024.11.6
+fvcore==0.1.5.post20221221
+iopath==0.1.10
+yacs==0.1.8
+portalocker==3.2.0
+termcolor==3.1.0
+pandas==2.3.3
+einops==0.8.2
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+six==1.17.0

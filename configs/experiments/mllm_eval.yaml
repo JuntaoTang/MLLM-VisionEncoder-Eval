@@ -1,0 +1,14 @@
+schema_version: 1
+experiment: {name: continuous_clip_eval, kind: mllm_eval}
+dataset: eleven_benchmarks_seed42
+required_paths: [lmudata, download, trained]
+inputs:
+  data: ${paths.lmudata}
+  checkpoints: ${paths.trained}
+steps:
+  - worker: mllm.pipeline
+    arguments: [--mode, continuous, --config, '${workspace}/configs/runtime.yaml', --stages, test]
+    outputs: ['${workspace}/results/finish.json']
+    metrics_adapter: {format: mllm_finish, path: '${workspace}/results/finish.json'}
+# Historical qwen_chat.py is restored; production evaluation still requires
+# configured checkpoint assets and a validated model-worker environment.

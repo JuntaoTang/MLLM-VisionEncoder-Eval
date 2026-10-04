@@ -1,0 +1,17 @@
+schema_version: 1
+experiment: {name: zero_shot_clip_benchmark_pinned, kind: method}
+method: zero_shot
+dataset: imagenet_official_val
+required_paths: [imagenet, model_assets, tokenizer_list]
+# This is the explicitly resolved upstream main on 2026-10-03, not a claim
+# about the unknown historical paper checkout. Override only after review.
+protocol:
+  upstream_commit: ee14a9a8a9bcde09d51f4a4b1dff5a75182a3596
+inputs:
+  val: ${paths.imagenet}/val
+  models: ${paths.tokenizer_list}
+  upstream: ${paths.model_assets}/CLIP_benchmark/clip_benchmark
+steps:
+  - worker: zero_shot.clip_benchmark
+    arguments: [--imagenet-root, '${paths.imagenet}', --model-file, '${paths.tokenizer_list}', --upstream-source, '${paths.model_assets}/CLIP_benchmark', --upstream-commit, ee14a9a8a9bcde09d51f4a4b1dff5a75182a3596, --output-dir, '${workspace}/scores']
+    outputs: ['${workspace}/scores/upstream_revision.json', '${workspace}/scores']

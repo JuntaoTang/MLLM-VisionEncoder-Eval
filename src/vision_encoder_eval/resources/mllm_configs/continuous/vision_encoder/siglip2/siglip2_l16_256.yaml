@@ -1,0 +1,10 @@
+# SigLIP2 siglip2_l16_256
+vision_encoder:
+  id: siglip2_l16_256
+  display_name: "ViT-L-16-SigLIP2-256 (local npz)"
+  type: open_clip_hub
+  model_name: ViT-L-16-SigLIP2-256
+  pretrained: webli
+  weights_path: /cache/ckpt/download/tokenizer/continuous/siglip2/siglip2_l16_256.npz
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  select_layer: -2

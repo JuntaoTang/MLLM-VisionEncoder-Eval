@@ -1,0 +1,15 @@
+schema_version: 1
+experiment: {name: tokbench_native256_summary, kind: method}
+method: tokbench
+dataset: native256_text_and_face
+required_paths: [tokbench_outputs]
+inputs:
+  scores: ${paths.tokbench_outputs}
+steps:
+  - worker: tokbench.summarize_paper_results
+    arguments: [--input-dir, '${paths.tokbench_outputs}', --output-dir, '${workspace}/summary']
+    outputs: ['${workspace}/summary/tokbench_discrete_results.csv', '${workspace}/summary/tokbench_bucket_details.csv']
+    metrics_adapter:
+      format: tokbench_summary
+      path: '${workspace}/summary/tokbench_discrete_results.csv'
+      expected_models: [TokLIP-S, TokLIP-L, UniTok, VILA-U, UniAR-BSQ]

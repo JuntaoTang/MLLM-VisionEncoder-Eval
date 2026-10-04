@@ -1,0 +1,28 @@
+# Shared dataset paths (/cache/data)
+datasets_root: /cache/data
+
+# Continuous finetune: multi-dataset list (LLaVA manifest when len>1)
+# Discrete finetune: use finetune_presets + finetune_tag in runtime
+pretrain:
+  datasets:
+    - data_path: instructions/pretrain/blip_laion_cc_sbu_558k.json
+      image_folder: images/pretrain
+      sampling_strategy: all
+
+finetune:
+  # mix665k filtered: drop conversation text chars >= 8000 (395 ShareGPT-style rows)
+  datasets:
+    - data_path: instructions/finetune/llava_v1_5_mix665k_drop_ge8kchars.json
+      image_folder: images/finetune
+      sampling_strategy: all
+
+finetune_presets:
+  mix:
+    datasets:
+      - data_path: instructions/finetune/llava_v1_5_mix665k_drop_ge8kchars.json
+        image_folder: images/finetune
+        sampling_strategy: all
+
+eval:
+  instructions_dir: instructions/test
+  images_dir: images/test

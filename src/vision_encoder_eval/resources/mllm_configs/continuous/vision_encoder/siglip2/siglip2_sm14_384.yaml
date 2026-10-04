@@ -1,0 +1,10 @@
+# SigLIP2 siglip2_sm14_384
+vision_encoder:
+  id: siglip2_sm14_384
+  display_name: "ViT-SO400M-14-SigLIP2-378 (local npz)"
+  type: open_clip_hub
+  model_name: ViT-SO400M-14-SigLIP2-378
+  pretrained: webli
+  weights_path: /cache/ckpt/download/tokenizer/continuous/siglip2/siglip2_sm14_384.npz
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  select_layer: -2

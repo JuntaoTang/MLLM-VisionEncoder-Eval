@@ -1,0 +1,136 @@
+{
+  "components": [
+    {
+      "byte_identical": 6,
+      "content_sha256": "d75d073db52131c9e7fd8850a0834dc6ec7ced422d1fd12bd5d24d0d950c64cb",
+      "files": 6,
+      "modified": [],
+      "name": "CLIP",
+      "origin": "backup/legacy_v1/linear_probing/vendor/CLIP"
+    },
+    {
+      "byte_identical": 294,
+      "content_sha256": "10cc05cdad5aa18cb603fc3b14e4474847206ec595852c843e64de2319e0988e",
+      "files": 295,
+      "modified": [
+        {
+          "active_sha256": "22df9ce992f3b62fc3caf893e18dbd3ecd0f07bcbe561d0ba798877e641ff2bb",
+          "file": "llava/model/multimodal_encoder/ssl_encoder.py",
+          "original_sha256": "9216fdd16b42c5efd741726bf580f07a6ba1cbb234b1c23edf5854167c0baa9d"
+        }
+      ],
+      "name": "LLaVA-NeXT",
+      "origin": "backup/legacy_v1/VTB/third_party/LLaVA-NeXT"
+    },
+    {
+      "byte_identical": 113,
+      "content_sha256": "3912dcceef17b4d4e2fd8edecfc6921103a66207202fa834152b04f7800ba0e9",
+      "files": 113,
+      "modified": [],
+      "name": "RAEv2",
+      "origin": "backup/legacy_v1/VTB/third_party/RAEv2"
+    },
+    {
+      "byte_identical": 719,
+      "content_sha256": "7fd6c65b86bfe116cb54d939f80b84981b2ed274b3f5f44b8c346d3f53436d48",
+      "files": 749,
+      "modified": [],
+      "name": "VLMEvalKit",
+      "origin": "backup/legacy_v1/VTB/third_party/VLMEvalKit",
+      "supplemental_files": 30,
+      "supplemental_manifest": "docs/SUPPLEMENTAL_SOURCE_MANIFEST.json"
+    },
+    {
+      "byte_identical": 153,
+      "content_sha256": "d4b005dc29227be2cd26e4ddcc756e93d59f8012ddccc347a6e736aead768b57",
+      "files": 175,
+      "modified": [],
+      "name": "dinov2",
+      "origin": "backup/legacy_v1/linear_probing/vendor/dinov2",
+      "supplemental_files": 22,
+      "supplemental_manifest": "docs/DINOV2_UPSTREAM_SUPPLEMENT.json"
+    },
+    {
+      "byte_identical": 189,
+      "content_sha256": "82592b6bad731eea23bd1a1b953f024415e5a61fee7733b2a45c9d37cbac4042",
+      "files": 206,
+      "modified": [],
+      "name": "dinov3",
+      "origin": "backup/legacy_v1/VTB/third_party/dinov3",
+      "supplemental_files": 17,
+      "supplemental_manifest": "docs/SUPPLEMENTAL_SOURCE_MANIFEST.json"
+    },
+    {
+      "byte_identical": 171,
+      "content_sha256": "8f13bcb8eedfcada8cae57f3260aff076f26a8b9408ad7e77a7ea04760f93540",
+      "files": 172,
+      "modified": [
+        {
+          "active_sha256": "c780fb5de18b02a6d8940509b5ce38079ade48d694f3cab2d5020c7014ef165e",
+          "file": "datasets/ocr_json.py",
+          "original_sha256": "0e263af347e5f683111d8adcfab94f70b085ce3db9f9e3d5fdfa4bc3ad6d530a",
+          "reason": "User-approved removal of TokBench video dataset (A6)."
+        }
+      ],
+      "name": "doctr",
+      "origin": "backup/legacy_v1/TokBench/doctr"
+    },
+    {
+      "byte_identical": 79,
+      "content_sha256": "ce0831eb6e624efaefd2ee3183aae47ce9b2ca7b6015be2d7dee8938b1810054",
+      "files": 92,
+      "modified": [],
+      "name": "eupe",
+      "origin": "backup/legacy_v1/VTB/third_party/eupe",
+      "supplemental_files": 13,
+      "supplemental_manifest": "docs/SUPPLEMENTAL_SOURCE_MANIFEST.json"
+    },
+    {
+      "byte_identical": 21,
+      "content_sha256": "21185650eadab7fa65618ab39a67a6e31b12b1ee1df46129c6e444934f6a617c",
+      "files": 21,
+      "modified": [],
+      "name": "ijepa",
+      "origin": "backup/legacy_v1/VTB/third_party/ijepa"
+    },
+    {
+      "byte_identical": 169,
+      "content_sha256": "78abbfc890921828ec8d0bc1f5a9f04fbc48b3243a24611a2ad8564953fb8d10",
+      "files": 176,
+      "modified": [],
+      "name": "perception_models",
+      "origin": "backup/legacy_v1/VTB/third_party/perception_models",
+      "supplemental_files": 7,
+      "supplemental_manifest": "docs/SUPPLEMENTAL_SOURCE_MANIFEST.json"
+    },
+    {
+      "byte_identical": 80,
+      "content_sha256": "604ec3f0dc9306043600e00f7921b3e70bfd3ce52781aeede92be6f24fd36bdb",
+      "files": 85,
+      "modified": [],
+      "name": "pixio",
+      "origin": "backup/legacy_v1/VTB/third_party/pixio",
+      "supplemental_files": 5,
+      "supplemental_manifest": "docs/SUPPLEMENTAL_SOURCE_MANIFEST.json"
+    }
+  ],
+  "notes": "Frozen local upstream copies, no downloads or legacy access at runtime. Original licenses retained. Changes only rebind first-party namespaces/paths. User-approved paper scope cleanup removes OpenFlamingo and the custom TokBench video dataset; historical origin hashes are retained.",
+  "paper_scope_removal": {
+    "date": "2026-10-03",
+    "groups": [
+      "A4",
+      "A6"
+    ]
+  },
+  "removed_components": [
+    {
+      "byte_identical": 7,
+      "content_sha256": "836a795d669a3b50634b498c2df8005d0316d108daca95e30ab8709eaf9f06d2",
+      "files": 7,
+      "modified": [],
+      "name": "open_flamingo_eval",
+      "origin": "backup/legacy_v1/VTB/third_party/open_flamingo_eval"
+    }
+  ],
+  "schema_version": 1
+}

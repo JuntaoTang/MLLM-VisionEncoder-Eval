@@ -1,0 +1,34 @@
+# Qwen3-1.7B + DINOv3 ViT-L/16 @256
+experiment:
+  description: "Qwen3-1.7B + DINOv3 ViT-L/16 @256 + mlp2x"
+
+llm: qwen3_1p7b
+vision_encoder: dinov3_vitl16
+projector: mlp2x
+
+eval:
+  conv_mode: qwen_3
+
+train:
+  pretrain:
+    learning_rate: 1.0e-3
+    warmup_ratio: 0.05
+    max_grad_norm: 1.0
+    gradient_checkpointing: true
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    tf32: true
+    dataloader_drop_last: true
+  finetune:
+    max_grad_norm: 1.0
+    gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+    dataloader_drop_last: true
+batch:
+  pretrain:
+    per_device_train_batch_size: 16
+    gradient_accumulation_steps: 8
+    probe_note: aligned to siglip2_l16_256 (256 tok, dim~1024)
+  finetune:
+    per_device_train_batch_size: 8
+    gradient_accumulation_steps: 4
+    visual_tokens: 256
+    probe_note: throughput-first; effective=32/GPU

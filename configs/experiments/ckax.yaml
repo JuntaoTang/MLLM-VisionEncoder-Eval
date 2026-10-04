@@ -1,0 +1,14 @@
+schema_version: 1
+experiment: {name: ckax_main_gbdt, kind: method}
+method: ckax
+dataset: frozen_calibration_pool
+required_paths: [features, ground_truth]
+inputs:
+  crossmodal: ${paths.features}/ckax/crossmodal_stats_final_qwen25_full.csv
+  kernel: ${paths.features}/ckax/cka_diverse.pt
+  labels: ${paths.ground_truth}
+steps:
+  - worker: ckax.scripts.run_ckax
+    arguments: [--preset, main, --learner, gbdt, --cm_csv, '${paths.features}/ckax/crossmodal_stats_final_qwen25_full.csv', --cka_pt, '${paths.features}/ckax/cka_diverse.pt', --out, '${workspace}/ckax.json']
+    outputs: ['${workspace}/ckax.json']
+    metrics_adapter: {format: ckax, path: '${workspace}/ckax.json'}

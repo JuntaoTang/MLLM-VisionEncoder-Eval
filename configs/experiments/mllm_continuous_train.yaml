@@ -1,0 +1,14 @@
+schema_version: 1
+experiment: {name: continuous_clip_train, kind: mllm_train}
+dataset: lcs558k_mix665k_filtered
+required_paths: [datasets, download, trained]
+inputs:
+  pretrain: ${paths.datasets}/instructions/pretrain/blip_laion_cc_sbu_558k.json
+  finetune: ${paths.datasets}/instructions/finetune/llava_v1_5_mix665k_drop_ge8kchars.json
+  images: ${paths.datasets}/images
+  checkpoints: ${paths.download}
+steps:
+  - worker: mllm.pipeline
+    arguments: [--mode, continuous, --config, '${workspace}/configs/runtime.yaml', --stages, pretrain, finetune]
+    outputs: ['${workspace}/logs/continuous/mllm_list.yaml']
+# Full GPU execution is not yet validated; see docs/MIGRATION_REVIEW.md.

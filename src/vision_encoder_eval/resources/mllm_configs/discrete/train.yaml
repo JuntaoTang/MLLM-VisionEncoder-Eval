@@ -1,0 +1,41 @@
+# Discrete training hyperparameters
+seed: 42
+
+wandb:
+  project: VTB
+  mode: online
+
+pretrain:
+  learning_rate: 1.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  lr_scheduler_type: cosine
+  num_train_epochs: 1
+  gradient_checkpointing: false
+  model_max_length: 8192
+  save_strategy: "no"
+  save_total_limit: 1
+  logging_steps: 10
+  bf16: true
+  dataloader_drop_last: false
+  report_to: none
+
+finetune:
+  learning_rate: 1.0e-5
+  mm_projector_lr: 1.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  lr_scheduler_type: cosine
+  num_train_epochs: 1
+  gradient_checkpointing: true
+  gradient_checkpointing_kwargs: '{"use_reentrant": false}'
+  model_max_length: 8192
+  save_strategy: "no"
+  save_total_limit: 1
+  logging_steps: 10
+  bf16: true
+  tf32: true
+  dataloader_drop_last: false
+  report_to: none

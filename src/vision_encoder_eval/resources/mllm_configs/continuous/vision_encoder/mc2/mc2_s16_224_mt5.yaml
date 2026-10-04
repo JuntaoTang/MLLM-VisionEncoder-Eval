@@ -1,0 +1,11 @@
+# MetaCLIP MC2 mc2_s16_224_mt5
+vision_encoder:
+  id: mc2_s16_224_mt5
+  display_name: "ViT-S-16 @ MetaCLIP MC2 (224px)"
+  type: open_clip_hub
+  model_name: ViT-S-16
+  pretrained: metaclip
+  weights_path: /cache/ckpt/download/tokenizer/continuous/mc2/mc2_s16_224_mt5.pt
+  processor_path: /cache/ckpt/download/tokenizer/continuous/clip-vit-large-patch14
+  force_quick_gelu: false
+  select_layer: -2

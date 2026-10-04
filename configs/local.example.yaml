@@ -1,0 +1,49 @@
+schema_version: 1
+
+# Copy this file to configs/local.yaml and edit only machine-local paths.
+paths:
+  # Shared model/data layout referenced by the MLLM recipe templates.
+  datasets: /path/to/datasets
+  download: /path/to/weights
+  trained: /path/to/trained_checkpoints
+  model_assets: /path/to/model_repositories_and_weights
+  tokenizer_list: /path/to/tokenizer.txt
+  ground_truth: /path/to/ground_truth.json
+  features: /path/to/exported_features
+  knn_protocol: /path/to/imagenet_train_195shot_5query_seed42.json
+  knn_exports: /path/to/shared_200000_row_feature_exports
+  tokbench_outputs: /path/to/native256_tokbench_outputs
+  lcs_558k: /path/to/LLaVA-Pretrain
+  mix665k: /path/to/llava_v1_5_mix665k.json
+  lmudata: /path/to/.lmudata
+  imagenet: /path/to/imagenet
+  coco: /path/to/coco
+  cc3m: /path/to/cc3m
+  spair71k: /path/to/SPair-71k
+  tokbench: /path/to/tokbench_data
+  checkpoints: /path/to/checkpoints
+
+output_root: ../runs
+resource_root: ..  # Directory containing the independent third_party/ tree.
+
+# Heavy adapters may use different locked Python environments. Use absolute
+# interpreter paths so runs do not depend on the caller's activated shell.
+environments:
+  core:
+    python: /absolute/path/to/core/bin/python
+  mllm:
+    python: /absolute/path/to/mllm/bin/python
+  probing:
+    python: /absolute/path/to/probing/bin/python
+  knn:
+    python: /absolute/path/to/knn/bin/python
+  zero_shot:
+    python: /absolute/path/to/zero_shot/bin/python
+  ckax:
+    python: /absolute/path/to/ckax/bin/python
+  tokbench:
+    python: /absolute/path/to/tokbench/bin/python
+
+runtime:
+  cuda_visible_devices: "0,1,2,3,4,5,6,7"
+  seed: 42
