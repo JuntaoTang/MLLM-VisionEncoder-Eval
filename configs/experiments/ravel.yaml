@@ -2,7 +2,7 @@ schema_version: 1
 experiment:
   name: ravel_main
   kind: method
-dataset: lcs_fixed_2000_seed42
+dataset: lcs558k_n1000_seed42
 method: ravel
 inputs:
   visual_features: ${paths.features}/ravel/patches.npy

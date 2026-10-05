@@ -1,0 +1,12 @@
+schema_version: 1
+experiment: {name: discrete_configured_eval, kind: mllm_eval}
+dataset: eleven_benchmarks_seed42
+required_paths: [lmudata, download, trained]
+inputs:
+  data: ${paths.lmudata}
+  checkpoints: ${paths.trained}
+steps:
+  - worker: mllm.pipeline
+    arguments: [--mode, discrete, --config, '${workspace}/configs/runtime.yaml', --stages, test]
+    outputs: ['${workspace}/results/finish.json']
+    metrics_adapter: {format: mllm_finish, path: '${workspace}/results/finish.json'}

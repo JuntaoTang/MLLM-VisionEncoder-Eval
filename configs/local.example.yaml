@@ -8,7 +8,7 @@ paths:
   trained: /path/to/trained_checkpoints
   model_assets: /path/to/model_repositories_and_weights
   tokenizer_list: /path/to/tokenizer.txt
-  ground_truth: /path/to/ground_truth.json
+  ground_truth: ../src/resources/ground_truth.json
   features: /path/to/exported_features
   knn_protocol: /path/to/imagenet_train_195shot_5query_seed42.json
   knn_exports: /path/to/shared_200000_row_feature_exports
@@ -16,6 +16,7 @@ paths:
   lcs_558k: /path/to/LLaVA-Pretrain
   mix665k: /path/to/llava_v1_5_mix665k.json
   lmudata: /path/to/.lmudata
+  ocr_vqa_cache: /path/to/local_ocr_vqa_dataset
   imagenet: /path/to/imagenet
   coco: /path/to/coco
   cc3m: /path/to/cc3m

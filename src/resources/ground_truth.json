@@ -1,0 +1,4168 @@
+{
+  "benchmarks": [
+    "MMMU_TEST",
+    "MMBench_TEST_EN_V11",
+    "VQAv2_VAL",
+    "ScienceQA_VAL",
+    "ChartQA_TEST",
+    "DocVQA_VAL",
+    "TextVQA_VAL",
+    "POPE",
+    "GQA_TestDev_Balanced",
+    "MSCOCO_KARPATHY_TEST",
+    "FLICKR30K_KARPATHY_TEST"
+  ],
+  "encoders": {
+    "clip_openai__l14": {
+      "display_name": "OpenAI CLIP ViT-L/14 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 49.76,
+          "scores": {
+            "ChartQA_TEST": 11.8,
+            "DocVQA_VAL": 14.17,
+            "FLICKR30K_KARPATHY_TEST": 48.42,
+            "GQA_TestDev_Balanced": 51.32,
+            "MMBench_TEST_EN_V11": 66.41,
+            "MMMU_TEST": 33.6,
+            "MSCOCO_KARPATHY_TEST": 74.11,
+            "POPE": 89.18,
+            "ScienceQA_VAL": 64.6,
+            "TextVQA_VAL": 32.56,
+            "VQAv2_VAL": 61.17
+          }
+        },
+        "qwen3": {
+          "average": 47.83,
+          "scores": {
+            "ChartQA_TEST": 12.4,
+            "DocVQA_VAL": 14.73,
+            "FLICKR30K_KARPATHY_TEST": 40.71,
+            "GQA_TestDev_Balanced": 49.59,
+            "MMBench_TEST_EN_V11": 62.55,
+            "MMMU_TEST": 33.7,
+            "MSCOCO_KARPATHY_TEST": 68.61,
+            "POPE": 85.21,
+            "ScienceQA_VAL": 64.6,
+            "TextVQA_VAL": 32.85,
+            "VQAv2_VAL": 61.16
+          }
+        },
+        "smollm2": {
+          "average": 40.51,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 10.99,
+            "FLICKR30K_KARPATHY_TEST": 34.19,
+            "GQA_TestDev_Balanced": 43.8,
+            "MMBench_TEST_EN_V11": 57.14,
+            "MMMU_TEST": 29.0,
+            "MSCOCO_KARPATHY_TEST": 56.6,
+            "POPE": 66.59,
+            "ScienceQA_VAL": 56.5,
+            "TextVQA_VAL": 24.99,
+            "VQAv2_VAL": 53.83
+          }
+        }
+      },
+      "mean": 46.03,
+      "rank": 16,
+      "stem": "clip_openai__l14",
+      "type": "Lang."
+    },
+    "dino_vitb16": {
+      "display_name": "DINO ViT-B/16",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 34.84,
+          "scores": {
+            "ChartQA_TEST": 10.3,
+            "DocVQA_VAL": 8.14,
+            "FLICKR30K_KARPATHY_TEST": 15.49,
+            "GQA_TestDev_Balanced": 43.5,
+            "MMBench_TEST_EN_V11": 39.38,
+            "MMMU_TEST": 33.3,
+            "MSCOCO_KARPATHY_TEST": 40.55,
+            "POPE": 75.14,
+            "ScienceQA_VAL": 63.0,
+            "TextVQA_VAL": 9.39,
+            "VQAv2_VAL": 45.1
+          }
+        },
+        "qwen3": {
+          "average": 33.42,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 7.65,
+            "FLICKR30K_KARPATHY_TEST": 13.79,
+            "GQA_TestDev_Balanced": 40.55,
+            "MMBench_TEST_EN_V11": 38.22,
+            "MMMU_TEST": 34.1,
+            "MSCOCO_KARPATHY_TEST": 36.23,
+            "POPE": 71.95,
+            "ScienceQA_VAL": 62.0,
+            "TextVQA_VAL": 8.52,
+            "VQAv2_VAL": 43.74
+          }
+        },
+        "smollm2": {
+          "average": 30.93,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 6.77,
+            "FLICKR30K_KARPATHY_TEST": 16.55,
+            "GQA_TestDev_Balanced": 38.52,
+            "MMBench_TEST_EN_V11": 30.12,
+            "MMMU_TEST": 28.7,
+            "MSCOCO_KARPATHY_TEST": 36.91,
+            "POPE": 66.04,
+            "ScienceQA_VAL": 54.4,
+            "TextVQA_VAL": 7.54,
+            "VQAv2_VAL": 44.52
+          }
+        }
+      },
+      "mean": 33.06,
+      "rank": 63,
+      "stem": "dino_vitb16",
+      "type": "SSL"
+    },
+    "dino_vitb8": {
+      "display_name": "DINO ViT-B/8",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 31.33,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 8.22,
+            "FLICKR30K_KARPATHY_TEST": 11.1,
+            "GQA_TestDev_Balanced": 40.14,
+            "MMBench_TEST_EN_V11": 32.82,
+            "MMMU_TEST": 32.5,
+            "MSCOCO_KARPATHY_TEST": 26.83,
+            "POPE": 69.27,
+            "ScienceQA_VAL": 61.9,
+            "TextVQA_VAL": 8.28,
+            "VQAv2_VAL": 43.22
+          }
+        },
+        "qwen3": {
+          "average": 29.32,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 6.91,
+            "FLICKR30K_KARPATHY_TEST": 11.11,
+            "GQA_TestDev_Balanced": 37.2,
+            "MMBench_TEST_EN_V11": 23.17,
+            "MMMU_TEST": 30.0,
+            "MSCOCO_KARPATHY_TEST": 26.02,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 62.5,
+            "TextVQA_VAL": 8.85,
+            "VQAv2_VAL": 39.73
+          }
+        },
+        "smollm2": {
+          "average": 28.59,
+          "scores": {
+            "ChartQA_TEST": 10.0,
+            "DocVQA_VAL": 6.51,
+            "FLICKR30K_KARPATHY_TEST": 10.68,
+            "GQA_TestDev_Balanced": 35.26,
+            "MMBench_TEST_EN_V11": 32.05,
+            "MMMU_TEST": 27.3,
+            "MSCOCO_KARPATHY_TEST": 26.77,
+            "POPE": 66.82,
+            "ScienceQA_VAL": 53.4,
+            "TextVQA_VAL": 7.56,
+            "VQAv2_VAL": 38.16
+          }
+        }
+      },
+      "mean": 29.75,
+      "rank": 68,
+      "stem": "dino_vitb8",
+      "type": "SSL"
+    },
+    "dino_vits16": {
+      "display_name": "DINO ViT-S/16",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 29.69,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 8.54,
+            "FLICKR30K_KARPATHY_TEST": 8.07,
+            "GQA_TestDev_Balanced": 38.31,
+            "MMBench_TEST_EN_V11": 29.73,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 18.81,
+            "POPE": 66.36,
+            "ScienceQA_VAL": 62.4,
+            "TextVQA_VAL": 9.53,
+            "VQAv2_VAL": 41.19
+          }
+        },
+        "qwen3": {
+          "average": 29.93,
+          "scores": {
+            "ChartQA_TEST": 10.3,
+            "DocVQA_VAL": 7.09,
+            "FLICKR30K_KARPATHY_TEST": 11.93,
+            "GQA_TestDev_Balanced": 38.21,
+            "MMBench_TEST_EN_V11": 27.03,
+            "MMMU_TEST": 30.2,
+            "MSCOCO_KARPATHY_TEST": 24.38,
+            "POPE": 68.43,
+            "ScienceQA_VAL": 62.2,
+            "TextVQA_VAL": 8.48,
+            "VQAv2_VAL": 40.97
+          }
+        },
+        "smollm2": {
+          "average": 28.7,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 6.32,
+            "FLICKR30K_KARPATHY_TEST": 12.38,
+            "GQA_TestDev_Balanced": 37.6,
+            "MMBench_TEST_EN_V11": 28.19,
+            "MMMU_TEST": 26.9,
+            "MSCOCO_KARPATHY_TEST": 26.56,
+            "POPE": 67.63,
+            "ScienceQA_VAL": 54.8,
+            "TextVQA_VAL": 5.84,
+            "VQAv2_VAL": 39.71
+          }
+        }
+      },
+      "mean": 29.44,
+      "rank": 69,
+      "stem": "dino_vits16",
+      "type": "SSL"
+    },
+    "dino_vits8": {
+      "display_name": "DINO ViT-S/8",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 30.68,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 8.22,
+            "FLICKR30K_KARPATHY_TEST": 12.99,
+            "GQA_TestDev_Balanced": 37.4,
+            "MMBench_TEST_EN_V11": 25.87,
+            "MMMU_TEST": 32.3,
+            "MSCOCO_KARPATHY_TEST": 26.0,
+            "POPE": 66.82,
+            "ScienceQA_VAL": 62.8,
+            "TextVQA_VAL": 9.87,
+            "VQAv2_VAL": 44.07
+          }
+        },
+        "qwen3": {
+          "average": 32.64,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 6.57,
+            "FLICKR30K_KARPATHY_TEST": 15.01,
+            "GQA_TestDev_Balanced": 39.43,
+            "MMBench_TEST_EN_V11": 33.98,
+            "MMMU_TEST": 30.7,
+            "MSCOCO_KARPATHY_TEST": 35.8,
+            "POPE": 74.68,
+            "ScienceQA_VAL": 60.2,
+            "TextVQA_VAL": 9.5,
+            "VQAv2_VAL": 42.55
+          }
+        },
+        "smollm2": {
+          "average": 26.05,
+          "scores": {
+            "ChartQA_TEST": 10.0,
+            "DocVQA_VAL": 7.39,
+            "FLICKR30K_KARPATHY_TEST": 6.77,
+            "GQA_TestDev_Balanced": 35.37,
+            "MMBench_TEST_EN_V11": 24.71,
+            "MMMU_TEST": 26.2,
+            "MSCOCO_KARPATHY_TEST": 11.09,
+            "POPE": 66.91,
+            "ScienceQA_VAL": 54.3,
+            "TextVQA_VAL": 6.95,
+            "VQAv2_VAL": 36.81
+          }
+        }
+      },
+      "mean": 29.79,
+      "rank": 67,
+      "stem": "dino_vits8",
+      "type": "SSL"
+    },
+    "dinov2_base": {
+      "display_name": "DINOv2 ViT-B/14",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.31,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 8.12,
+            "FLICKR30K_KARPATHY_TEST": 33.42,
+            "GQA_TestDev_Balanced": 46.75,
+            "MMBench_TEST_EN_V11": 50.97,
+            "MMMU_TEST": 35.3,
+            "MSCOCO_KARPATHY_TEST": 66.29,
+            "POPE": 74.7,
+            "ScienceQA_VAL": 61.6,
+            "TextVQA_VAL": 10.74,
+            "VQAv2_VAL": 55.42
+          }
+        },
+        "qwen3": {
+          "average": 33.98,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 7.06,
+            "FLICKR30K_KARPATHY_TEST": 20.3,
+            "GQA_TestDev_Balanced": 40.85,
+            "MMBench_TEST_EN_V11": 36.68,
+            "MMMU_TEST": 30.5,
+            "MSCOCO_KARPATHY_TEST": 44.31,
+            "POPE": 68.12,
+            "ScienceQA_VAL": 61.2,
+            "TextVQA_VAL": 9.37,
+            "VQAv2_VAL": 44.81
+          }
+        },
+        "smollm2": {
+          "average": 32.1,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 6.52,
+            "FLICKR30K_KARPATHY_TEST": 19.07,
+            "GQA_TestDev_Balanced": 42.68,
+            "MMBench_TEST_EN_V11": 39.38,
+            "MMMU_TEST": 31.1,
+            "MSCOCO_KARPATHY_TEST": 33.88,
+            "POPE": 66.51,
+            "ScienceQA_VAL": 47.8,
+            "TextVQA_VAL": 9.09,
+            "VQAv2_VAL": 47.29
+          }
+        }
+      },
+      "mean": 35.8,
+      "rank": 56,
+      "stem": "dinov2_base",
+      "type": "SSL"
+    },
+    "dinov2_giant": {
+      "display_name": "DINOv2 ViT-G/14",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 44.42,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 7.81,
+            "FLICKR30K_KARPATHY_TEST": 41.08,
+            "GQA_TestDev_Balanced": 50.61,
+            "MMBench_TEST_EN_V11": 55.98,
+            "MMMU_TEST": 34.2,
+            "MSCOCO_KARPATHY_TEST": 68.5,
+            "POPE": 88.81,
+            "ScienceQA_VAL": 60.9,
+            "TextVQA_VAL": 10.74,
+            "VQAv2_VAL": 59.08
+          }
+        },
+        "qwen3": {
+          "average": 40.48,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 7.63,
+            "FLICKR30K_KARPATHY_TEST": 26.91,
+            "GQA_TestDev_Balanced": 47.87,
+            "MMBench_TEST_EN_V11": 52.51,
+            "MMMU_TEST": 32.5,
+            "MSCOCO_KARPATHY_TEST": 50.44,
+            "POPE": 87.46,
+            "ScienceQA_VAL": 61.6,
+            "TextVQA_VAL": 9.97,
+            "VQAv2_VAL": 57.88
+          }
+        },
+        "smollm2": {
+          "average": 34.99,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 5.75,
+            "FLICKR30K_KARPATHY_TEST": 26.96,
+            "GQA_TestDev_Balanced": 41.77,
+            "MMBench_TEST_EN_V11": 44.02,
+            "MMMU_TEST": 29.1,
+            "MSCOCO_KARPATHY_TEST": 46.95,
+            "POPE": 67.41,
+            "ScienceQA_VAL": 52.0,
+            "TextVQA_VAL": 10.07,
+            "VQAv2_VAL": 50.3
+          }
+        }
+      },
+      "mean": 39.96,
+      "rank": 37,
+      "stem": "dinov2_giant",
+      "type": "SSL"
+    },
+    "dinov2_large": {
+      "display_name": "DINOv2 ViT-L/14",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 43.08,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 7.93,
+            "FLICKR30K_KARPATHY_TEST": 34.76,
+            "GQA_TestDev_Balanced": 49.8,
+            "MMBench_TEST_EN_V11": 54.83,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 65.57,
+            "POPE": 89.85,
+            "ScienceQA_VAL": 60.9,
+            "TextVQA_VAL": 10.77,
+            "VQAv2_VAL": 55.61
+          }
+        },
+        "qwen3": {
+          "average": 36.27,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 8.56,
+            "FLICKR30K_KARPATHY_TEST": 25.05,
+            "GQA_TestDev_Balanced": 42.89,
+            "MMBench_TEST_EN_V11": 38.61,
+            "MMMU_TEST": 30.5,
+            "MSCOCO_KARPATHY_TEST": 50.13,
+            "POPE": 74.44,
+            "ScienceQA_VAL": 62.5,
+            "TextVQA_VAL": 9.11,
+            "VQAv2_VAL": 47.02
+          }
+        },
+        "smollm2": {
+          "average": 37.48,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 7.93,
+            "FLICKR30K_KARPATHY_TEST": 28.46,
+            "GQA_TestDev_Balanced": 42.78,
+            "MMBench_TEST_EN_V11": 44.02,
+            "MMMU_TEST": 31.2,
+            "MSCOCO_KARPATHY_TEST": 54.61,
+            "POPE": 77.97,
+            "ScienceQA_VAL": 55.1,
+            "TextVQA_VAL": 9.84,
+            "VQAv2_VAL": 49.54
+          }
+        }
+      },
+      "mean": 38.94,
+      "rank": 41,
+      "stem": "dinov2_large",
+      "type": "SSL"
+    },
+    "dinov2_small": {
+      "display_name": "DINOv2 ViT-S/14",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 38.78,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 8.41,
+            "FLICKR30K_KARPATHY_TEST": 25.29,
+            "GQA_TestDev_Balanced": 46.75,
+            "MMBench_TEST_EN_V11": 45.17,
+            "MMMU_TEST": 32.2,
+            "MSCOCO_KARPATHY_TEST": 54.46,
+            "POPE": 80.9,
+            "ScienceQA_VAL": 61.9,
+            "TextVQA_VAL": 9.94,
+            "VQAv2_VAL": 50.86
+          }
+        },
+        "qwen3": {
+          "average": 36.34,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 7.75,
+            "FLICKR30K_KARPATHY_TEST": 23.06,
+            "GQA_TestDev_Balanced": 44.41,
+            "MMBench_TEST_EN_V11": 41.31,
+            "MMMU_TEST": 31.1,
+            "MSCOCO_KARPATHY_TEST": 48.22,
+            "POPE": 75.04,
+            "ScienceQA_VAL": 61.5,
+            "TextVQA_VAL": 9.32,
+            "VQAv2_VAL": 47.18
+          }
+        },
+        "smollm2": {
+          "average": 32.25,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 6.89,
+            "FLICKR30K_KARPATHY_TEST": 17.24,
+            "GQA_TestDev_Balanced": 41.16,
+            "MMBench_TEST_EN_V11": 37.84,
+            "MMMU_TEST": 27.7,
+            "MSCOCO_KARPATHY_TEST": 35.46,
+            "POPE": 69.75,
+            "ScienceQA_VAL": 51.8,
+            "TextVQA_VAL": 9.09,
+            "VQAv2_VAL": 47.37
+          }
+        }
+      },
+      "mean": 35.79,
+      "rank": 57,
+      "stem": "dinov2_small",
+      "type": "SSL"
+    },
+    "dinov3_vitl16": {
+      "display_name": "DINOv3 ViT-L/16",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 36.88,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 8.61,
+            "FLICKR30K_KARPATHY_TEST": 23.26,
+            "GQA_TestDev_Balanced": 43.19,
+            "MMBench_TEST_EN_V11": 44.02,
+            "MMMU_TEST": 32.2,
+            "MSCOCO_KARPATHY_TEST": 48.48,
+            "POPE": 71.63,
+            "ScienceQA_VAL": 61.9,
+            "TextVQA_VAL": 10.88,
+            "VQAv2_VAL": 50.84
+          }
+        },
+        "qwen3": {
+          "average": 39.46,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 7.74,
+            "FLICKR30K_KARPATHY_TEST": 30.79,
+            "GQA_TestDev_Balanced": 42.68,
+            "MMBench_TEST_EN_V11": 46.72,
+            "MMMU_TEST": 33.3,
+            "MSCOCO_KARPATHY_TEST": 58.51,
+            "POPE": 83.08,
+            "ScienceQA_VAL": 62.4,
+            "TextVQA_VAL": 10.22,
+            "VQAv2_VAL": 48.37
+          }
+        },
+        "smollm2": {
+          "average": 36.59,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 8.07,
+            "FLICKR30K_KARPATHY_TEST": 31.25,
+            "GQA_TestDev_Balanced": 42.89,
+            "MMBench_TEST_EN_V11": 44.79,
+            "MMMU_TEST": 29.9,
+            "MSCOCO_KARPATHY_TEST": 50.91,
+            "POPE": 69.69,
+            "ScienceQA_VAL": 53.1,
+            "TextVQA_VAL": 11.88,
+            "VQAv2_VAL": 49.1
+          }
+        }
+      },
+      "mean": 37.64,
+      "rank": 50,
+      "stem": "dinov3_vitl16",
+      "type": "SSL"
+    },
+    "eupe_convnext_b": {
+      "display_name": "EUPE ConvNeXt-B",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 44.04,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 8.75,
+            "FLICKR30K_KARPATHY_TEST": 40.01,
+            "GQA_TestDev_Balanced": 49.29,
+            "MMBench_TEST_EN_V11": 59.46,
+            "MMMU_TEST": 34.0,
+            "MSCOCO_KARPATHY_TEST": 66.26,
+            "POPE": 80.17,
+            "ScienceQA_VAL": 62.3,
+            "TextVQA_VAL": 16.76,
+            "VQAv2_VAL": 56.96
+          }
+        },
+        "qwen3": {
+          "average": 37.71,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 7.97,
+            "FLICKR30K_KARPATHY_TEST": 29.0,
+            "GQA_TestDev_Balanced": 42.68,
+            "MMBench_TEST_EN_V11": 43.63,
+            "MMMU_TEST": 32.1,
+            "MSCOCO_KARPATHY_TEST": 51.41,
+            "POPE": 77.71,
+            "ScienceQA_VAL": 62.6,
+            "TextVQA_VAL": 10.29,
+            "VQAv2_VAL": 47.17
+          }
+        },
+        "smollm2": {
+          "average": 36.73,
+          "scores": {
+            "ChartQA_TEST": 9.6,
+            "DocVQA_VAL": 5.76,
+            "FLICKR30K_KARPATHY_TEST": 29.24,
+            "GQA_TestDev_Balanced": 41.97,
+            "MMBench_TEST_EN_V11": 50.97,
+            "MMMU_TEST": 30.6,
+            "MSCOCO_KARPATHY_TEST": 52.32,
+            "POPE": 67.22,
+            "ScienceQA_VAL": 53.1,
+            "TextVQA_VAL": 10.88,
+            "VQAv2_VAL": 52.37
+          }
+        }
+      },
+      "mean": 39.49,
+      "rank": 39,
+      "stem": "eupe_convnext_b",
+      "type": "SSL"
+    },
+    "eupe_vit_b": {
+      "display_name": "EUPE ViT-B",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.52,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 9.01,
+            "FLICKR30K_KARPATHY_TEST": 33.26,
+            "GQA_TestDev_Balanced": 47.05,
+            "MMBench_TEST_EN_V11": 55.98,
+            "MMMU_TEST": 33.6,
+            "MSCOCO_KARPATHY_TEST": 61.7,
+            "POPE": 77.61,
+            "ScienceQA_VAL": 62.6,
+            "TextVQA_VAL": 11.35,
+            "VQAv2_VAL": 53.53
+          }
+        },
+        "qwen3": {
+          "average": 34.62,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 7.61,
+            "FLICKR30K_KARPATHY_TEST": 22.02,
+            "GQA_TestDev_Balanced": 42.28,
+            "MMBench_TEST_EN_V11": 37.84,
+            "MMMU_TEST": 31.1,
+            "MSCOCO_KARPATHY_TEST": 42.92,
+            "POPE": 68.73,
+            "ScienceQA_VAL": 61.4,
+            "TextVQA_VAL": 10.92,
+            "VQAv2_VAL": 45.59
+          }
+        },
+        "smollm2": {
+          "average": 35.74,
+          "scores": {
+            "ChartQA_TEST": 9.6,
+            "DocVQA_VAL": 8.48,
+            "FLICKR30K_KARPATHY_TEST": 28.2,
+            "GQA_TestDev_Balanced": 41.67,
+            "MMBench_TEST_EN_V11": 51.74,
+            "MMMU_TEST": 27.9,
+            "MSCOCO_KARPATHY_TEST": 48.59,
+            "POPE": 64.61,
+            "ScienceQA_VAL": 50.4,
+            "TextVQA_VAL": 12.85,
+            "VQAv2_VAL": 49.11
+          }
+        }
+      },
+      "mean": 37.29,
+      "rank": 51,
+      "stem": "eupe_vit_b",
+      "type": "SSL"
+    },
+    "eupe_vit_s": {
+      "display_name": "EUPE ViT-S",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.11,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 8.26,
+            "FLICKR30K_KARPATHY_TEST": 31.86,
+            "GQA_TestDev_Balanced": 48.07,
+            "MMBench_TEST_EN_V11": 55.6,
+            "MMMU_TEST": 33.5,
+            "MSCOCO_KARPATHY_TEST": 62.17,
+            "POPE": 72.29,
+            "ScienceQA_VAL": 62.9,
+            "TextVQA_VAL": 11.18,
+            "VQAv2_VAL": 55.24
+          }
+        },
+        "qwen3": {
+          "average": 37.51,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 7.43,
+            "FLICKR30K_KARPATHY_TEST": 29.14,
+            "GQA_TestDev_Balanced": 44.21,
+            "MMBench_TEST_EN_V11": 43.24,
+            "MMMU_TEST": 32.8,
+            "MSCOCO_KARPATHY_TEST": 56.39,
+            "POPE": 70.44,
+            "ScienceQA_VAL": 62.8,
+            "TextVQA_VAL": 9.39,
+            "VQAv2_VAL": 46.21
+          }
+        },
+        "smollm2": {
+          "average": 32.79,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 5.67,
+            "FLICKR30K_KARPATHY_TEST": 22.52,
+            "GQA_TestDev_Balanced": 37.5,
+            "MMBench_TEST_EN_V11": 41.31,
+            "MMMU_TEST": 28.4,
+            "MSCOCO_KARPATHY_TEST": 43.6,
+            "POPE": 67.63,
+            "ScienceQA_VAL": 49.7,
+            "TextVQA_VAL": 9.18,
+            "VQAv2_VAL": 45.1
+          }
+        }
+      },
+      "mean": 37.14,
+      "rank": 54,
+      "stem": "eupe_vit_s",
+      "type": "SSL"
+    },
+    "eupe_vit_t": {
+      "display_name": "EUPE ViT-T",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 26.94,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 7.27,
+            "FLICKR30K_KARPATHY_TEST": 4.61,
+            "GQA_TestDev_Balanced": 34.76,
+            "MMBench_TEST_EN_V11": 25.1,
+            "MMMU_TEST": 31.2,
+            "MSCOCO_KARPATHY_TEST": 5.93,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 60.7,
+            "TextVQA_VAL": 9.15,
+            "VQAv2_VAL": 40.38
+          }
+        },
+        "qwen3": {
+          "average": 34.74,
+          "scores": {
+            "ChartQA_TEST": 9.3,
+            "DocVQA_VAL": 7.81,
+            "FLICKR30K_KARPATHY_TEST": 17.63,
+            "GQA_TestDev_Balanced": 39.23,
+            "MMBench_TEST_EN_V11": 40.15,
+            "MMMU_TEST": 33.7,
+            "MSCOCO_KARPATHY_TEST": 36.11,
+            "POPE": 81.99,
+            "ScienceQA_VAL": 63.0,
+            "TextVQA_VAL": 8.74,
+            "VQAv2_VAL": 44.48
+          }
+        },
+        "smollm2": {
+          "average": 29.68,
+          "scores": {
+            "ChartQA_TEST": 10.3,
+            "DocVQA_VAL": 5.77,
+            "FLICKR30K_KARPATHY_TEST": 16.61,
+            "GQA_TestDev_Balanced": 37.2,
+            "MMBench_TEST_EN_V11": 28.19,
+            "MMMU_TEST": 28.5,
+            "MSCOCO_KARPATHY_TEST": 34.16,
+            "POPE": 66.36,
+            "ScienceQA_VAL": 47.0,
+            "TextVQA_VAL": 8.93,
+            "VQAv2_VAL": 43.41
+          }
+        }
+      },
+      "mean": 30.45,
+      "rank": 66,
+      "stem": "eupe_vit_t",
+      "type": "SSL"
+    },
+    "ijepa_vith14": {
+      "display_name": "I-JEPA ViT-H/14",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 36.48,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 7.64,
+            "FLICKR30K_KARPATHY_TEST": 20.45,
+            "GQA_TestDev_Balanced": 44.31,
+            "MMBench_TEST_EN_V11": 42.08,
+            "MMMU_TEST": 31.7,
+            "MSCOCO_KARPATHY_TEST": 52.83,
+            "POPE": 72.29,
+            "ScienceQA_VAL": 62.0,
+            "TextVQA_VAL": 9.91,
+            "VQAv2_VAL": 47.97
+          }
+        },
+        "qwen3": {
+          "average": 36.56,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 8.01,
+            "FLICKR30K_KARPATHY_TEST": 19.83,
+            "GQA_TestDev_Balanced": 42.68,
+            "MMBench_TEST_EN_V11": 41.7,
+            "MMMU_TEST": 30.8,
+            "MSCOCO_KARPATHY_TEST": 46.11,
+            "POPE": 82.99,
+            "ScienceQA_VAL": 63.2,
+            "TextVQA_VAL": 8.91,
+            "VQAv2_VAL": 47.08
+          }
+        },
+        "smollm2": {
+          "average": 33.23,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 7.43,
+            "FLICKR30K_KARPATHY_TEST": 20.11,
+            "GQA_TestDev_Balanced": 39.43,
+            "MMBench_TEST_EN_V11": 35.91,
+            "MMMU_TEST": 27.9,
+            "MSCOCO_KARPATHY_TEST": 47.83,
+            "POPE": 66.67,
+            "ScienceQA_VAL": 53.2,
+            "TextVQA_VAL": 9.27,
+            "VQAv2_VAL": 47.05
+          }
+        }
+      },
+      "mean": 35.42,
+      "rank": 59,
+      "stem": "ijepa_vith14",
+      "type": "SSL"
+    },
+    "mc1_b16_224_2.5b": {
+      "display_name": "MetaCLIP ViT-B/16 (2.5B, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 44.74,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 11.84,
+            "FLICKR30K_KARPATHY_TEST": 35.75,
+            "GQA_TestDev_Balanced": 50.3,
+            "MMBench_TEST_EN_V11": 62.55,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 61.13,
+            "POPE": 78.96,
+            "ScienceQA_VAL": 62.8,
+            "TextVQA_VAL": 25.07,
+            "VQAv2_VAL": 59.85
+          }
+        },
+        "qwen3": {
+          "average": 43.9,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 10.71,
+            "FLICKR30K_KARPATHY_TEST": 35.68,
+            "GQA_TestDev_Balanced": 49.39,
+            "MMBench_TEST_EN_V11": 54.83,
+            "MMMU_TEST": 33.2,
+            "MSCOCO_KARPATHY_TEST": 63.61,
+            "POPE": 82.14,
+            "ScienceQA_VAL": 62.8,
+            "TextVQA_VAL": 23.13,
+            "VQAv2_VAL": 55.86
+          }
+        },
+        "smollm2": {
+          "average": 37.05,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 10.08,
+            "FLICKR30K_KARPATHY_TEST": 26.25,
+            "GQA_TestDev_Balanced": 41.16,
+            "MMBench_TEST_EN_V11": 49.81,
+            "MMMU_TEST": 28.4,
+            "MSCOCO_KARPATHY_TEST": 50.75,
+            "POPE": 66.51,
+            "ScienceQA_VAL": 54.4,
+            "TextVQA_VAL": 19.84,
+            "VQAv2_VAL": 49.77
+          }
+        }
+      },
+      "mean": 41.9,
+      "rank": 32,
+      "stem": "mc1_b16_224_2.5b",
+      "type": "Lang."
+    },
+    "mc1_b16_224_400m": {
+      "display_name": "MetaCLIP ViT-B/16 (400M, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 44.78,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 11.69,
+            "FLICKR30K_KARPATHY_TEST": 34.45,
+            "GQA_TestDev_Balanced": 49.29,
+            "MMBench_TEST_EN_V11": 57.14,
+            "MMMU_TEST": 34.6,
+            "MSCOCO_KARPATHY_TEST": 62.82,
+            "POPE": 86.83,
+            "ScienceQA_VAL": 63.9,
+            "TextVQA_VAL": 22.61,
+            "VQAv2_VAL": 58.2
+          }
+        },
+        "qwen3": {
+          "average": 44.05,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 11.21,
+            "FLICKR30K_KARPATHY_TEST": 31.04,
+            "GQA_TestDev_Balanced": 48.78,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 34.0,
+            "MSCOCO_KARPATHY_TEST": 58.09,
+            "POPE": 85.13,
+            "ScienceQA_VAL": 65.1,
+            "TextVQA_VAL": 23.76,
+            "VQAv2_VAL": 57.91
+          }
+        },
+        "smollm2": {
+          "average": 36.89,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 8.39,
+            "FLICKR30K_KARPATHY_TEST": 25.72,
+            "GQA_TestDev_Balanced": 40.65,
+            "MMBench_TEST_EN_V11": 47.1,
+            "MMMU_TEST": 27.9,
+            "MSCOCO_KARPATHY_TEST": 47.57,
+            "POPE": 71.43,
+            "ScienceQA_VAL": 55.0,
+            "TextVQA_VAL": 19.16,
+            "VQAv2_VAL": 51.42
+          }
+        }
+      },
+      "mean": 41.91,
+      "rank": 31,
+      "stem": "mc1_b16_224_400m",
+      "type": "Lang."
+    },
+    "mc1_b32_224_2.5b": {
+      "display_name": "MetaCLIP ViT-B/32 (2.5B, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 39.04,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 7.82,
+            "FLICKR30K_KARPATHY_TEST": 26.24,
+            "GQA_TestDev_Balanced": 45.93,
+            "MMBench_TEST_EN_V11": 50.58,
+            "MMMU_TEST": 34.7,
+            "MSCOCO_KARPATHY_TEST": 54.87,
+            "POPE": 75.34,
+            "ScienceQA_VAL": 62.9,
+            "TextVQA_VAL": 10.79,
+            "VQAv2_VAL": 49.24
+          }
+        },
+        "qwen3": {
+          "average": 38.43,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 8.3,
+            "FLICKR30K_KARPATHY_TEST": 24.93,
+            "GQA_TestDev_Balanced": 41.87,
+            "MMBench_TEST_EN_V11": 49.81,
+            "MMMU_TEST": 31.6,
+            "MSCOCO_KARPATHY_TEST": 50.28,
+            "POPE": 78.2,
+            "ScienceQA_VAL": 65.4,
+            "TextVQA_VAL": 13.91,
+            "VQAv2_VAL": 47.85
+          }
+        },
+        "smollm2": {
+          "average": 34.06,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 8.29,
+            "FLICKR30K_KARPATHY_TEST": 21.75,
+            "GQA_TestDev_Balanced": 38.62,
+            "MMBench_TEST_EN_V11": 43.24,
+            "MMMU_TEST": 28.8,
+            "MSCOCO_KARPATHY_TEST": 44.31,
+            "POPE": 68.51,
+            "ScienceQA_VAL": 52.6,
+            "TextVQA_VAL": 12.54,
+            "VQAv2_VAL": 46.19
+          }
+        }
+      },
+      "mean": 37.18,
+      "rank": 53,
+      "stem": "mc1_b32_224_2.5b",
+      "type": "Lang."
+    },
+    "mc1_b32_224_400m": {
+      "display_name": "MetaCLIP ViT-B/32 (400M, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 37.63,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 7.79,
+            "FLICKR30K_KARPATHY_TEST": 26.1,
+            "GQA_TestDev_Balanced": 43.29,
+            "MMBench_TEST_EN_V11": 49.03,
+            "MMMU_TEST": 34.7,
+            "MSCOCO_KARPATHY_TEST": 49.98,
+            "POPE": 71.55,
+            "ScienceQA_VAL": 62.7,
+            "TextVQA_VAL": 10.95,
+            "VQAv2_VAL": 47.62
+          }
+        },
+        "qwen3": {
+          "average": 34.69,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 6.83,
+            "FLICKR30K_KARPATHY_TEST": 19.49,
+            "GQA_TestDev_Balanced": 39.53,
+            "MMBench_TEST_EN_V11": 39.38,
+            "MMMU_TEST": 33.6,
+            "MSCOCO_KARPATHY_TEST": 38.13,
+            "POPE": 74.31,
+            "ScienceQA_VAL": 63.4,
+            "TextVQA_VAL": 10.46,
+            "VQAv2_VAL": 45.84
+          }
+        },
+        "smollm2": {
+          "average": 33.12,
+          "scores": {
+            "ChartQA_TEST": 9.6,
+            "DocVQA_VAL": 7.98,
+            "FLICKR30K_KARPATHY_TEST": 20.62,
+            "GQA_TestDev_Balanced": 38.92,
+            "MMBench_TEST_EN_V11": 37.84,
+            "MMMU_TEST": 29.4,
+            "MSCOCO_KARPATHY_TEST": 39.68,
+            "POPE": 66.36,
+            "ScienceQA_VAL": 54.6,
+            "TextVQA_VAL": 13.51,
+            "VQAv2_VAL": 45.76
+          }
+        }
+      },
+      "mean": 35.15,
+      "rank": 61,
+      "stem": "mc1_b32_224_400m",
+      "type": "Lang."
+    },
+    "mc1_g14_224_2.5b": {
+      "display_name": "MetaCLIP ViT-G/14 (2.5B, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 49.86,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 14.84,
+            "FLICKR30K_KARPATHY_TEST": 48.4,
+            "GQA_TestDev_Balanced": 50.71,
+            "MMBench_TEST_EN_V11": 69.11,
+            "MMMU_TEST": 35.0,
+            "MSCOCO_KARPATHY_TEST": 69.57,
+            "POPE": 88.52,
+            "ScienceQA_VAL": 65.4,
+            "TextVQA_VAL": 31.9,
+            "VQAv2_VAL": 63.56
+          }
+        },
+        "qwen3": {
+          "average": 47.7,
+          "scores": {
+            "ChartQA_TEST": 12.4,
+            "DocVQA_VAL": 13.85,
+            "FLICKR30K_KARPATHY_TEST": 43.33,
+            "GQA_TestDev_Balanced": 50.1,
+            "MMBench_TEST_EN_V11": 61.39,
+            "MMMU_TEST": 34.6,
+            "MSCOCO_KARPATHY_TEST": 68.09,
+            "POPE": 84.21,
+            "ScienceQA_VAL": 64.3,
+            "TextVQA_VAL": 31.2,
+            "VQAv2_VAL": 61.24
+          }
+        },
+        "smollm2": {
+          "average": 43.19,
+          "scores": {
+            "ChartQA_TEST": 11.4,
+            "DocVQA_VAL": 11.03,
+            "FLICKR30K_KARPATHY_TEST": 43.54,
+            "GQA_TestDev_Balanced": 43.09,
+            "MMBench_TEST_EN_V11": 59.46,
+            "MMMU_TEST": 28.3,
+            "MSCOCO_KARPATHY_TEST": 68.64,
+            "POPE": 67.91,
+            "ScienceQA_VAL": 59.5,
+            "TextVQA_VAL": 27.56,
+            "VQAv2_VAL": 54.7
+          }
+        }
+      },
+      "mean": 46.92,
+      "rank": 12,
+      "stem": "mc1_g14_224_2.5b",
+      "type": "Lang."
+    },
+    "mc1_h14_224_2.5b": {
+      "display_name": "MetaCLIP ViT-H/14 (2.5B, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 48.92,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 15.26,
+            "FLICKR30K_KARPATHY_TEST": 48.4,
+            "GQA_TestDev_Balanced": 51.22,
+            "MMBench_TEST_EN_V11": 62.55,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 74.23,
+            "POPE": 88.65,
+            "ScienceQA_VAL": 64.6,
+            "TextVQA_VAL": 28.23,
+            "VQAv2_VAL": 61.08
+          }
+        },
+        "qwen3": {
+          "average": 46.4,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 13.13,
+            "FLICKR30K_KARPATHY_TEST": 37.94,
+            "GQA_TestDev_Balanced": 50.3,
+            "MMBench_TEST_EN_V11": 58.69,
+            "MMMU_TEST": 35.4,
+            "MSCOCO_KARPATHY_TEST": 64.02,
+            "POPE": 86.79,
+            "ScienceQA_VAL": 63.6,
+            "TextVQA_VAL": 28.98,
+            "VQAv2_VAL": 59.53
+          }
+        },
+        "smollm2": {
+          "average": 40.26,
+          "scores": {
+            "ChartQA_TEST": 11.9,
+            "DocVQA_VAL": 12.68,
+            "FLICKR30K_KARPATHY_TEST": 31.95,
+            "GQA_TestDev_Balanced": 45.43,
+            "MMBench_TEST_EN_V11": 53.28,
+            "MMMU_TEST": 28.7,
+            "MSCOCO_KARPATHY_TEST": 54.07,
+            "POPE": 65.31,
+            "ScienceQA_VAL": 55.4,
+            "TextVQA_VAL": 26.31,
+            "VQAv2_VAL": 57.87
+          }
+        }
+      },
+      "mean": 45.19,
+      "rank": 17,
+      "stem": "mc1_h14_224_2.5b",
+      "type": "Lang."
+    },
+    "mc1_h14_224_v1.2": {
+      "display_name": "MetaCLIP ViT-H/14 (v1.2, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 51.16,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 14.72,
+            "FLICKR30K_KARPATHY_TEST": 50.42,
+            "GQA_TestDev_Balanced": 52.95,
+            "MMBench_TEST_EN_V11": 66.41,
+            "MMMU_TEST": 37.3,
+            "MSCOCO_KARPATHY_TEST": 82.66,
+            "POPE": 83.59,
+            "ScienceQA_VAL": 65.0,
+            "TextVQA_VAL": 34.05,
+            "VQAv2_VAL": 64.56
+          }
+        },
+        "qwen3": {
+          "average": 48.67,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 13.8,
+            "FLICKR30K_KARPATHY_TEST": 45.88,
+            "GQA_TestDev_Balanced": 49.7,
+            "MMBench_TEST_EN_V11": 61.78,
+            "MMMU_TEST": 34.1,
+            "MSCOCO_KARPATHY_TEST": 72.17,
+            "POPE": 87.87,
+            "ScienceQA_VAL": 63.9,
+            "TextVQA_VAL": 31.48,
+            "VQAv2_VAL": 63.81
+          }
+        },
+        "smollm2": {
+          "average": 39.42,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 11.33,
+            "FLICKR30K_KARPATHY_TEST": 25.83,
+            "GQA_TestDev_Balanced": 44.82,
+            "MMBench_TEST_EN_V11": 54.44,
+            "MMMU_TEST": 30.1,
+            "MSCOCO_KARPATHY_TEST": 42.93,
+            "POPE": 73.03,
+            "ScienceQA_VAL": 55.0,
+            "TextVQA_VAL": 27.63,
+            "VQAv2_VAL": 57.05
+          }
+        }
+      },
+      "mean": 46.42,
+      "rank": 15,
+      "stem": "mc1_h14_224_v1.2",
+      "type": "Lang."
+    },
+    "mc1_l14_224_2.5b": {
+      "display_name": "MetaCLIP ViT-L/14 (2.5B, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 48.78,
+          "scores": {
+            "ChartQA_TEST": 12.2,
+            "DocVQA_VAL": 13.07,
+            "FLICKR30K_KARPATHY_TEST": 47.87,
+            "GQA_TestDev_Balanced": 51.73,
+            "MMBench_TEST_EN_V11": 66.8,
+            "MMMU_TEST": 36.9,
+            "MSCOCO_KARPATHY_TEST": 72.73,
+            "POPE": 81.04,
+            "ScienceQA_VAL": 63.5,
+            "TextVQA_VAL": 29.38,
+            "VQAv2_VAL": 61.34
+          }
+        },
+        "qwen3": {
+          "average": 46.08,
+          "scores": {
+            "ChartQA_TEST": 12.6,
+            "DocVQA_VAL": 11.37,
+            "FLICKR30K_KARPATHY_TEST": 37.85,
+            "GQA_TestDev_Balanced": 47.05,
+            "MMBench_TEST_EN_V11": 60.23,
+            "MMMU_TEST": 34.1,
+            "MSCOCO_KARPATHY_TEST": 63.04,
+            "POPE": 85.47,
+            "ScienceQA_VAL": 65.8,
+            "TextVQA_VAL": 29.32,
+            "VQAv2_VAL": 60.09
+          }
+        },
+        "smollm2": {
+          "average": 40.68,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 11.96,
+            "FLICKR30K_KARPATHY_TEST": 35.81,
+            "GQA_TestDev_Balanced": 42.48,
+            "MMBench_TEST_EN_V11": 55.21,
+            "MMMU_TEST": 29.1,
+            "MSCOCO_KARPATHY_TEST": 53.95,
+            "POPE": 70.51,
+            "ScienceQA_VAL": 54.6,
+            "TextVQA_VAL": 26.52,
+            "VQAv2_VAL": 56.34
+          }
+        }
+      },
+      "mean": 45.18,
+      "rank": 18,
+      "stem": "mc1_l14_224_2.5b",
+      "type": "Lang."
+    },
+    "mc1_l14_224_400m": {
+      "display_name": "MetaCLIP ViT-L/14 (400M, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 47.08,
+          "scores": {
+            "ChartQA_TEST": 11.4,
+            "DocVQA_VAL": 13.72,
+            "FLICKR30K_KARPATHY_TEST": 43.9,
+            "GQA_TestDev_Balanced": 50.3,
+            "MMBench_TEST_EN_V11": 62.16,
+            "MMMU_TEST": 33.8,
+            "MSCOCO_KARPATHY_TEST": 70.94,
+            "POPE": 79.71,
+            "ScienceQA_VAL": 62.6,
+            "TextVQA_VAL": 28.16,
+            "VQAv2_VAL": 61.16
+          }
+        },
+        "qwen3": {
+          "average": 45.89,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 11.35,
+            "FLICKR30K_KARPATHY_TEST": 38.04,
+            "GQA_TestDev_Balanced": 48.58,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 67.63,
+            "POPE": 85.81,
+            "ScienceQA_VAL": 65.6,
+            "TextVQA_VAL": 27.07,
+            "VQAv2_VAL": 58.43
+          }
+        },
+        "smollm2": {
+          "average": 37.57,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 10.03,
+            "FLICKR30K_KARPATHY_TEST": 28.3,
+            "GQA_TestDev_Balanced": 41.67,
+            "MMBench_TEST_EN_V11": 51.35,
+            "MMMU_TEST": 29.8,
+            "MSCOCO_KARPATHY_TEST": 46.45,
+            "POPE": 64.31,
+            "ScienceQA_VAL": 54.2,
+            "TextVQA_VAL": 23.44,
+            "VQAv2_VAL": 52.77
+          }
+        }
+      },
+      "mean": 43.51,
+      "rank": 23,
+      "stem": "mc1_l14_224_400m",
+      "type": "Lang."
+    },
+    "mc2_b16_224": {
+      "display_name": "MetaCLIP 2 ViT-B/16 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 45.56,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 11.06,
+            "FLICKR30K_KARPATHY_TEST": 40.07,
+            "GQA_TestDev_Balanced": 47.56,
+            "MMBench_TEST_EN_V11": 59.85,
+            "MMMU_TEST": 35.3,
+            "MSCOCO_KARPATHY_TEST": 66.64,
+            "POPE": 85.85,
+            "ScienceQA_VAL": 60.5,
+            "TextVQA_VAL": 23.81,
+            "VQAv2_VAL": 59.43
+          }
+        },
+        "qwen3": {
+          "average": 43.65,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 11.42,
+            "FLICKR30K_KARPATHY_TEST": 32.08,
+            "GQA_TestDev_Balanced": 47.46,
+            "MMBench_TEST_EN_V11": 57.14,
+            "MMMU_TEST": 33.8,
+            "MSCOCO_KARPATHY_TEST": 58.59,
+            "POPE": 83.47,
+            "ScienceQA_VAL": 62.3,
+            "TextVQA_VAL": 26.23,
+            "VQAv2_VAL": 57.02
+          }
+        },
+        "smollm2": {
+          "average": 36.88,
+          "scores": {
+            "ChartQA_TEST": 11.6,
+            "DocVQA_VAL": 9.6,
+            "FLICKR30K_KARPATHY_TEST": 25.58,
+            "GQA_TestDev_Balanced": 39.74,
+            "MMBench_TEST_EN_V11": 48.26,
+            "MMMU_TEST": 28.0,
+            "MSCOCO_KARPATHY_TEST": 46.99,
+            "POPE": 68.38,
+            "ScienceQA_VAL": 55.1,
+            "TextVQA_VAL": 21.12,
+            "VQAv2_VAL": 51.36
+          }
+        }
+      },
+      "mean": 42.03,
+      "rank": 30,
+      "stem": "mc2_b16_224",
+      "type": "Lang."
+    },
+    "mc2_b16_384": {
+      "display_name": "MetaCLIP 2 ViT-B/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 46.85,
+          "scores": {
+            "ChartQA_TEST": 11.7,
+            "DocVQA_VAL": 14.31,
+            "FLICKR30K_KARPATHY_TEST": 40.4,
+            "GQA_TestDev_Balanced": 51.02,
+            "MMBench_TEST_EN_V11": 61.0,
+            "MMMU_TEST": 33.3,
+            "MSCOCO_KARPATHY_TEST": 67.51,
+            "POPE": 82.39,
+            "ScienceQA_VAL": 63.6,
+            "TextVQA_VAL": 30.93,
+            "VQAv2_VAL": 59.22
+          }
+        },
+        "qwen3": {
+          "average": 44.29,
+          "scores": {
+            "ChartQA_TEST": 11.8,
+            "DocVQA_VAL": 14.55,
+            "FLICKR30K_KARPATHY_TEST": 33.8,
+            "GQA_TestDev_Balanced": 47.26,
+            "MMBench_TEST_EN_V11": 55.98,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 63.44,
+            "POPE": 77.97,
+            "ScienceQA_VAL": 62.8,
+            "TextVQA_VAL": 28.86,
+            "VQAv2_VAL": 58.06
+          }
+        },
+        "smollm2": {
+          "average": 38.8,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 12.13,
+            "FLICKR30K_KARPATHY_TEST": 28.47,
+            "GQA_TestDev_Balanced": 44.72,
+            "MMBench_TEST_EN_V11": 48.26,
+            "MMMU_TEST": 30.0,
+            "MSCOCO_KARPATHY_TEST": 54.17,
+            "POPE": 68.46,
+            "ScienceQA_VAL": 50.0,
+            "TextVQA_VAL": 26.22,
+            "VQAv2_VAL": 53.6
+          }
+        }
+      },
+      "mean": 43.31,
+      "rank": 24,
+      "stem": "mc2_b16_384",
+      "type": "Lang."
+    },
+    "mc2_b32_224": {
+      "display_name": "MetaCLIP 2 ViT-B/32 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.35,
+          "scores": {
+            "ChartQA_TEST": 11.3,
+            "DocVQA_VAL": 9.05,
+            "FLICKR30K_KARPATHY_TEST": 31.7,
+            "GQA_TestDev_Balanced": 47.76,
+            "MMBench_TEST_EN_V11": 56.37,
+            "MMMU_TEST": 33.7,
+            "MSCOCO_KARPATHY_TEST": 61.08,
+            "POPE": 70.12,
+            "ScienceQA_VAL": 62.1,
+            "TextVQA_VAL": 16.19,
+            "VQAv2_VAL": 55.5
+          }
+        },
+        "qwen3": {
+          "average": 38.24,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 8.33,
+            "FLICKR30K_KARPATHY_TEST": 21.34,
+            "GQA_TestDev_Balanced": 43.39,
+            "MMBench_TEST_EN_V11": 46.72,
+            "MMMU_TEST": 34.4,
+            "MSCOCO_KARPATHY_TEST": 46.02,
+            "POPE": 83.28,
+            "ScienceQA_VAL": 64.0,
+            "TextVQA_VAL": 13.17,
+            "VQAv2_VAL": 49.04
+          }
+        },
+        "smollm2": {
+          "average": 34.05,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 7.43,
+            "FLICKR30K_KARPATHY_TEST": 19.65,
+            "GQA_TestDev_Balanced": 40.45,
+            "MMBench_TEST_EN_V11": 44.4,
+            "MMMU_TEST": 25.5,
+            "MSCOCO_KARPATHY_TEST": 45.29,
+            "POPE": 66.75,
+            "ScienceQA_VAL": 53.9,
+            "TextVQA_VAL": 13.23,
+            "VQAv2_VAL": 47.58
+          }
+        }
+      },
+      "mean": 37.88,
+      "rank": 47,
+      "stem": "mc2_b32_224",
+      "type": "Lang."
+    },
+    "mc2_b32_224_mt5": {
+      "display_name": "MetaCLIP 2 ViT-B/32 (mT5, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.62,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 9.83,
+            "FLICKR30K_KARPATHY_TEST": 33.48,
+            "GQA_TestDev_Balanced": 49.39,
+            "MMBench_TEST_EN_V11": 55.21,
+            "MMMU_TEST": 33.5,
+            "MSCOCO_KARPATHY_TEST": 61.65,
+            "POPE": 73.32,
+            "ScienceQA_VAL": 60.5,
+            "TextVQA_VAL": 14.5,
+            "VQAv2_VAL": 55.88
+          }
+        },
+        "qwen3": {
+          "average": 35.39,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 8.26,
+            "FLICKR30K_KARPATHY_TEST": 24.06,
+            "GQA_TestDev_Balanced": 38.41,
+            "MMBench_TEST_EN_V11": 37.84,
+            "MMMU_TEST": 31.7,
+            "MSCOCO_KARPATHY_TEST": 47.49,
+            "POPE": 72.11,
+            "ScienceQA_VAL": 64.0,
+            "TextVQA_VAL": 9.6,
+            "VQAv2_VAL": 45.29
+          }
+        },
+        "smollm2": {
+          "average": 34.59,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 6.91,
+            "FLICKR30K_KARPATHY_TEST": 20.13,
+            "GQA_TestDev_Balanced": 44.82,
+            "MMBench_TEST_EN_V11": 46.33,
+            "MMMU_TEST": 28.7,
+            "MSCOCO_KARPATHY_TEST": 37.35,
+            "POPE": 68.43,
+            "ScienceQA_VAL": 54.3,
+            "TextVQA_VAL": 13.78,
+            "VQAv2_VAL": 49.5
+          }
+        }
+      },
+      "mean": 37.2,
+      "rank": 52,
+      "stem": "mc2_b32_224_mt5",
+      "type": "Lang."
+    },
+    "mc2_b32_384": {
+      "display_name": "MetaCLIP 2 ViT-B/32 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 43.07,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 11.57,
+            "FLICKR30K_KARPATHY_TEST": 35.02,
+            "GQA_TestDev_Balanced": 46.34,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 33.9,
+            "MSCOCO_KARPATHY_TEST": 61.37,
+            "POPE": 76.26,
+            "ScienceQA_VAL": 62.7,
+            "TextVQA_VAL": 20.97,
+            "VQAv2_VAL": 57.42
+          }
+        },
+        "qwen3": {
+          "average": 43.37,
+          "scores": {
+            "ChartQA_TEST": 11.2,
+            "DocVQA_VAL": 10.44,
+            "FLICKR30K_KARPATHY_TEST": 33.24,
+            "GQA_TestDev_Balanced": 47.56,
+            "MMBench_TEST_EN_V11": 55.21,
+            "MMMU_TEST": 32.9,
+            "MSCOCO_KARPATHY_TEST": 62.28,
+            "POPE": 84.27,
+            "ScienceQA_VAL": 64.6,
+            "TextVQA_VAL": 20.35,
+            "VQAv2_VAL": 55.04
+          }
+        },
+        "smollm2": {
+          "average": 35.4,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 9.05,
+            "FLICKR30K_KARPATHY_TEST": 24.6,
+            "GQA_TestDev_Balanced": 43.5,
+            "MMBench_TEST_EN_V11": 42.08,
+            "MMMU_TEST": 29.2,
+            "MSCOCO_KARPATHY_TEST": 47.61,
+            "POPE": 62.57,
+            "ScienceQA_VAL": 50.7,
+            "TextVQA_VAL": 17.94,
+            "VQAv2_VAL": 51.49
+          }
+        }
+      },
+      "mean": 40.61,
+      "rank": 35,
+      "stem": "mc2_b32_384",
+      "type": "Lang."
+    },
+    "mc2_g14_224": {
+      "display_name": "MetaCLIP 2 ViT-G/14 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 50.77,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 15.44,
+            "FLICKR30K_KARPATHY_TEST": 50.45,
+            "GQA_TestDev_Balanced": 51.93,
+            "MMBench_TEST_EN_V11": 64.86,
+            "MMMU_TEST": 36.2,
+            "MSCOCO_KARPATHY_TEST": 76.75,
+            "POPE": 89.54,
+            "ScienceQA_VAL": 63.5,
+            "TextVQA_VAL": 34.35,
+            "VQAv2_VAL": 63.96
+          }
+        },
+        "qwen3": {
+          "average": 48.84,
+          "scores": {
+            "ChartQA_TEST": 11.7,
+            "DocVQA_VAL": 14.43,
+            "FLICKR30K_KARPATHY_TEST": 45.49,
+            "GQA_TestDev_Balanced": 51.22,
+            "MMBench_TEST_EN_V11": 63.71,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 73.08,
+            "POPE": 85.93,
+            "ScienceQA_VAL": 64.3,
+            "TextVQA_VAL": 32.55,
+            "VQAv2_VAL": 62.16
+          }
+        },
+        "smollm2": {
+          "average": 40.9,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 8.48,
+            "FLICKR30K_KARPATHY_TEST": 37.42,
+            "GQA_TestDev_Balanced": 44.0,
+            "MMBench_TEST_EN_V11": 55.6,
+            "MMMU_TEST": 28.8,
+            "MSCOCO_KARPATHY_TEST": 58.82,
+            "POPE": 72.32,
+            "ScienceQA_VAL": 55.4,
+            "TextVQA_VAL": 21.87,
+            "VQAv2_VAL": 56.74
+          }
+        }
+      },
+      "mean": 46.84,
+      "rank": 13,
+      "stem": "mc2_g14_224",
+      "type": "Lang."
+    },
+    "mc2_g14_378": {
+      "display_name": "MetaCLIP 2 ViT-G/14 (378)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 52.56,
+          "scores": {
+            "ChartQA_TEST": 13.6,
+            "DocVQA_VAL": 20.62,
+            "FLICKR30K_KARPATHY_TEST": 51.97,
+            "GQA_TestDev_Balanced": 52.95,
+            "MMBench_TEST_EN_V11": 66.41,
+            "MMMU_TEST": 38.1,
+            "MSCOCO_KARPATHY_TEST": 76.55,
+            "POPE": 88.82,
+            "ScienceQA_VAL": 65.0,
+            "TextVQA_VAL": 39.14,
+            "VQAv2_VAL": 65.04
+          }
+        },
+        "qwen3": {
+          "average": 47.08,
+          "scores": {
+            "ChartQA_TEST": 11.9,
+            "DocVQA_VAL": 15.59,
+            "FLICKR30K_KARPATHY_TEST": 41.36,
+            "GQA_TestDev_Balanced": 48.98,
+            "MMBench_TEST_EN_V11": 60.62,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 67.13,
+            "POPE": 84.43,
+            "ScienceQA_VAL": 63.2,
+            "TextVQA_VAL": 31.83,
+            "VQAv2_VAL": 59.7
+          }
+        },
+        "smollm2": {
+          "average": 45.93,
+          "scores": {
+            "ChartQA_TEST": 13.7,
+            "DocVQA_VAL": 17.39,
+            "FLICKR30K_KARPATHY_TEST": 35.04,
+            "GQA_TestDev_Balanced": 48.88,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 31.1,
+            "MSCOCO_KARPATHY_TEST": 56.77,
+            "POPE": 84.41,
+            "ScienceQA_VAL": 60.4,
+            "TextVQA_VAL": 38.08,
+            "VQAv2_VAL": 61.97
+          }
+        }
+      },
+      "mean": 48.52,
+      "rank": 7,
+      "stem": "mc2_g14_378",
+      "type": "Lang."
+    },
+    "mc2_h14_378": {
+      "display_name": "MetaCLIP 2 ViT-H/14 (378)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 50.89,
+          "scores": {
+            "ChartQA_TEST": 12.8,
+            "DocVQA_VAL": 21.13,
+            "FLICKR30K_KARPATHY_TEST": 50.73,
+            "GQA_TestDev_Balanced": 51.22,
+            "MMBench_TEST_EN_V11": 65.64,
+            "MMMU_TEST": 35.0,
+            "MSCOCO_KARPATHY_TEST": 77.4,
+            "POPE": 82.6,
+            "ScienceQA_VAL": 63.6,
+            "TextVQA_VAL": 37.22,
+            "VQAv2_VAL": 62.4
+          }
+        },
+        "qwen3": {
+          "average": 40.52,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 8.44,
+            "FLICKR30K_KARPATHY_TEST": 31.87,
+            "GQA_TestDev_Balanced": 43.39,
+            "MMBench_TEST_EN_V11": 52.12,
+            "MMMU_TEST": 31.6,
+            "MSCOCO_KARPATHY_TEST": 56.97,
+            "POPE": 83.99,
+            "ScienceQA_VAL": 62.5,
+            "TextVQA_VAL": 13.47,
+            "VQAv2_VAL": 50.82
+          }
+        },
+        "smollm2": {
+          "average": 34.88,
+          "scores": {
+            "ChartQA_TEST": 12.2,
+            "DocVQA_VAL": 8.33,
+            "FLICKR30K_KARPATHY_TEST": 23.43,
+            "GQA_TestDev_Balanced": 42.89,
+            "MMBench_TEST_EN_V11": 53.28,
+            "MMMU_TEST": 30.3,
+            "MSCOCO_KARPATHY_TEST": 44.08,
+            "POPE": 46.47,
+            "ScienceQA_VAL": 53.2,
+            "TextVQA_VAL": 19.93,
+            "VQAv2_VAL": 49.55
+          }
+        }
+      },
+      "mean": 42.1,
+      "rank": 29,
+      "stem": "mc2_h14_378",
+      "type": "Lang."
+    },
+    "mc2_l14_224": {
+      "display_name": "MetaCLIP 2 ViT-L/14 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 49.46,
+          "scores": {
+            "ChartQA_TEST": 12.5,
+            "DocVQA_VAL": 14.75,
+            "FLICKR30K_KARPATHY_TEST": 47.88,
+            "GQA_TestDev_Balanced": 51.32,
+            "MMBench_TEST_EN_V11": 67.18,
+            "MMMU_TEST": 34.5,
+            "MSCOCO_KARPATHY_TEST": 71.15,
+            "POPE": 88.67,
+            "ScienceQA_VAL": 63.2,
+            "TextVQA_VAL": 32.11,
+            "VQAv2_VAL": 60.84
+          }
+        },
+        "qwen3": {
+          "average": 40.43,
+          "scores": {
+            "ChartQA_TEST": 9.7,
+            "DocVQA_VAL": 8.7,
+            "FLICKR30K_KARPATHY_TEST": 31.61,
+            "GQA_TestDev_Balanced": 47.15,
+            "MMBench_TEST_EN_V11": 47.88,
+            "MMMU_TEST": 33.4,
+            "MSCOCO_KARPATHY_TEST": 57.41,
+            "POPE": 82.9,
+            "ScienceQA_VAL": 63.7,
+            "TextVQA_VAL": 12.01,
+            "VQAv2_VAL": 50.31
+          }
+        },
+        "smollm2": {
+          "average": 41.39,
+          "scores": {
+            "ChartQA_TEST": 11.4,
+            "DocVQA_VAL": 9.01,
+            "FLICKR30K_KARPATHY_TEST": 40.26,
+            "GQA_TestDev_Balanced": 42.58,
+            "MMBench_TEST_EN_V11": 52.9,
+            "MMMU_TEST": 28.3,
+            "MSCOCO_KARPATHY_TEST": 67.06,
+            "POPE": 66.12,
+            "ScienceQA_VAL": 54.0,
+            "TextVQA_VAL": 28.9,
+            "VQAv2_VAL": 54.79
+          }
+        }
+      },
+      "mean": 43.76,
+      "rank": 22,
+      "stem": "mc2_l14_224",
+      "type": "Lang."
+    },
+    "mc2_m16_224": {
+      "display_name": "MetaCLIP 2 ViT-M/16 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 43.34,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 10.65,
+            "FLICKR30K_KARPATHY_TEST": 31.53,
+            "GQA_TestDev_Balanced": 46.65,
+            "MMBench_TEST_EN_V11": 58.3,
+            "MMMU_TEST": 34.6,
+            "MSCOCO_KARPATHY_TEST": 62.7,
+            "POPE": 79.69,
+            "ScienceQA_VAL": 64.2,
+            "TextVQA_VAL": 19.66,
+            "VQAv2_VAL": 58.03
+          }
+        },
+        "qwen3": {
+          "average": 38.76,
+          "scores": {
+            "ChartQA_TEST": 11.2,
+            "DocVQA_VAL": 8.13,
+            "FLICKR30K_KARPATHY_TEST": 23.7,
+            "GQA_TestDev_Balanced": 45.73,
+            "MMBench_TEST_EN_V11": 49.81,
+            "MMMU_TEST": 32.1,
+            "MSCOCO_KARPATHY_TEST": 43.42,
+            "POPE": 78.56,
+            "ScienceQA_VAL": 65.0,
+            "TextVQA_VAL": 15.68,
+            "VQAv2_VAL": 53.08
+          }
+        },
+        "smollm2": {
+          "average": 34.47,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 8.57,
+            "FLICKR30K_KARPATHY_TEST": 17.51,
+            "GQA_TestDev_Balanced": 39.94,
+            "MMBench_TEST_EN_V11": 46.72,
+            "MMMU_TEST": 29.3,
+            "MSCOCO_KARPATHY_TEST": 33.94,
+            "POPE": 71.09,
+            "ScienceQA_VAL": 54.6,
+            "TextVQA_VAL": 17.13,
+            "VQAv2_VAL": 49.79
+          }
+        }
+      },
+      "mean": 38.86,
+      "rank": 42,
+      "stem": "mc2_m16_224",
+      "type": "Lang."
+    },
+    "mc2_m16_224_mt5": {
+      "display_name": "MetaCLIP 2 ViT-M/16 (mT5, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 43.25,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 11.56,
+            "FLICKR30K_KARPATHY_TEST": 32.71,
+            "GQA_TestDev_Balanced": 47.46,
+            "MMBench_TEST_EN_V11": 55.98,
+            "MMMU_TEST": 34.0,
+            "MSCOCO_KARPATHY_TEST": 60.32,
+            "POPE": 82.33,
+            "ScienceQA_VAL": 62.0,
+            "TextVQA_VAL": 20.84,
+            "VQAv2_VAL": 57.54
+          }
+        },
+        "qwen3": {
+          "average": 40.42,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 9.59,
+            "FLICKR30K_KARPATHY_TEST": 26.03,
+            "GQA_TestDev_Balanced": 47.87,
+            "MMBench_TEST_EN_V11": 47.88,
+            "MMMU_TEST": 31.2,
+            "MSCOCO_KARPATHY_TEST": 53.41,
+            "POPE": 83.79,
+            "ScienceQA_VAL": 62.6,
+            "TextVQA_VAL": 18.68,
+            "VQAv2_VAL": 52.66
+          }
+        },
+        "smollm2": {
+          "average": 34.54,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 8.52,
+            "FLICKR30K_KARPATHY_TEST": 23.71,
+            "GQA_TestDev_Balanced": 37.09,
+            "MMBench_TEST_EN_V11": 44.4,
+            "MMMU_TEST": 27.4,
+            "MSCOCO_KARPATHY_TEST": 47.85,
+            "POPE": 65.96,
+            "ScienceQA_VAL": 49.0,
+            "TextVQA_VAL": 18.31,
+            "VQAv2_VAL": 46.92
+          }
+        }
+      },
+      "mean": 39.4,
+      "rank": 40,
+      "stem": "mc2_m16_224_mt5",
+      "type": "Lang."
+    },
+    "mc2_m16_384": {
+      "display_name": "MetaCLIP 2 ViT-M/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 44.79,
+          "scores": {
+            "ChartQA_TEST": 11.4,
+            "DocVQA_VAL": 14.53,
+            "FLICKR30K_KARPATHY_TEST": 33.3,
+            "GQA_TestDev_Balanced": 47.97,
+            "MMBench_TEST_EN_V11": 58.69,
+            "MMMU_TEST": 35.1,
+            "MSCOCO_KARPATHY_TEST": 61.26,
+            "POPE": 84.11,
+            "ScienceQA_VAL": 61.7,
+            "TextVQA_VAL": 26.82,
+            "VQAv2_VAL": 57.77
+          }
+        },
+        "qwen3": {
+          "average": 42.93,
+          "scores": {
+            "ChartQA_TEST": 11.9,
+            "DocVQA_VAL": 12.16,
+            "FLICKR30K_KARPATHY_TEST": 32.92,
+            "GQA_TestDev_Balanced": 47.66,
+            "MMBench_TEST_EN_V11": 54.44,
+            "MMMU_TEST": 33.0,
+            "MSCOCO_KARPATHY_TEST": 61.7,
+            "POPE": 71.78,
+            "ScienceQA_VAL": 65.5,
+            "TextVQA_VAL": 24.39,
+            "VQAv2_VAL": 56.78
+          }
+        },
+        "smollm2": {
+          "average": 37.6,
+          "scores": {
+            "ChartQA_TEST": 11.4,
+            "DocVQA_VAL": 10.18,
+            "FLICKR30K_KARPATHY_TEST": 31.33,
+            "GQA_TestDev_Balanced": 41.16,
+            "MMBench_TEST_EN_V11": 42.47,
+            "MMMU_TEST": 28.8,
+            "MSCOCO_KARPATHY_TEST": 54.44,
+            "POPE": 69.18,
+            "ScienceQA_VAL": 50.8,
+            "TextVQA_VAL": 21.49,
+            "VQAv2_VAL": 52.38
+          }
+        }
+      },
+      "mean": 41.77,
+      "rank": 33,
+      "stem": "mc2_m16_384",
+      "type": "Lang."
+    },
+    "mc2_s16_224": {
+      "display_name": "MetaCLIP 2 ViT-S/16 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.05,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 10.2,
+            "FLICKR30K_KARPATHY_TEST": 27.61,
+            "GQA_TestDev_Balanced": 48.78,
+            "MMBench_TEST_EN_V11": 56.76,
+            "MMMU_TEST": 34.7,
+            "MSCOCO_KARPATHY_TEST": 54.06,
+            "POPE": 76.9,
+            "ScienceQA_VAL": 59.7,
+            "TextVQA_VAL": 17.68,
+            "VQAv2_VAL": 54.27
+          }
+        },
+        "qwen3": {
+          "average": 39.77,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 10.07,
+            "FLICKR30K_KARPATHY_TEST": 26.22,
+            "GQA_TestDev_Balanced": 46.34,
+            "MMBench_TEST_EN_V11": 56.76,
+            "MMMU_TEST": 32.0,
+            "MSCOCO_KARPATHY_TEST": 51.9,
+            "POPE": 71.01,
+            "ScienceQA_VAL": 63.4,
+            "TextVQA_VAL": 16.93,
+            "VQAv2_VAL": 52.19
+          }
+        },
+        "smollm2": {
+          "average": 30.59,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 8.6,
+            "FLICKR30K_KARPATHY_TEST": 6.48,
+            "GQA_TestDev_Balanced": 39.53,
+            "MMBench_TEST_EN_V11": 36.29,
+            "MMMU_TEST": 26.1,
+            "MSCOCO_KARPATHY_TEST": 32.07,
+            "POPE": 66.04,
+            "ScienceQA_VAL": 49.4,
+            "TextVQA_VAL": 14.84,
+            "VQAv2_VAL": 46.78
+          }
+        }
+      },
+      "mean": 37.14,
+      "rank": 55,
+      "stem": "mc2_s16_224",
+      "type": "Lang."
+    },
+    "mc2_s16_224_mt5": {
+      "display_name": "MetaCLIP 2 ViT-S/16 (mT5, 224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.35,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 9.48,
+            "FLICKR30K_KARPATHY_TEST": 29.61,
+            "GQA_TestDev_Balanced": 46.95,
+            "MMBench_TEST_EN_V11": 58.69,
+            "MMMU_TEST": 33.7,
+            "MSCOCO_KARPATHY_TEST": 58.74,
+            "POPE": 73.82,
+            "ScienceQA_VAL": 61.1,
+            "TextVQA_VAL": 16.9,
+            "VQAv2_VAL": 55.07
+          }
+        },
+        "qwen3": {
+          "average": 39.12,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 9.42,
+            "FLICKR30K_KARPATHY_TEST": 27.17,
+            "GQA_TestDev_Balanced": 44.21,
+            "MMBench_TEST_EN_V11": 49.03,
+            "MMMU_TEST": 32.6,
+            "MSCOCO_KARPATHY_TEST": 52.35,
+            "POPE": 73.85,
+            "ScienceQA_VAL": 63.9,
+            "TextVQA_VAL": 15.76,
+            "VQAv2_VAL": 51.02
+          }
+        },
+        "smollm2": {
+          "average": 33.48,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 9.01,
+            "FLICKR30K_KARPATHY_TEST": 18.05,
+            "GQA_TestDev_Balanced": 42.17,
+            "MMBench_TEST_EN_V11": 38.61,
+            "MMMU_TEST": 26.0,
+            "MSCOCO_KARPATHY_TEST": 36.06,
+            "POPE": 75.74,
+            "ScienceQA_VAL": 49.9,
+            "TextVQA_VAL": 14.6,
+            "VQAv2_VAL": 48.29
+          }
+        }
+      },
+      "mean": 37.98,
+      "rank": 46,
+      "stem": "mc2_s16_224_mt5",
+      "type": "Lang."
+    },
+    "mc2_s16_384": {
+      "display_name": "MetaCLIP 2 ViT-S/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.58,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 12.19,
+            "FLICKR30K_KARPATHY_TEST": 29.08,
+            "GQA_TestDev_Balanced": 46.34,
+            "MMBench_TEST_EN_V11": 56.76,
+            "MMMU_TEST": 35.2,
+            "MSCOCO_KARPATHY_TEST": 55.94,
+            "POPE": 72.38,
+            "ScienceQA_VAL": 60.1,
+            "TextVQA_VAL": 21.98,
+            "VQAv2_VAL": 55.39
+          }
+        },
+        "qwen3": {
+          "average": 40.91,
+          "scores": {
+            "ChartQA_TEST": 11.6,
+            "DocVQA_VAL": 10.76,
+            "FLICKR30K_KARPATHY_TEST": 26.55,
+            "GQA_TestDev_Balanced": 45.33,
+            "MMBench_TEST_EN_V11": 50.58,
+            "MMMU_TEST": 32.3,
+            "MSCOCO_KARPATHY_TEST": 49.6,
+            "POPE": 83.27,
+            "ScienceQA_VAL": 61.9,
+            "TextVQA_VAL": 23.21,
+            "VQAv2_VAL": 54.95
+          }
+        },
+        "smollm2": {
+          "average": 33.16,
+          "scores": {
+            "ChartQA_TEST": 11.2,
+            "DocVQA_VAL": 6.89,
+            "FLICKR30K_KARPATHY_TEST": 23.58,
+            "GQA_TestDev_Balanced": 39.02,
+            "MMBench_TEST_EN_V11": 38.22,
+            "MMMU_TEST": 28.5,
+            "MSCOCO_KARPATHY_TEST": 34.54,
+            "POPE": 65.65,
+            "ScienceQA_VAL": 51.5,
+            "TextVQA_VAL": 17.47,
+            "VQAv2_VAL": 48.18
+          }
+        }
+      },
+      "mean": 38.55,
+      "rank": 44,
+      "stem": "mc2_s16_384",
+      "type": "Lang."
+    },
+    "pe_core_b16_224": {
+      "display_name": "PE-Core-B/16 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 45.91,
+          "scores": {
+            "ChartQA_TEST": 11.6,
+            "DocVQA_VAL": 10.91,
+            "FLICKR30K_KARPATHY_TEST": 41.25,
+            "GQA_TestDev_Balanced": 51.52,
+            "MMBench_TEST_EN_V11": 60.62,
+            "MMMU_TEST": 34.3,
+            "MSCOCO_KARPATHY_TEST": 65.44,
+            "POPE": 83.13,
+            "ScienceQA_VAL": 61.7,
+            "TextVQA_VAL": 23.63,
+            "VQAv2_VAL": 60.92
+          }
+        },
+        "qwen3": {
+          "average": 45.51,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 11.47,
+            "FLICKR30K_KARPATHY_TEST": 37.2,
+            "GQA_TestDev_Balanced": 49.29,
+            "MMBench_TEST_EN_V11": 58.3,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 63.94,
+            "POPE": 87.57,
+            "ScienceQA_VAL": 64.8,
+            "TextVQA_VAL": 24.93,
+            "VQAv2_VAL": 58.47
+          }
+        },
+        "smollm2": {
+          "average": 35.77,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 8.8,
+            "FLICKR30K_KARPATHY_TEST": 24.7,
+            "GQA_TestDev_Balanced": 45.22,
+            "MMBench_TEST_EN_V11": 42.86,
+            "MMMU_TEST": 26.1,
+            "MSCOCO_KARPATHY_TEST": 41.92,
+            "POPE": 73.85,
+            "ScienceQA_VAL": 49.7,
+            "TextVQA_VAL": 19.58,
+            "VQAv2_VAL": 50.35
+          }
+        }
+      },
+      "mean": 42.4,
+      "rank": 28,
+      "stem": "pe_core_b16_224",
+      "type": "Lang."
+    },
+    "pe_core_g14_448": {
+      "display_name": "PE-Core-G/14 (448)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 51.88,
+          "scores": {
+            "ChartQA_TEST": 14.0,
+            "DocVQA_VAL": 21.12,
+            "FLICKR30K_KARPATHY_TEST": 52.32,
+            "GQA_TestDev_Balanced": 49.49,
+            "MMBench_TEST_EN_V11": 66.02,
+            "MMMU_TEST": 34.6,
+            "MSCOCO_KARPATHY_TEST": 77.0,
+            "POPE": 89.55,
+            "ScienceQA_VAL": 64.3,
+            "TextVQA_VAL": 39.97,
+            "VQAv2_VAL": 62.34
+          }
+        },
+        "qwen3": {
+          "average": 48.58,
+          "scores": {
+            "ChartQA_TEST": 14.2,
+            "DocVQA_VAL": 16.32,
+            "FLICKR30K_KARPATHY_TEST": 45.76,
+            "GQA_TestDev_Balanced": 48.58,
+            "MMBench_TEST_EN_V11": 62.93,
+            "MMMU_TEST": 34.1,
+            "MSCOCO_KARPATHY_TEST": 72.55,
+            "POPE": 79.83,
+            "ScienceQA_VAL": 66.1,
+            "TextVQA_VAL": 34.12,
+            "VQAv2_VAL": 59.88
+          }
+        },
+        "smollm2": {
+          "average": 42.41,
+          "scores": {
+            "ChartQA_TEST": 13.3,
+            "DocVQA_VAL": 14.64,
+            "FLICKR30K_KARPATHY_TEST": 34.44,
+            "GQA_TestDev_Balanced": 45.33,
+            "MMBench_TEST_EN_V11": 54.44,
+            "MMMU_TEST": 27.4,
+            "MSCOCO_KARPATHY_TEST": 49.85,
+            "POPE": 81.35,
+            "ScienceQA_VAL": 56.3,
+            "TextVQA_VAL": 34.19,
+            "VQAv2_VAL": 55.26
+          }
+        }
+      },
+      "mean": 47.62,
+      "rank": 9,
+      "stem": "pe_core_g14_448",
+      "type": "Lang."
+    },
+    "pe_lang_l14_448": {
+      "display_name": "PE-Lang-L/14 (448)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 45.62,
+          "scores": {
+            "ChartQA_TEST": 12.7,
+            "DocVQA_VAL": 9.8,
+            "FLICKR30K_KARPATHY_TEST": 43.26,
+            "GQA_TestDev_Balanced": 50.91,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 32.5,
+            "MSCOCO_KARPATHY_TEST": 68.55,
+            "POPE": 83.59,
+            "ScienceQA_VAL": 61.0,
+            "TextVQA_VAL": 22.32,
+            "VQAv2_VAL": 59.69
+          }
+        },
+        "qwen3": {
+          "average": 39.9,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 7.01,
+            "FLICKR30K_KARPATHY_TEST": 34.32,
+            "GQA_TestDev_Balanced": 46.65,
+            "MMBench_TEST_EN_V11": 51.35,
+            "MMMU_TEST": 30.4,
+            "MSCOCO_KARPATHY_TEST": 55.89,
+            "POPE": 79.24,
+            "ScienceQA_VAL": 59.2,
+            "TextVQA_VAL": 12.49,
+            "VQAv2_VAL": 52.25
+          }
+        },
+        "smollm2": {
+          "average": 42.48,
+          "scores": {
+            "ChartQA_TEST": 13.2,
+            "DocVQA_VAL": 16.9,
+            "FLICKR30K_KARPATHY_TEST": 35.85,
+            "GQA_TestDev_Balanced": 47.76,
+            "MMBench_TEST_EN_V11": 49.42,
+            "MMMU_TEST": 26.3,
+            "MSCOCO_KARPATHY_TEST": 62.23,
+            "POPE": 68.13,
+            "ScienceQA_VAL": 54.0,
+            "TextVQA_VAL": 36.91,
+            "VQAv2_VAL": 56.58
+          }
+        }
+      },
+      "mean": 42.67,
+      "rank": 26,
+      "stem": "pe_lang_l14_448",
+      "type": "Lang."
+    },
+    "pixio_vitb16": {
+      "display_name": "Pixio ViT-B/16",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 41.0,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 8.66,
+            "FLICKR30K_KARPATHY_TEST": 33.03,
+            "GQA_TestDev_Balanced": 46.75,
+            "MMBench_TEST_EN_V11": 52.9,
+            "MMMU_TEST": 32.4,
+            "MSCOCO_KARPATHY_TEST": 61.05,
+            "POPE": 77.48,
+            "ScienceQA_VAL": 63.1,
+            "TextVQA_VAL": 11.07,
+            "VQAv2_VAL": 53.84
+          }
+        },
+        "qwen3": {
+          "average": 39.41,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 8.52,
+            "FLICKR30K_KARPATHY_TEST": 29.67,
+            "GQA_TestDev_Balanced": 44.11,
+            "MMBench_TEST_EN_V11": 47.49,
+            "MMMU_TEST": 31.3,
+            "MSCOCO_KARPATHY_TEST": 56.81,
+            "POPE": 80.94,
+            "ScienceQA_VAL": 64.7,
+            "TextVQA_VAL": 9.69,
+            "VQAv2_VAL": 50.23
+          }
+        },
+        "smollm2": {
+          "average": 33.11,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 7.47,
+            "FLICKR30K_KARPATHY_TEST": 18.28,
+            "GQA_TestDev_Balanced": 40.55,
+            "MMBench_TEST_EN_V11": 43.24,
+            "MMMU_TEST": 29.3,
+            "MSCOCO_KARPATHY_TEST": 36.6,
+            "POPE": 66.36,
+            "ScienceQA_VAL": 53.3,
+            "TextVQA_VAL": 9.13,
+            "VQAv2_VAL": 49.84
+          }
+        }
+      },
+      "mean": 37.84,
+      "rank": 48,
+      "stem": "pixio_vitb16",
+      "type": "SSL"
+    },
+    "pixio_vith16": {
+      "display_name": "Pixio ViT-H/16",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 36.07,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 8.27,
+            "FLICKR30K_KARPATHY_TEST": 31.44,
+            "GQA_TestDev_Balanced": 43.19,
+            "MMBench_TEST_EN_V11": 25.1,
+            "MMMU_TEST": 32.8,
+            "MSCOCO_KARPATHY_TEST": 58.44,
+            "POPE": 65.49,
+            "ScienceQA_VAL": 60.7,
+            "TextVQA_VAL": 10.14,
+            "VQAv2_VAL": 50.07
+          }
+        },
+        "qwen3": {
+          "average": 33.67,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 7.56,
+            "FLICKR30K_KARPATHY_TEST": 23.7,
+            "GQA_TestDev_Balanced": 40.96,
+            "MMBench_TEST_EN_V11": 29.34,
+            "MMMU_TEST": 29.9,
+            "MSCOCO_KARPATHY_TEST": 45.55,
+            "POPE": 68.43,
+            "ScienceQA_VAL": 61.1,
+            "TextVQA_VAL": 10.0,
+            "VQAv2_VAL": 43.98
+          }
+        },
+        "smollm2": {
+          "average": 36.96,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 7.28,
+            "FLICKR30K_KARPATHY_TEST": 27.54,
+            "GQA_TestDev_Balanced": 43.8,
+            "MMBench_TEST_EN_V11": 42.86,
+            "MMMU_TEST": 29.1,
+            "MSCOCO_KARPATHY_TEST": 55.76,
+            "POPE": 78.16,
+            "ScienceQA_VAL": 53.3,
+            "TextVQA_VAL": 10.16,
+            "VQAv2_VAL": 48.46
+          }
+        }
+      },
+      "mean": 35.57,
+      "rank": 58,
+      "stem": "pixio_vith16",
+      "type": "SSL"
+    },
+    "pixio_vitl16": {
+      "display_name": "Pixio ViT-L/16",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 45.95,
+          "scores": {
+            "ChartQA_TEST": 11.3,
+            "DocVQA_VAL": 8.26,
+            "FLICKR30K_KARPATHY_TEST": 43.76,
+            "GQA_TestDev_Balanced": 53.96,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 33.8,
+            "MSCOCO_KARPATHY_TEST": 74.56,
+            "POPE": 90.08,
+            "ScienceQA_VAL": 62.6,
+            "TextVQA_VAL": 11.23,
+            "VQAv2_VAL": 58.32
+          }
+        },
+        "qwen3": {
+          "average": 39.82,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 7.2,
+            "FLICKR30K_KARPATHY_TEST": 29.12,
+            "GQA_TestDev_Balanced": 46.54,
+            "MMBench_TEST_EN_V11": 50.19,
+            "MMMU_TEST": 30.5,
+            "MSCOCO_KARPATHY_TEST": 56.11,
+            "POPE": 85.35,
+            "ScienceQA_VAL": 64.1,
+            "TextVQA_VAL": 8.75,
+            "VQAv2_VAL": 50.31
+          }
+        },
+        "smollm2": {
+          "average": 34.57,
+          "scores": {
+            "ChartQA_TEST": 9.5,
+            "DocVQA_VAL": 7.3,
+            "FLICKR30K_KARPATHY_TEST": 25.86,
+            "GQA_TestDev_Balanced": 40.75,
+            "MMBench_TEST_EN_V11": 40.15,
+            "MMMU_TEST": 26.9,
+            "MSCOCO_KARPATHY_TEST": 45.71,
+            "POPE": 69.37,
+            "ScienceQA_VAL": 54.9,
+            "TextVQA_VAL": 9.89,
+            "VQAv2_VAL": 49.98
+          }
+        }
+      },
+      "mean": 40.11,
+      "rank": 36,
+      "stem": "pixio_vitl16",
+      "type": "SSL"
+    },
+    "raev2_dinov3l_k7": {
+      "display_name": "RAEv2 DINOv3-L (k=7)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 36.26,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 8.36,
+            "FLICKR30K_KARPATHY_TEST": 22.01,
+            "GQA_TestDev_Balanced": 40.35,
+            "MMBench_TEST_EN_V11": 48.26,
+            "MMMU_TEST": 33.8,
+            "MSCOCO_KARPATHY_TEST": 47.03,
+            "POPE": 66.59,
+            "ScienceQA_VAL": 61.6,
+            "TextVQA_VAL": 11.47,
+            "VQAv2_VAL": 48.33
+          }
+        },
+        "qwen3": {
+          "average": 33.52,
+          "scores": {
+            "ChartQA_TEST": 10.0,
+            "DocVQA_VAL": 8.5,
+            "FLICKR30K_KARPATHY_TEST": 18.58,
+            "GQA_TestDev_Balanced": 39.74,
+            "MMBench_TEST_EN_V11": 40.15,
+            "MMMU_TEST": 30.4,
+            "MSCOCO_KARPATHY_TEST": 38.55,
+            "POPE": 67.14,
+            "ScienceQA_VAL": 60.2,
+            "TextVQA_VAL": 10.64,
+            "VQAv2_VAL": 44.83
+          }
+        },
+        "smollm2": {
+          "average": 33.09,
+          "scores": {
+            "ChartQA_TEST": 7.2,
+            "DocVQA_VAL": 5.09,
+            "FLICKR30K_KARPATHY_TEST": 24.25,
+            "GQA_TestDev_Balanced": 39.23,
+            "MMBench_TEST_EN_V11": 38.22,
+            "MMMU_TEST": 26.2,
+            "MSCOCO_KARPATHY_TEST": 46.01,
+            "POPE": 77.07,
+            "ScienceQA_VAL": 47.1,
+            "TextVQA_VAL": 7.37,
+            "VQAv2_VAL": 46.29
+          }
+        }
+      },
+      "mean": 34.29,
+      "rank": 62,
+      "stem": "raev2_dinov3l_k7",
+      "type": "SSL"
+    },
+    "siglip2_b16_224": {
+      "display_name": "SigLIP2 ViT-B/16 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 47.83,
+          "scores": {
+            "ChartQA_TEST": 11.2,
+            "DocVQA_VAL": 11.83,
+            "FLICKR30K_KARPATHY_TEST": 44.37,
+            "GQA_TestDev_Balanced": 53.05,
+            "MMBench_TEST_EN_V11": 64.86,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 73.94,
+            "POPE": 78.87,
+            "ScienceQA_VAL": 65.1,
+            "TextVQA_VAL": 26.96,
+            "VQAv2_VAL": 63.27
+          }
+        },
+        "qwen3": {
+          "average": 46.6,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 13.38,
+            "FLICKR30K_KARPATHY_TEST": 38.95,
+            "GQA_TestDev_Balanced": 51.83,
+            "MMBench_TEST_EN_V11": 58.3,
+            "MMMU_TEST": 31.5,
+            "MSCOCO_KARPATHY_TEST": 64.23,
+            "POPE": 89.31,
+            "ScienceQA_VAL": 65.2,
+            "TextVQA_VAL": 28.24,
+            "VQAv2_VAL": 59.71
+          }
+        },
+        "smollm2": {
+          "average": 38.9,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 10.65,
+            "FLICKR30K_KARPATHY_TEST": 33.09,
+            "GQA_TestDev_Balanced": 45.22,
+            "MMBench_TEST_EN_V11": 55.6,
+            "MMMU_TEST": 27.1,
+            "MSCOCO_KARPATHY_TEST": 41.34,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 59.4,
+            "TextVQA_VAL": 23.12,
+            "VQAv2_VAL": 56.02
+          }
+        }
+      },
+      "mean": 44.44,
+      "rank": 21,
+      "stem": "siglip2_b16_224",
+      "type": "Lang."
+    },
+    "siglip2_b16_256": {
+      "display_name": "SigLIP2 ViT-B/16 (256)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 47.62,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 11.89,
+            "FLICKR30K_KARPATHY_TEST": 42.89,
+            "GQA_TestDev_Balanced": 51.63,
+            "MMBench_TEST_EN_V11": 64.86,
+            "MMMU_TEST": 33.7,
+            "MSCOCO_KARPATHY_TEST": 68.42,
+            "POPE": 82.0,
+            "ScienceQA_VAL": 64.7,
+            "TextVQA_VAL": 29.16,
+            "VQAv2_VAL": 62.53
+          }
+        },
+        "qwen3": {
+          "average": 46.91,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 13.77,
+            "FLICKR30K_KARPATHY_TEST": 36.01,
+            "GQA_TestDev_Balanced": 50.0,
+            "MMBench_TEST_EN_V11": 61.39,
+            "MMMU_TEST": 33.8,
+            "MSCOCO_KARPATHY_TEST": 63.77,
+            "POPE": 89.73,
+            "ScienceQA_VAL": 66.9,
+            "TextVQA_VAL": 28.42,
+            "VQAv2_VAL": 61.12
+          }
+        },
+        "smollm2": {
+          "average": 39.2,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 11.05,
+            "FLICKR30K_KARPATHY_TEST": 28.06,
+            "GQA_TestDev_Balanced": 48.27,
+            "MMBench_TEST_EN_V11": 51.35,
+            "MMMU_TEST": 28.5,
+            "MSCOCO_KARPATHY_TEST": 51.34,
+            "POPE": 66.43,
+            "ScienceQA_VAL": 52.9,
+            "TextVQA_VAL": 27.68,
+            "VQAv2_VAL": 55.81
+          }
+        }
+      },
+      "mean": 44.58,
+      "rank": 20,
+      "stem": "siglip2_b16_256",
+      "type": "Lang."
+    },
+    "siglip2_b16_384": {
+      "display_name": "SigLIP2 ViT-B/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 50.5,
+          "scores": {
+            "ChartQA_TEST": 12.3,
+            "DocVQA_VAL": 17.65,
+            "FLICKR30K_KARPATHY_TEST": 47.91,
+            "GQA_TestDev_Balanced": 51.32,
+            "MMBench_TEST_EN_V11": 64.86,
+            "MMMU_TEST": 33.5,
+            "MSCOCO_KARPATHY_TEST": 75.79,
+            "POPE": 89.26,
+            "ScienceQA_VAL": 64.8,
+            "TextVQA_VAL": 34.25,
+            "VQAv2_VAL": 63.9
+          }
+        },
+        "qwen3": {
+          "average": 42.53,
+          "scores": {
+            "ChartQA_TEST": 11.8,
+            "DocVQA_VAL": 10.09,
+            "FLICKR30K_KARPATHY_TEST": 35.4,
+            "GQA_TestDev_Balanced": 45.93,
+            "MMBench_TEST_EN_V11": 54.44,
+            "MMMU_TEST": 32.2,
+            "MSCOCO_KARPATHY_TEST": 64.34,
+            "POPE": 74.8,
+            "ScienceQA_VAL": 65.0,
+            "TextVQA_VAL": 21.3,
+            "VQAv2_VAL": 52.51
+          }
+        },
+        "smollm2": {
+          "average": 42.17,
+          "scores": {
+            "ChartQA_TEST": 12.1,
+            "DocVQA_VAL": 10.24,
+            "FLICKR30K_KARPATHY_TEST": 42.27,
+            "GQA_TestDev_Balanced": 47.36,
+            "MMBench_TEST_EN_V11": 50.97,
+            "MMMU_TEST": 29.4,
+            "MSCOCO_KARPATHY_TEST": 61.3,
+            "POPE": 69.35,
+            "ScienceQA_VAL": 54.8,
+            "TextVQA_VAL": 31.11,
+            "VQAv2_VAL": 54.94
+          }
+        }
+      },
+      "mean": 45.07,
+      "rank": 19,
+      "stem": "siglip2_b16_384",
+      "type": "Lang."
+    },
+    "siglip2_b16_512": {
+      "display_name": "SigLIP2 ViT-B/16 (512)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 50.16,
+          "scores": {
+            "ChartQA_TEST": 13.0,
+            "DocVQA_VAL": 20.67,
+            "FLICKR30K_KARPATHY_TEST": 44.84,
+            "GQA_TestDev_Balanced": 51.22,
+            "MMBench_TEST_EN_V11": 63.32,
+            "MMMU_TEST": 34.7,
+            "MSCOCO_KARPATHY_TEST": 72.31,
+            "POPE": 88.67,
+            "ScienceQA_VAL": 64.4,
+            "TextVQA_VAL": 35.9,
+            "VQAv2_VAL": 62.78
+          }
+        },
+        "qwen3": {
+          "average": 48.51,
+          "scores": {
+            "ChartQA_TEST": 13.7,
+            "DocVQA_VAL": 18.74,
+            "FLICKR30K_KARPATHY_TEST": 43.12,
+            "GQA_TestDev_Balanced": 51.52,
+            "MMBench_TEST_EN_V11": 60.23,
+            "MMMU_TEST": 32.6,
+            "MSCOCO_KARPATHY_TEST": 67.14,
+            "POPE": 86.31,
+            "ScienceQA_VAL": 61.7,
+            "TextVQA_VAL": 38.13,
+            "VQAv2_VAL": 60.41
+          }
+        },
+        "smollm2": {
+          "average": 40.72,
+          "scores": {
+            "ChartQA_TEST": 12.2,
+            "DocVQA_VAL": 14.84,
+            "FLICKR30K_KARPATHY_TEST": 37.16,
+            "GQA_TestDev_Balanced": 45.12,
+            "MMBench_TEST_EN_V11": 50.58,
+            "MMMU_TEST": 28.3,
+            "MSCOCO_KARPATHY_TEST": 53.37,
+            "POPE": 68.48,
+            "ScienceQA_VAL": 51.2,
+            "TextVQA_VAL": 31.3,
+            "VQAv2_VAL": 55.34
+          }
+        }
+      },
+      "mean": 46.46,
+      "rank": 14,
+      "stem": "siglip2_b16_512",
+      "type": "Lang."
+    },
+    "siglip2_b32_256": {
+      "display_name": "SigLIP2 ViT-B/32 (256)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 45.23,
+          "scores": {
+            "ChartQA_TEST": 11.3,
+            "DocVQA_VAL": 9.03,
+            "FLICKR30K_KARPATHY_TEST": 39.16,
+            "GQA_TestDev_Balanced": 49.19,
+            "MMBench_TEST_EN_V11": 62.93,
+            "MMMU_TEST": 34.7,
+            "MSCOCO_KARPATHY_TEST": 65.03,
+            "POPE": 83.46,
+            "ScienceQA_VAL": 65.4,
+            "TextVQA_VAL": 17.92,
+            "VQAv2_VAL": 59.38
+          }
+        },
+        "qwen3": {
+          "average": 42.5,
+          "scores": {
+            "ChartQA_TEST": 10.7,
+            "DocVQA_VAL": 8.91,
+            "FLICKR30K_KARPATHY_TEST": 30.08,
+            "GQA_TestDev_Balanced": 47.66,
+            "MMBench_TEST_EN_V11": 57.14,
+            "MMMU_TEST": 33.0,
+            "MSCOCO_KARPATHY_TEST": 58.04,
+            "POPE": 81.65,
+            "ScienceQA_VAL": 64.2,
+            "TextVQA_VAL": 18.46,
+            "VQAv2_VAL": 57.62
+          }
+        },
+        "smollm2": {
+          "average": 37.22,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 8.81,
+            "FLICKR30K_KARPATHY_TEST": 24.24,
+            "GQA_TestDev_Balanced": 44.41,
+            "MMBench_TEST_EN_V11": 55.98,
+            "MMMU_TEST": 27.1,
+            "MSCOCO_KARPATHY_TEST": 45.01,
+            "POPE": 69.1,
+            "ScienceQA_VAL": 53.0,
+            "TextVQA_VAL": 17.11,
+            "VQAv2_VAL": 53.83
+          }
+        }
+      },
+      "mean": 41.65,
+      "rank": 34,
+      "stem": "siglip2_b32_256",
+      "type": "Lang."
+    },
+    "siglip2_g16_256": {
+      "display_name": "SigLIP2 ViT-G/16 (256)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 53.87,
+          "scores": {
+            "ChartQA_TEST": 12.4,
+            "DocVQA_VAL": 15.92,
+            "FLICKR30K_KARPATHY_TEST": 57.45,
+            "GQA_TestDev_Balanced": 53.86,
+            "MMBench_TEST_EN_V11": 66.8,
+            "MMMU_TEST": 34.6,
+            "MSCOCO_KARPATHY_TEST": 85.89,
+            "POPE": 91.21,
+            "ScienceQA_VAL": 66.8,
+            "TextVQA_VAL": 39.51,
+            "VQAv2_VAL": 68.08
+          }
+        },
+        "qwen3": {
+          "average": 51.02,
+          "scores": {
+            "ChartQA_TEST": 11.6,
+            "DocVQA_VAL": 16.59,
+            "FLICKR30K_KARPATHY_TEST": 46.45,
+            "GQA_TestDev_Balanced": 52.74,
+            "MMBench_TEST_EN_V11": 67.18,
+            "MMMU_TEST": 33.5,
+            "MSCOCO_KARPATHY_TEST": 76.16,
+            "POPE": 87.88,
+            "ScienceQA_VAL": 65.3,
+            "TextVQA_VAL": 39.18,
+            "VQAv2_VAL": 64.62
+          }
+        },
+        "smollm2": {
+          "average": 43.75,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 14.52,
+            "FLICKR30K_KARPATHY_TEST": 43.33,
+            "GQA_TestDev_Balanced": 46.04,
+            "MMBench_TEST_EN_V11": 58.69,
+            "MMMU_TEST": 29.5,
+            "MSCOCO_KARPATHY_TEST": 60.52,
+            "POPE": 65.31,
+            "ScienceQA_VAL": 56.0,
+            "TextVQA_VAL": 37.87,
+            "VQAv2_VAL": 57.52
+          }
+        }
+      },
+      "mean": 49.55,
+      "rank": 6,
+      "stem": "siglip2_g16_256",
+      "type": "Lang."
+    },
+    "siglip2_g16_384": {
+      "display_name": "SigLIP2 ViT-G/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 54.25,
+          "scores": {
+            "ChartQA_TEST": 15.1,
+            "DocVQA_VAL": 24.62,
+            "FLICKR30K_KARPATHY_TEST": 51.37,
+            "GQA_TestDev_Balanced": 53.56,
+            "MMBench_TEST_EN_V11": 70.27,
+            "MMMU_TEST": 34.1,
+            "MSCOCO_KARPATHY_TEST": 77.92,
+            "POPE": 84.65,
+            "ScienceQA_VAL": 66.8,
+            "TextVQA_VAL": 50.33,
+            "VQAv2_VAL": 68.07
+          }
+        },
+        "qwen3": {
+          "average": 54.56,
+          "scores": {
+            "ChartQA_TEST": 14.4,
+            "DocVQA_VAL": 25.22,
+            "FLICKR30K_KARPATHY_TEST": 53.53,
+            "GQA_TestDev_Balanced": 54.47,
+            "MMBench_TEST_EN_V11": 61.39,
+            "MMMU_TEST": 32.4,
+            "MSCOCO_KARPATHY_TEST": 81.97,
+            "POPE": 91.82,
+            "ScienceQA_VAL": 68.4,
+            "TextVQA_VAL": 48.88,
+            "VQAv2_VAL": 67.72
+          }
+        },
+        "smollm2": {
+          "average": 42.97,
+          "scores": {
+            "ChartQA_TEST": 13.6,
+            "DocVQA_VAL": 18.24,
+            "FLICKR30K_KARPATHY_TEST": 32.51,
+            "GQA_TestDev_Balanced": 46.14,
+            "MMBench_TEST_EN_V11": 56.37,
+            "MMMU_TEST": 27.4,
+            "MSCOCO_KARPATHY_TEST": 54.23,
+            "POPE": 64.28,
+            "ScienceQA_VAL": 57.7,
+            "TextVQA_VAL": 43.18,
+            "VQAv2_VAL": 58.99
+          }
+        }
+      },
+      "mean": 50.59,
+      "rank": 2,
+      "stem": "siglip2_g16_384",
+      "type": "Lang."
+    },
+    "siglip2_l16_256": {
+      "display_name": "SigLIP2 ViT-L/16 (256)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 50.76,
+          "scores": {
+            "ChartQA_TEST": 12.3,
+            "DocVQA_VAL": 15.44,
+            "FLICKR30K_KARPATHY_TEST": 48.44,
+            "GQA_TestDev_Balanced": 51.32,
+            "MMBench_TEST_EN_V11": 63.71,
+            "MMMU_TEST": 34.5,
+            "MSCOCO_KARPATHY_TEST": 75.6,
+            "POPE": 89.32,
+            "ScienceQA_VAL": 65.4,
+            "TextVQA_VAL": 38.19,
+            "VQAv2_VAL": 64.12
+          }
+        },
+        "qwen3": {
+          "average": 49.09,
+          "scores": {
+            "ChartQA_TEST": 11.3,
+            "DocVQA_VAL": 14.39,
+            "FLICKR30K_KARPATHY_TEST": 44.81,
+            "GQA_TestDev_Balanced": 52.54,
+            "MMBench_TEST_EN_V11": 61.0,
+            "MMMU_TEST": 33.3,
+            "MSCOCO_KARPATHY_TEST": 74.3,
+            "POPE": 83.08,
+            "ScienceQA_VAL": 66.9,
+            "TextVQA_VAL": 35.96,
+            "VQAv2_VAL": 62.45
+          }
+        },
+        "smollm2": {
+          "average": 42.35,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 14.6,
+            "FLICKR30K_KARPATHY_TEST": 34.56,
+            "GQA_TestDev_Balanced": 47.46,
+            "MMBench_TEST_EN_V11": 61.0,
+            "MMMU_TEST": 27.7,
+            "MSCOCO_KARPATHY_TEST": 58.26,
+            "POPE": 67.71,
+            "ScienceQA_VAL": 53.4,
+            "TextVQA_VAL": 33.08,
+            "VQAv2_VAL": 57.23
+          }
+        }
+      },
+      "mean": 47.4,
+      "rank": 11,
+      "stem": "siglip2_l16_256",
+      "type": "Lang."
+    },
+    "siglip2_l16_384": {
+      "display_name": "SigLIP2 ViT-L/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 53.01,
+          "scores": {
+            "ChartQA_TEST": 13.9,
+            "DocVQA_VAL": 18.89,
+            "FLICKR30K_KARPATHY_TEST": 52.84,
+            "GQA_TestDev_Balanced": 52.64,
+            "MMBench_TEST_EN_V11": 64.09,
+            "MMMU_TEST": 35.2,
+            "MSCOCO_KARPATHY_TEST": 84.15,
+            "POPE": 89.73,
+            "ScienceQA_VAL": 66.0,
+            "TextVQA_VAL": 41.45,
+            "VQAv2_VAL": 64.21
+          }
+        },
+        "qwen3": {
+          "average": 52.56,
+          "scores": {
+            "ChartQA_TEST": 14.7,
+            "DocVQA_VAL": 21.45,
+            "FLICKR30K_KARPATHY_TEST": 47.6,
+            "GQA_TestDev_Balanced": 53.15,
+            "MMBench_TEST_EN_V11": 63.71,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 78.08,
+            "POPE": 90.14,
+            "ScienceQA_VAL": 66.3,
+            "TextVQA_VAL": 45.17,
+            "VQAv2_VAL": 65.14
+          }
+        },
+        "smollm2": {
+          "average": 45.86,
+          "scores": {
+            "ChartQA_TEST": 11.8,
+            "DocVQA_VAL": 16.92,
+            "FLICKR30K_KARPATHY_TEST": 44.85,
+            "GQA_TestDev_Balanced": 49.8,
+            "MMBench_TEST_EN_V11": 57.14,
+            "MMMU_TEST": 27.4,
+            "MSCOCO_KARPATHY_TEST": 61.74,
+            "POPE": 80.72,
+            "ScienceQA_VAL": 55.1,
+            "TextVQA_VAL": 39.32,
+            "VQAv2_VAL": 59.62
+          }
+        }
+      },
+      "mean": 50.48,
+      "rank": 3,
+      "stem": "siglip2_l16_384",
+      "type": "Lang."
+    },
+    "siglip2_l16_512": {
+      "display_name": "SigLIP2 ViT-L/16 (512)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 54.47,
+          "scores": {
+            "ChartQA_TEST": 13.2,
+            "DocVQA_VAL": 25.07,
+            "FLICKR30K_KARPATHY_TEST": 55.53,
+            "GQA_TestDev_Balanced": 55.08,
+            "MMBench_TEST_EN_V11": 64.09,
+            "MMMU_TEST": 35.0,
+            "MSCOCO_KARPATHY_TEST": 80.59,
+            "POPE": 91.39,
+            "ScienceQA_VAL": 67.1,
+            "TextVQA_VAL": 45.45,
+            "VQAv2_VAL": 66.63
+          }
+        },
+        "qwen3": {
+          "average": 39.19,
+          "scores": {
+            "ChartQA_TEST": 10.3,
+            "DocVQA_VAL": 7.88,
+            "FLICKR30K_KARPATHY_TEST": 31.6,
+            "GQA_TestDev_Balanced": 43.29,
+            "MMBench_TEST_EN_V11": 50.58,
+            "MMMU_TEST": 31.9,
+            "MSCOCO_KARPATHY_TEST": 52.14,
+            "POPE": 79.03,
+            "ScienceQA_VAL": 62.1,
+            "TextVQA_VAL": 12.06,
+            "VQAv2_VAL": 50.16
+          }
+        },
+        "smollm2": {
+          "average": 35.82,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 7.88,
+            "FLICKR30K_KARPATHY_TEST": 26.23,
+            "GQA_TestDev_Balanced": 41.57,
+            "MMBench_TEST_EN_V11": 46.33,
+            "MMMU_TEST": 27.7,
+            "MSCOCO_KARPATHY_TEST": 49.99,
+            "POPE": 68.33,
+            "ScienceQA_VAL": 54.6,
+            "TextVQA_VAL": 11.57,
+            "VQAv2_VAL": 49.06
+          }
+        }
+      },
+      "mean": 43.16,
+      "rank": 25,
+      "stem": "siglip2_l16_512",
+      "type": "Lang."
+    },
+    "siglip2_sm14_224": {
+      "display_name": "SigLIP2 So400m/14 (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 53.02,
+          "scores": {
+            "ChartQA_TEST": 12.7,
+            "DocVQA_VAL": 15.73,
+            "FLICKR30K_KARPATHY_TEST": 56.51,
+            "GQA_TestDev_Balanced": 52.24,
+            "MMBench_TEST_EN_V11": 66.02,
+            "MMMU_TEST": 35.7,
+            "MSCOCO_KARPATHY_TEST": 84.1,
+            "POPE": 89.41,
+            "ScienceQA_VAL": 66.4,
+            "TextVQA_VAL": 37.55,
+            "VQAv2_VAL": 66.87
+          }
+        },
+        "qwen3": {
+          "average": 49.12,
+          "scores": {
+            "ChartQA_TEST": 12.9,
+            "DocVQA_VAL": 14.88,
+            "FLICKR30K_KARPATHY_TEST": 41.12,
+            "GQA_TestDev_Balanced": 53.25,
+            "MMBench_TEST_EN_V11": 61.78,
+            "MMMU_TEST": 33.2,
+            "MSCOCO_KARPATHY_TEST": 65.91,
+            "POPE": 90.04,
+            "ScienceQA_VAL": 65.8,
+            "TextVQA_VAL": 36.69,
+            "VQAv2_VAL": 64.7
+          }
+        },
+        "smollm2": {
+          "average": 42.81,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 14.67,
+            "FLICKR30K_KARPATHY_TEST": 35.23,
+            "GQA_TestDev_Balanced": 48.98,
+            "MMBench_TEST_EN_V11": 57.92,
+            "MMMU_TEST": 30.0,
+            "MSCOCO_KARPATHY_TEST": 57.49,
+            "POPE": 66.67,
+            "ScienceQA_VAL": 54.1,
+            "TextVQA_VAL": 35.4,
+            "VQAv2_VAL": 59.6
+          }
+        }
+      },
+      "mean": 48.32,
+      "rank": 8,
+      "stem": "siglip2_sm14_224",
+      "type": "Lang."
+    },
+    "siglip2_sm14_384": {
+      "display_name": "SigLIP2 So400m/14 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 54.49,
+          "scores": {
+            "ChartQA_TEST": 14.1,
+            "DocVQA_VAL": 24.59,
+            "FLICKR30K_KARPATHY_TEST": 53.82,
+            "GQA_TestDev_Balanced": 52.64,
+            "MMBench_TEST_EN_V11": 66.02,
+            "MMMU_TEST": 35.5,
+            "MSCOCO_KARPATHY_TEST": 82.34,
+            "POPE": 89.98,
+            "ScienceQA_VAL": 65.9,
+            "TextVQA_VAL": 46.61,
+            "VQAv2_VAL": 67.89
+          }
+        },
+        "qwen3": {
+          "average": 54.06,
+          "scores": {
+            "ChartQA_TEST": 14.2,
+            "DocVQA_VAL": 25.62,
+            "FLICKR30K_KARPATHY_TEST": 53.6,
+            "GQA_TestDev_Balanced": 52.03,
+            "MMBench_TEST_EN_V11": 62.93,
+            "MMMU_TEST": 33.3,
+            "MSCOCO_KARPATHY_TEST": 78.4,
+            "POPE": 91.61,
+            "ScienceQA_VAL": 69.2,
+            "TextVQA_VAL": 47.33,
+            "VQAv2_VAL": 66.39
+          }
+        },
+        "smollm2": {
+          "average": 45.57,
+          "scores": {
+            "ChartQA_TEST": 13.2,
+            "DocVQA_VAL": 18.78,
+            "FLICKR30K_KARPATHY_TEST": 40.12,
+            "GQA_TestDev_Balanced": 50.61,
+            "MMBench_TEST_EN_V11": 56.76,
+            "MMMU_TEST": 28.7,
+            "MSCOCO_KARPATHY_TEST": 55.26,
+            "POPE": 84.84,
+            "ScienceQA_VAL": 51.0,
+            "TextVQA_VAL": 42.03,
+            "VQAv2_VAL": 59.95
+          }
+        }
+      },
+      "mean": 51.37,
+      "rank": 1,
+      "stem": "siglip2_sm14_384",
+      "type": "Lang."
+    },
+    "siglip2_sm16_256": {
+      "display_name": "SigLIP2 So400m/16 (256)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 51.4,
+          "scores": {
+            "ChartQA_TEST": 12.4,
+            "DocVQA_VAL": 17.54,
+            "FLICKR30K_KARPATHY_TEST": 49.39,
+            "GQA_TestDev_Balanced": 52.54,
+            "MMBench_TEST_EN_V11": 64.09,
+            "MMMU_TEST": 36.7,
+            "MSCOCO_KARPATHY_TEST": 74.17,
+            "POPE": 91.6,
+            "ScienceQA_VAL": 62.5,
+            "TextVQA_VAL": 37.83,
+            "VQAv2_VAL": 66.69
+          }
+        },
+        "qwen3": {
+          "average": 49.12,
+          "scores": {
+            "ChartQA_TEST": 12.3,
+            "DocVQA_VAL": 16.84,
+            "FLICKR30K_KARPATHY_TEST": 41.16,
+            "GQA_TestDev_Balanced": 51.93,
+            "MMBench_TEST_EN_V11": 59.85,
+            "MMMU_TEST": 32.0,
+            "MSCOCO_KARPATHY_TEST": 64.35,
+            "POPE": 90.42,
+            "ScienceQA_VAL": 67.7,
+            "TextVQA_VAL": 39.13,
+            "VQAv2_VAL": 64.64
+          }
+        },
+        "smollm2": {
+          "average": 41.94,
+          "scores": {
+            "ChartQA_TEST": 12.0,
+            "DocVQA_VAL": 14.14,
+            "FLICKR30K_KARPATHY_TEST": 34.95,
+            "GQA_TestDev_Balanced": 46.75,
+            "MMBench_TEST_EN_V11": 56.37,
+            "MMMU_TEST": 29.1,
+            "MSCOCO_KARPATHY_TEST": 55.66,
+            "POPE": 66.12,
+            "ScienceQA_VAL": 54.3,
+            "TextVQA_VAL": 34.23,
+            "VQAv2_VAL": 57.74
+          }
+        }
+      },
+      "mean": 47.49,
+      "rank": 10,
+      "stem": "siglip2_sm16_256",
+      "type": "Lang."
+    },
+    "siglip2_sm16_384": {
+      "display_name": "SigLIP2 So400m/16 (384)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 53.12,
+          "scores": {
+            "ChartQA_TEST": 12.9,
+            "DocVQA_VAL": 22.49,
+            "FLICKR30K_KARPATHY_TEST": 54.53,
+            "GQA_TestDev_Balanced": 53.25,
+            "MMBench_TEST_EN_V11": 64.48,
+            "MMMU_TEST": 37.1,
+            "MSCOCO_KARPATHY_TEST": 72.46,
+            "POPE": 91.58,
+            "ScienceQA_VAL": 64.0,
+            "TextVQA_VAL": 45.26,
+            "VQAv2_VAL": 66.25
+          }
+        },
+        "qwen3": {
+          "average": 51.75,
+          "scores": {
+            "ChartQA_TEST": 13.1,
+            "DocVQA_VAL": 23.48,
+            "FLICKR30K_KARPATHY_TEST": 45.61,
+            "GQA_TestDev_Balanced": 54.07,
+            "MMBench_TEST_EN_V11": 62.55,
+            "MMMU_TEST": 33.2,
+            "MSCOCO_KARPATHY_TEST": 70.64,
+            "POPE": 86.59,
+            "ScienceQA_VAL": 67.5,
+            "TextVQA_VAL": 47.77,
+            "VQAv2_VAL": 64.76
+          }
+        },
+        "smollm2": {
+          "average": 44.08,
+          "scores": {
+            "ChartQA_TEST": 13.3,
+            "DocVQA_VAL": 17.4,
+            "FLICKR30K_KARPATHY_TEST": 37.68,
+            "GQA_TestDev_Balanced": 46.95,
+            "MMBench_TEST_EN_V11": 57.53,
+            "MMMU_TEST": 26.9,
+            "MSCOCO_KARPATHY_TEST": 63.33,
+            "POPE": 66.36,
+            "ScienceQA_VAL": 54.3,
+            "TextVQA_VAL": 40.36,
+            "VQAv2_VAL": 60.78
+          }
+        }
+      },
+      "mean": 49.65,
+      "rank": 5,
+      "stem": "siglip2_sm16_384",
+      "type": "Lang."
+    },
+    "siglip2_sm16_512": {
+      "display_name": "SigLIP2 So400m/16 (512)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 54.97,
+          "scores": {
+            "ChartQA_TEST": 14.1,
+            "DocVQA_VAL": 26.22,
+            "FLICKR30K_KARPATHY_TEST": 57.01,
+            "GQA_TestDev_Balanced": 55.49,
+            "MMBench_TEST_EN_V11": 64.86,
+            "MMMU_TEST": 36.1,
+            "MSCOCO_KARPATHY_TEST": 85.14,
+            "POPE": 84.91,
+            "ScienceQA_VAL": 65.5,
+            "TextVQA_VAL": 47.79,
+            "VQAv2_VAL": 67.52
+          }
+        },
+        "qwen3": {
+          "average": 52.51,
+          "scores": {
+            "ChartQA_TEST": 14.0,
+            "DocVQA_VAL": 26.22,
+            "FLICKR30K_KARPATHY_TEST": 49.44,
+            "GQA_TestDev_Balanced": 50.2,
+            "MMBench_TEST_EN_V11": 62.16,
+            "MMMU_TEST": 32.8,
+            "MSCOCO_KARPATHY_TEST": 75.77,
+            "POPE": 87.61,
+            "ScienceQA_VAL": 68.2,
+            "TextVQA_VAL": 47.02,
+            "VQAv2_VAL": 64.16
+          }
+        },
+        "smollm2": {
+          "average": 42.37,
+          "scores": {
+            "ChartQA_TEST": 13.6,
+            "DocVQA_VAL": 19.28,
+            "FLICKR30K_KARPATHY_TEST": 31.72,
+            "GQA_TestDev_Balanced": 47.26,
+            "MMBench_TEST_EN_V11": 57.92,
+            "MMMU_TEST": 29.8,
+            "MSCOCO_KARPATHY_TEST": 47.27,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 53.1,
+            "TextVQA_VAL": 40.89,
+            "VQAv2_VAL": 58.97
+          }
+        }
+      },
+      "mean": 49.95,
+      "rank": 4,
+      "stem": "siglip2_sm16_512",
+      "type": "Lang."
+    },
+    "toklip_l_384": {
+      "display_name": "TokLIP-L (384)",
+      "family": "discrete",
+      "llms": {
+        "qwen25": {
+          "average": 43.99,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 8.87,
+            "FLICKR30K_KARPATHY_TEST": 41.93,
+            "GQA_TestDev_Balanced": 50.0,
+            "MMBench_TEST_EN_V11": 59.07,
+            "MMMU_TEST": 35.3,
+            "MSCOCO_KARPATHY_TEST": 71.19,
+            "POPE": 72.99,
+            "ScienceQA_VAL": 64.2,
+            "TextVQA_VAL": 12.26,
+            "VQAv2_VAL": 57.26
+          }
+        },
+        "qwen3": {
+          "average": 38.23,
+          "scores": {
+            "ChartQA_TEST": 11.5,
+            "DocVQA_VAL": 7.93,
+            "FLICKR30K_KARPATHY_TEST": 24.14,
+            "GQA_TestDev_Balanced": 44.41,
+            "MMBench_TEST_EN_V11": 46.72,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 50.09,
+            "POPE": 80.29,
+            "ScienceQA_VAL": 61.7,
+            "TextVQA_VAL": 11.68,
+            "VQAv2_VAL": 48.94
+          }
+        },
+        "smollm2": {
+          "average": 36.98,
+          "scores": {
+            "ChartQA_TEST": 11.2,
+            "DocVQA_VAL": 6.88,
+            "FLICKR30K_KARPATHY_TEST": 25.02,
+            "GQA_TestDev_Balanced": 44.41,
+            "MMBench_TEST_EN_V11": 52.51,
+            "MMMU_TEST": 27.3,
+            "MSCOCO_KARPATHY_TEST": 35.25,
+            "POPE": 82.62,
+            "ScienceQA_VAL": 56.9,
+            "TextVQA_VAL": 13.05,
+            "VQAv2_VAL": 51.66
+          }
+        }
+      },
+      "mean": 39.73,
+      "rank": 38,
+      "stem": "toklip_l_384",
+      "type": "Discrete"
+    },
+    "toklip_s_256": {
+      "display_name": "TokLIP-S (256)",
+      "family": "discrete",
+      "llms": {
+        "qwen25": {
+          "average": 40.76,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 8.14,
+            "FLICKR30K_KARPATHY_TEST": 31.34,
+            "GQA_TestDev_Balanced": 47.26,
+            "MMBench_TEST_EN_V11": 50.97,
+            "MMMU_TEST": 35.3,
+            "MSCOCO_KARPATHY_TEST": 61.05,
+            "POPE": 76.82,
+            "ScienceQA_VAL": 64.2,
+            "TextVQA_VAL": 10.67,
+            "VQAv2_VAL": 52.13
+          }
+        },
+        "qwen3": {
+          "average": 39.02,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 7.55,
+            "FLICKR30K_KARPATHY_TEST": 23.75,
+            "GQA_TestDev_Balanced": 45.93,
+            "MMBench_TEST_EN_V11": 53.28,
+            "MMMU_TEST": 31.4,
+            "MSCOCO_KARPATHY_TEST": 41.63,
+            "POPE": 85.97,
+            "ScienceQA_VAL": 64.9,
+            "TextVQA_VAL": 11.53,
+            "VQAv2_VAL": 52.43
+          }
+        },
+        "smollm2": {
+          "average": 34.47,
+          "scores": {
+            "ChartQA_TEST": 11.3,
+            "DocVQA_VAL": 6.48,
+            "FLICKR30K_KARPATHY_TEST": 22.49,
+            "GQA_TestDev_Balanced": 39.63,
+            "MMBench_TEST_EN_V11": 48.26,
+            "MMMU_TEST": 28.3,
+            "MSCOCO_KARPATHY_TEST": 41.66,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 55.0,
+            "TextVQA_VAL": 10.46,
+            "VQAv2_VAL": 49.28
+          }
+        }
+      },
+      "mean": 38.08,
+      "rank": 45,
+      "stem": "toklip_s_256",
+      "type": "Discrete"
+    },
+    "uniar_bsq": {
+      "display_name": "UniAR-BSQ",
+      "family": "discrete",
+      "llms": {
+        "qwen25": {
+          "average": 40.87,
+          "scores": {
+            "ChartQA_TEST": 10.2,
+            "DocVQA_VAL": 8.43,
+            "FLICKR30K_KARPATHY_TEST": 32.1,
+            "GQA_TestDev_Balanced": 46.14,
+            "MMBench_TEST_EN_V11": 49.81,
+            "MMMU_TEST": 35.5,
+            "MSCOCO_KARPATHY_TEST": 55.32,
+            "POPE": 82.84,
+            "ScienceQA_VAL": 65.1,
+            "TextVQA_VAL": 10.97,
+            "VQAv2_VAL": 53.2
+          }
+        },
+        "qwen3": {
+          "average": 34.9,
+          "scores": {
+            "ChartQA_TEST": 10.9,
+            "DocVQA_VAL": 7.71,
+            "FLICKR30K_KARPATHY_TEST": 20.62,
+            "GQA_TestDev_Balanced": 41.46,
+            "MMBench_TEST_EN_V11": 44.79,
+            "MMMU_TEST": 31.4,
+            "MSCOCO_KARPATHY_TEST": 36.32,
+            "POPE": 69.45,
+            "ScienceQA_VAL": 63.5,
+            "TextVQA_VAL": 9.46,
+            "VQAv2_VAL": 48.24
+          }
+        },
+        "smollm2": {
+          "average": 30.24,
+          "scores": {
+            "ChartQA_TEST": 10.3,
+            "DocVQA_VAL": 7.04,
+            "FLICKR30K_KARPATHY_TEST": 17.31,
+            "GQA_TestDev_Balanced": 37.6,
+            "MMBench_TEST_EN_V11": 35.14,
+            "MMMU_TEST": 28.2,
+            "MSCOCO_KARPATHY_TEST": 25.6,
+            "POPE": 63.67,
+            "ScienceQA_VAL": 53.3,
+            "TextVQA_VAL": 8.77,
+            "VQAv2_VAL": 45.68
+          }
+        }
+      },
+      "mean": 35.34,
+      "rank": 60,
+      "stem": "uniar_bsq",
+      "type": "Discrete"
+    },
+    "unitok_attn": {
+      "display_name": "UniTok-Attn (256)",
+      "family": "discrete",
+      "llms": {
+        "qwen25": {
+          "average": 42.5,
+          "scores": {
+            "ChartQA_TEST": 11.0,
+            "DocVQA_VAL": 8.44,
+            "FLICKR30K_KARPATHY_TEST": 34.85,
+            "GQA_TestDev_Balanced": 48.88,
+            "MMBench_TEST_EN_V11": 56.76,
+            "MMMU_TEST": 33.8,
+            "MSCOCO_KARPATHY_TEST": 64.44,
+            "POPE": 77.89,
+            "ScienceQA_VAL": 62.3,
+            "TextVQA_VAL": 12.38,
+            "VQAv2_VAL": 56.8
+          }
+        },
+        "qwen3": {
+          "average": 41.48,
+          "scores": {
+            "ChartQA_TEST": 12.5,
+            "DocVQA_VAL": 9.0,
+            "FLICKR30K_KARPATHY_TEST": 31.42,
+            "GQA_TestDev_Balanced": 47.15,
+            "MMBench_TEST_EN_V11": 50.58,
+            "MMMU_TEST": 33.5,
+            "MSCOCO_KARPATHY_TEST": 53.66,
+            "POPE": 80.48,
+            "ScienceQA_VAL": 65.1,
+            "TextVQA_VAL": 16.84,
+            "VQAv2_VAL": 56.01
+          }
+        },
+        "smollm2": {
+          "average": 32.25,
+          "scores": {
+            "ChartQA_TEST": 9.4,
+            "DocVQA_VAL": 8.06,
+            "FLICKR30K_KARPATHY_TEST": 24.36,
+            "GQA_TestDev_Balanced": 40.45,
+            "MMBench_TEST_EN_V11": 33.98,
+            "MMMU_TEST": 28.9,
+            "MSCOCO_KARPATHY_TEST": 31.6,
+            "POPE": 69.38,
+            "ScienceQA_VAL": 51.6,
+            "TextVQA_VAL": 10.13,
+            "VQAv2_VAL": 46.84
+          }
+        }
+      },
+      "mean": 38.74,
+      "rank": 43,
+      "stem": "unitok_attn",
+      "type": "Discrete"
+    },
+    "vilau_256": {
+      "display_name": "VILA-U (256)",
+      "family": "discrete",
+      "llms": {
+        "qwen25": {
+          "average": 40.53,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 8.53,
+            "FLICKR30K_KARPATHY_TEST": 28.37,
+            "GQA_TestDev_Balanced": 46.24,
+            "MMBench_TEST_EN_V11": 52.12,
+            "MMMU_TEST": 34.3,
+            "MSCOCO_KARPATHY_TEST": 55.23,
+            "POPE": 79.94,
+            "ScienceQA_VAL": 64.5,
+            "TextVQA_VAL": 11.1,
+            "VQAv2_VAL": 55.11
+          }
+        },
+        "qwen3": {
+          "average": 39.45,
+          "scores": {
+            "ChartQA_TEST": 11.1,
+            "DocVQA_VAL": 7.69,
+            "FLICKR30K_KARPATHY_TEST": 25.14,
+            "GQA_TestDev_Balanced": 45.02,
+            "MMBench_TEST_EN_V11": 48.26,
+            "MMMU_TEST": 31.5,
+            "MSCOCO_KARPATHY_TEST": 52.16,
+            "POPE": 83.84,
+            "ScienceQA_VAL": 65.6,
+            "TextVQA_VAL": 11.45,
+            "VQAv2_VAL": 52.16
+          }
+        },
+        "smollm2": {
+          "average": 33.33,
+          "scores": {
+            "ChartQA_TEST": 10.3,
+            "DocVQA_VAL": 7.03,
+            "FLICKR30K_KARPATHY_TEST": 17.35,
+            "GQA_TestDev_Balanced": 40.75,
+            "MMBench_TEST_EN_V11": 45.17,
+            "MMMU_TEST": 29.0,
+            "MSCOCO_KARPATHY_TEST": 24.68,
+            "POPE": 79.14,
+            "ScienceQA_VAL": 54.5,
+            "TextVQA_VAL": 11.03,
+            "VQAv2_VAL": 47.72
+          }
+        }
+      },
+      "mean": 37.77,
+      "rank": 49,
+      "stem": "vilau_256",
+      "type": "Discrete"
+    },
+    "webssl_dino1b_full2b_224": {
+      "display_name": "Web-SSL DINO 1B (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 44.26,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 8.26,
+            "FLICKR30K_KARPATHY_TEST": 41.55,
+            "GQA_TestDev_Balanced": 49.19,
+            "MMBench_TEST_EN_V11": 58.3,
+            "MMMU_TEST": 32.1,
+            "MSCOCO_KARPATHY_TEST": 73.07,
+            "POPE": 81.52,
+            "ScienceQA_VAL": 62.3,
+            "TextVQA_VAL": 11.92,
+            "VQAv2_VAL": 58.17
+          }
+        },
+        "qwen3": {
+          "average": 43.65,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 7.38,
+            "FLICKR30K_KARPATHY_TEST": 35.87,
+            "GQA_TestDev_Balanced": 49.39,
+            "MMBench_TEST_EN_V11": 56.37,
+            "MMMU_TEST": 32.7,
+            "MSCOCO_KARPATHY_TEST": 68.14,
+            "POPE": 88.19,
+            "ScienceQA_VAL": 61.9,
+            "TextVQA_VAL": 12.19,
+            "VQAv2_VAL": 57.6
+          }
+        },
+        "smollm2": {
+          "average": 39.97,
+          "scores": {
+            "ChartQA_TEST": 12.2,
+            "DocVQA_VAL": 7.71,
+            "FLICKR30K_KARPATHY_TEST": 35.63,
+            "GQA_TestDev_Balanced": 48.27,
+            "MMBench_TEST_EN_V11": 47.88,
+            "MMMU_TEST": 28.9,
+            "MSCOCO_KARPATHY_TEST": 65.84,
+            "POPE": 73.91,
+            "ScienceQA_VAL": 53.0,
+            "TextVQA_VAL": 10.81,
+            "VQAv2_VAL": 55.55
+          }
+        }
+      },
+      "mean": 42.63,
+      "rank": 27,
+      "stem": "webssl_dino1b_full2b_224",
+      "type": "SSL"
+    },
+    "webssl_mae1b_full2b_224": {
+      "display_name": "Web-SSL MAE 1B (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 33.73,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 8.0,
+            "FLICKR30K_KARPATHY_TEST": 15.44,
+            "GQA_TestDev_Balanced": 41.97,
+            "MMBench_TEST_EN_V11": 37.84,
+            "MMMU_TEST": 33.1,
+            "MSCOCO_KARPATHY_TEST": 37.2,
+            "POPE": 70.41,
+            "ScienceQA_VAL": 61.2,
+            "TextVQA_VAL": 10.12,
+            "VQAv2_VAL": 45.12
+          }
+        },
+        "qwen3": {
+          "average": 29.7,
+          "scores": {
+            "ChartQA_TEST": 9.8,
+            "DocVQA_VAL": 7.32,
+            "FLICKR30K_KARPATHY_TEST": 11.57,
+            "GQA_TestDev_Balanced": 37.8,
+            "MMBench_TEST_EN_V11": 27.03,
+            "MMMU_TEST": 34.3,
+            "MSCOCO_KARPATHY_TEST": 21.51,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 62.4,
+            "TextVQA_VAL": 8.3,
+            "VQAv2_VAL": 40.44
+          }
+        },
+        "smollm2": {
+          "average": 23.84,
+          "scores": {
+            "ChartQA_TEST": 10.5,
+            "DocVQA_VAL": 7.61,
+            "FLICKR30K_KARPATHY_TEST": 3.28,
+            "GQA_TestDev_Balanced": 30.39,
+            "MMBench_TEST_EN_V11": 23.55,
+            "MMMU_TEST": 26.6,
+            "MSCOCO_KARPATHY_TEST": 1.54,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 50.1,
+            "TextVQA_VAL": 8.16,
+            "VQAv2_VAL": 34.19
+          }
+        }
+      },
+      "mean": 29.09,
+      "rank": 70,
+      "stem": "webssl_mae1b_full2b_224",
+      "type": "SSL"
+    },
+    "webssl_mae300m_full2b_224": {
+      "display_name": "Web-SSL MAE 300M (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 33.59,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 7.71,
+            "FLICKR30K_KARPATHY_TEST": 16.23,
+            "GQA_TestDev_Balanced": 41.06,
+            "MMBench_TEST_EN_V11": 36.68,
+            "MMMU_TEST": 33.6,
+            "MSCOCO_KARPATHY_TEST": 36.69,
+            "POPE": 71.34,
+            "ScienceQA_VAL": 62.3,
+            "TextVQA_VAL": 7.94,
+            "VQAv2_VAL": 45.35
+          }
+        },
+        "qwen3": {
+          "average": 28.85,
+          "scores": {
+            "ChartQA_TEST": 10.1,
+            "DocVQA_VAL": 7.42,
+            "FLICKR30K_KARPATHY_TEST": 10.17,
+            "GQA_TestDev_Balanced": 37.4,
+            "MMBench_TEST_EN_V11": 27.03,
+            "MMMU_TEST": 29.6,
+            "MSCOCO_KARPATHY_TEST": 14.23,
+            "POPE": 68.98,
+            "ScienceQA_VAL": 61.2,
+            "TextVQA_VAL": 9.46,
+            "VQAv2_VAL": 41.79
+          }
+        },
+        "smollm2": {
+          "average": 29.34,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 5.82,
+            "FLICKR30K_KARPATHY_TEST": 13.24,
+            "GQA_TestDev_Balanced": 36.79,
+            "MMBench_TEST_EN_V11": 32.05,
+            "MMMU_TEST": 27.0,
+            "MSCOCO_KARPATHY_TEST": 27.74,
+            "POPE": 66.28,
+            "ScienceQA_VAL": 53.7,
+            "TextVQA_VAL": 7.53,
+            "VQAv2_VAL": 42.2
+          }
+        }
+      },
+      "mean": 30.59,
+      "rank": 65,
+      "stem": "webssl_mae300m_full2b_224",
+      "type": "SSL"
+    },
+    "webssl_mae3b_full2b_224": {
+      "display_name": "Web-SSL MAE 3B (224)",
+      "family": "continuous",
+      "llms": {
+        "qwen25": {
+          "average": 36.13,
+          "scores": {
+            "ChartQA_TEST": 10.8,
+            "DocVQA_VAL": 7.54,
+            "FLICKR30K_KARPATHY_TEST": 20.27,
+            "GQA_TestDev_Balanced": 44.0,
+            "MMBench_TEST_EN_V11": 44.02,
+            "MMMU_TEST": 33.5,
+            "MSCOCO_KARPATHY_TEST": 45.03,
+            "POPE": 70.47,
+            "ScienceQA_VAL": 62.9,
+            "TextVQA_VAL": 9.39,
+            "VQAv2_VAL": 49.55
+          }
+        },
+        "qwen3": {
+          "average": 30.63,
+          "scores": {
+            "ChartQA_TEST": 10.6,
+            "DocVQA_VAL": 6.46,
+            "FLICKR30K_KARPATHY_TEST": 12.56,
+            "GQA_TestDev_Balanced": 37.7,
+            "MMBench_TEST_EN_V11": 34.36,
+            "MMMU_TEST": 32.0,
+            "MSCOCO_KARPATHY_TEST": 24.35,
+            "POPE": 67.55,
+            "ScienceQA_VAL": 60.6,
+            "TextVQA_VAL": 9.24,
+            "VQAv2_VAL": 41.5
+          }
+        },
+        "smollm2": {
+          "average": 25.34,
+          "scores": {
+            "ChartQA_TEST": 10.4,
+            "DocVQA_VAL": 7.54,
+            "FLICKR30K_KARPATHY_TEST": 5.75,
+            "GQA_TestDev_Balanced": 35.57,
+            "MMBench_TEST_EN_V11": 25.48,
+            "MMMU_TEST": 26.6,
+            "MSCOCO_KARPATHY_TEST": 3.98,
+            "POPE": 62.32,
+            "ScienceQA_VAL": 53.4,
+            "TextVQA_VAL": 8.58,
+            "VQAv2_VAL": 39.1
+          }
+        }
+      },
+      "mean": 30.7,
+      "rank": 64,
+      "stem": "webssl_mae3b_full2b_224",
+      "type": "SSL"
+    }
+  },
+  "llm_labels": {
+    "qwen25": "Qwen2.5-1.5B-Instruct",
+    "qwen3": "Qwen3-1.7B",
+    "smollm2": "SmolLM2-1.7B-Instruct"
+  },
+  "llms": [
+    "qwen3",
+    "qwen25",
+    "smollm2"
+  ],
+  "n_encoders": 70,
+  "n_pairs": 210,
+  "order": [
+    "siglip2_sm14_384",
+    "siglip2_g16_384",
+    "siglip2_l16_384",
+    "siglip2_sm16_512",
+    "siglip2_sm16_384",
+    "siglip2_g16_256",
+    "mc2_g14_378",
+    "siglip2_sm14_224",
+    "pe_core_g14_448",
+    "siglip2_sm16_256",
+    "siglip2_l16_256",
+    "mc1_g14_224_2.5b",
+    "mc2_g14_224",
+    "siglip2_b16_512",
+    "mc1_h14_224_v1.2",
+    "clip_openai__l14",
+    "mc1_h14_224_2.5b",
+    "mc1_l14_224_2.5b",
+    "siglip2_b16_384",
+    "siglip2_b16_256",
+    "siglip2_b16_224",
+    "mc2_l14_224",
+    "mc1_l14_224_400m",
+    "mc2_b16_384",
+    "siglip2_l16_512",
+    "pe_lang_l14_448",
+    "webssl_dino1b_full2b_224",
+    "pe_core_b16_224",
+    "mc2_h14_378",
+    "mc2_b16_224",
+    "mc1_b16_224_400m",
+    "mc1_b16_224_2.5b",
+    "mc2_m16_384",
+    "siglip2_b32_256",
+    "mc2_b32_384",
+    "pixio_vitl16",
+    "dinov2_giant",
+    "toklip_l_384",
+    "eupe_convnext_b",
+    "mc2_m16_224_mt5",
+    "dinov2_large",
+    "mc2_m16_224",
+    "unitok_attn",
+    "mc2_s16_384",
+    "toklip_s_256",
+    "mc2_s16_224_mt5",
+    "mc2_b32_224",
+    "pixio_vitb16",
+    "vilau_256",
+    "dinov3_vitl16",
+    "eupe_vit_b",
+    "mc2_b32_224_mt5",
+    "mc1_b32_224_2.5b",
+    "eupe_vit_s",
+    "mc2_s16_224",
+    "dinov2_base",
+    "dinov2_small",
+    "pixio_vith16",
+    "ijepa_vith14",
+    "uniar_bsq",
+    "mc1_b32_224_400m",
+    "raev2_dinov3l_k7",
+    "dino_vitb16",
+    "webssl_mae3b_full2b_224",
+    "webssl_mae300m_full2b_224",
+    "eupe_vit_t",
+    "dino_vits8",
+    "dino_vitb8",
+    "dino_vits16",
+    "webssl_mae1b_full2b_224"
+  ],
+  "provenance": {
+    "averages": "original two-decimal labels; not recomputed",
+    "score_units": "percentage; captioning CIDEr multiplied by 100",
+    "source_sha256": "4e1a431bb4a2818b9d3f0a0838d5d13d603c84d26a372e225d01edb175a3a096"
+  },
+  "schema_version": 1,
+  "sorted_by": "mean"
+}

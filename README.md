@@ -1,136 +1,82 @@
-# MLLM Vision Encoder Evaluation
+# VisualTokenizerBench / RAVEL
 
-This repository provides a configuration-driven framework for reproducing the
-vision-encoder and visual-tokenizer experiments in VisualTokenizerBench.
+Evaluate visual encoders with RAVEL and baseline methods using cached features.
 
-The independent `vision_encoder_eval` package includes RAVEL, baseline
-evaluation workers, and continuous/discrete MLLM training and evaluation.
+## Run RAVEL
 
-## Quick start
+Python 3.10+ is required. From the repository root:
 
 ```bash
-# Install the framework and method requirements.
 bash scripts/setup.sh
-
-# Configure machine-local data, checkpoint, environment, and output paths.
-cp configs/local.example.yaml configs/local.yaml
-$EDITOR configs/local.yaml
-
-# Validate paths and the selected experiment before loading any model.
-bash scripts/preflight.sh \
-  configs/experiments/ravel.yaml \
-  --local configs/local.yaml
-
-# Inspect the fully resolved run without executing it.
-bash scripts/run_experiment.sh \
-  configs/experiments/ravel.yaml \
-  --local configs/local.yaml \
-  --dry-run
-
-# Run one experiment.
-bash scripts/run_experiment.sh \
-  configs/experiments/ravel.yaml \
-  --local configs/local.yaml
-
-# Reproduce a configured experiment suite.
-bash scripts/reproduce.sh \
-  configs/experiments/paper_all.yaml \
-  --local configs/local.yaml
+bash scripts/reproduce.sh --init-local --data-root /path/to/vision_encoder_eval_data
+.venv/bin/python -m pip install -e '.[paper]'
+bash scripts/reproduce.sh ravel_paper --check
+bash scripts/reproduce.sh ravel_paper
 ```
 
-Scripts locate the repository themselves, so they can be invoked from any
-working directory. Scientific settings live in tracked experiment configs;
-`configs/local.yaml` contains only machine-local paths and is git-ignored.
+Table 1 uses 70 encoders x 3 LLMs, 1,000 aligned LCS pairs, final-layer visual
+patches without special tokens, penultimate text states averaged over valid
+tokens, k=100 and full-rank PCA whitening with epsilon=1e-4. The runner extracts
+text from the original frozen backbones and writes `scores.csv` and
+`correlations.json` under `runs/ravel_paper/`.
 
-## Repository layout
+Visual audits must verify `feature_layer: final` (or `-1`) and the ordered sample
+manifest. Check the extraction source before adding this field; legacy audits
+without layer provenance must be verified or the features re-extracted.
+To attempt reproduction with existing patches whose layer is unverified, use
+`ravel_paper --use-existing-visual-cache`; reports retain that limitation.
 
-- `src/vision_encoder_eval/`: CLI, configuration, experiment execution,
-  methods, baseline workers, and MLLM pipelines.
-- `configs/`: experiment suites and model/training recipes.
-- `scripts/`: setup, preflight, execution, and reproduction commands.
-- `requirements/`: dependency specifications for separate worker environments.
-- `third_party/`: retained upstream runtime sources and provenance metadata.
-
-The `paper_all.yaml` recipe defines a ten-component suite. Full paper
-reproduction requires the corresponding datasets, checkpoints, environments,
-and reviewed experiment parameters.
-
-## Separate worker environments
-
-Create a separate Python environment for each dependency group you need, then
-install its retained historical requirements and configure the interpreter in
-`local.yaml`. Do not combine all groups in the core environment.
+On this server, the three LLMs and aligned caches are already prepared.
+Run the complete 210-pair evaluation with the existing visual features:
 
 ```bash
-bash scripts/setup_worker.sh probing /absolute/path/to/probing/bin/python
-bash scripts/setup_worker.sh ckax /absolute/path/to/ckax/bin/python
+HF_HUB_OFFLINE=1 bash scripts/reproduce.sh ravel_paper --use-existing-visual-cache
 ```
 
-Groups: `mllm`, `probing`, `knn`, `ckax`, `tokbench`, `zero_shot`. Historical
-requirements have not all been installation/smoke-tested. Real model runs also
-require local weights/data and `resource_root` pointing at this repository's
-independent `third_party/` tree; these upstream trees are not bundled in the
-lightweight wheel.
+The data root is `/cache/vision_encoder_eval_data`; `configs/local.yaml` selects
+an audited copy that restores one corrupt UniAR scalar from its official encoder.
+The original cache is preserved. Initialization is needed only once. CUDA is
+used when available; add `--device cpu` for CPU execution.
 
-## Feature row contracts and sweeps
-
-Paired-feature experiments require manifests pinning array content, dtype,
-shape and exact ordered sample IDs. Generate one for each exported array:
+With verified final-layer visual and penultimate mean-pooled text caches:
 
 ```bash
-vision-encoder-eval data feature-manifest \
-  --features /path/to/patches.npy \
-  --sample-ids /path/to/ordered_sample_ids.json \
-  --output /path/to/patches.manifest.json
+bash scripts/reproduce.sh ravel --encoder dino_vits16 --text-encoder qwen3
+bash scripts/reproduce.sh ravel --encoder all --text-encoder all
 ```
 
-Do not infer sample order from equal row counts. Legacy caches without sample
-IDs can explicitly use `protocol.assume_aligned_rows: true`, which is recorded
-as an unverified assumption.
+The full panel contains 70 visual encoders x 3 text encoders and can take time.
+The launcher verifies cache audits and sample order; it never falls back to
+last-token text. The cached `ravel` command defaults to CLIP-L/14 + Qwen2.5.
 
-Experiment configs support `matrix: {axis: [value1, value2]}` and
-`${matrix.axis}` substitutions. Every combination has a separate config hash,
-workspace and result. Resume checks input/code/environment fingerprints and
-saved outputs, not only file existence. To change a completed run, use a new
-experiment name or output root.
-
-## Cached kNN: generate and run the complete 70-model panel
-
-Set `paths.knn_exports` and the `knn` interpreter in `local.yaml`, then:
+For your own features, supply patch `[N,T,D]` and text `[N,D]` arrays,
+plus a JSON list of unique sample IDs in their shared row order:
 
 ```bash
-vision-encoder-eval config knn-panel \
-  --local configs/local.yaml --output configs/generated/knn70
-bash scripts/reproduce.sh configs/generated/knn70/suite.json \
-  --local configs/local.yaml --dry-run
-# After reviewing the plan, execute with the same command without --dry-run.
+bash scripts/reproduce.sh ravel --patches /path/patches.npy \
+  --text /path/text.npy --sample-ids /path/sample_ids.json
 ```
 
-Generation validates all 70 feature headers/ranks and freezes the common
-seed-42 195-pool/5-query split with nested 5/10/20/45/95/195 shots. It refuses
-to overwrite an existing reviewed output directory. This recipe uses the
-original CPU `evaluate_features` route, explicitly not a proof of GPU FAISS
-parity or raw encoder extraction. Full execution can be expensive and has not
-been run in this refactor stage.
+Results and logs are under `runs/`; suites include CSV/JSON reports.
+Repeated unchanged runs reuse successful results. Local paths are configured
+in `configs/local.yaml` and are not committed.
 
-Each worker keeps its native JSON/CSV. The explicit `knn_multishot` adapter
-records percentage-valued Top1 and TFLOPs per shot; original two-decimal Top1
-rounding is retained. The suite automatically writes `runs.csv`, `metrics.csv`
-and `report.json` after all runs succeed. Invalid, duplicated or missing shot
-rows fail instead of being averaged or filled in.
+The paper's 210 downstream labels (70 encoders x 3 LLMs, 11 benchmarks)
+are bundled in `src/resources/ground_truth.json`; validate with
+`.venv/bin/vision-encoder-eval data ground-truth`.
 
-## Paired-feature canonical70 panels
-
-Supply all 70 visual caches, explicit ordered row manifests, text caches and
-reviewed method parameters. Generate individual experiments and a strict table:
+## Other Experiments
 
 ```bash
-vision-encoder-eval config feature-panel \
-  --manifest /your/feature-panel.yaml --output /your/generated-panel
-bash /your/repo/scripts/reproduce.sh /your/generated-panel/suite.json \
-  --local /your/local.yaml
+bash scripts/reproduce.sh --list
+bash scripts/reproduce.sh knn                 # 70 cached models, six shot counts
+bash scripts/reproduce.sh linear_probe --check
+bash scripts/reproduce.sh mllm_train
+bash scripts/reproduce.sh mllm_eval
 ```
 
-The table requires every declared cell, validates identities and native metric
-units, and allows only explicitly reasoned N/A. No missing/failed result is
-filled with zero.
+Add `--check` to inspect required inputs/dependencies, or `--dry-run` to
+inspect the plan. Other baselines and MLLM pipelines require their datasets,
+checkpoints and worker environments; configure them in `configs/local.yaml`.
+RAVEL cached-score evaluation does not retrain MLLMs or reproduce every paper
+experiment. Source modules live directly in `src/`; recipes are in `configs/`.

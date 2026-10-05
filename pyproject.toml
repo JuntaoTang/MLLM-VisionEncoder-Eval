@@ -26,6 +26,10 @@ knn = [
   "numpy>=1.26,<3",
   "faiss-cpu>=1.8,<2",
 ]
+paper = [
+  "transformers==4.51.3",
+  "huggingface-hub>=0.30,<1",
+]
 
 [tool.setuptools.package-data]
 vision_encoder_eval = ["resources/**/*", "workers/**/*.tsv", "workers/**/requirements.txt", "workers/**/LICENSE_NOTE.md", "workers/**/models.txt", "workers/knn/protocols/*.json", "workers/knn/feature_exports/*.json", "workers/knn/feature_exports/metadata/*.json", "workers/ckax/ground_truth/*.json", "mllm/**/*.yaml", "mllm/**/*.json", "mllm/**/*.txt", "mllm/**/*.txt.gz"]
@@ -34,11 +38,7 @@ vision_encoder_eval = ["resources/**/*", "workers/**/*.tsv", "workers/**/require
 vision-encoder-eval = "vision_encoder_eval.cli:main"
 
 [tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["vision_encoder_eval*"]
+package-dir = {vision_encoder_eval = "src"}
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
