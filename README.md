@@ -1,8 +1,10 @@
 # MLLM-VisionEncoder-Eval
 
-Evaluate vision encoders for a target LLM with RAVEL, baseline metrics, and downstream MLLM training and evaluation.
+Given a set of vision encoders and a target LLM, how to select the encoder best suited to that LLM for MLLM training? Training and evaluating an MLLM for every candidate is expensive.
 
-## Our Method: RAVEL
+MLLM-VisionEncoder-Eval provides a unified framework for this selection problem, bringing together encoder evaluation metrics, baseline comparisons, and downstream MLLM training and evaluation.
+
+## Our Evaluation Method: RAVEL
 
 <h3 align="center">A Strong Baseline for Evaluating Vision Encoders<br>in Multimodal Large Language Models</h3>
 
@@ -41,19 +43,15 @@ Set dataset, weight, feature, and worker Python paths in `configs/local.yaml` ([
 
 ## Data
 
-| Dataset | Use | Download Source |
-| --- | --- | --- |
-| LLaVA-LCS-558K | RAVEL, MLLM pretraining, AC Policy | [Hugging Face](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/tree/main) |
-| LLaVA-1.5 mix665K | MLLM finetuning | [Hugging Face](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/tree/main) |
-| ImageNet-1K | kNN, linear probing, zero-shot | [ImageNet](https://image-net.org/download.php) |
-| COCO / Karpathy | Alignment probing, caption evaluation | [COCO](https://cocodataset.org/#download), [Karpathy](https://cs.stanford.edu/people/karpathy/deepimagesent/) |
-| CC3M | Alignment probing | [Official repository](https://github.com/google-research-datasets/conceptual-captions) |
-| SPair-71k | AC Policy | [Project page](https://cvlab.postech.ac.kr/research/SPair-71k/) |
-| TokBench | Reconstruction evaluation | [Hugging Face](https://huggingface.co/datasets/Junfeng5/TokBench/tree/main) |
+We provide precomputed features for reproducing **RAVEL and other vision encoder evaluation metrics** at [336labs/VisionEncoder-Features](https://huggingface.co/datasets/336labs/VisionEncoder-Features). Download the features required by your experiment and configure the corresponding cache paths in `configs/local.yaml` ([template](configs/local.example.yaml)). Preserve the accompanying metadata and image/text sample order.
 
-MLLM training paths follow [configs/mllm/data.yaml](configs/mllm/data.yaml). Prepare the 11 evaluation splits listed in [configs/mllm/eval_datasets.yaml](configs/mllm/eval_datasets.yaml) as local LMUData TSVs and images using [VLMEvalKit](https://github.com/open-compass/VLMEvalKit); [VQAv2](https://visualqa.org/download.html) and Karpathy annotations supply the VQA and caption splits.
+The [ground-truth scores](src/resources/ground_truth.json) for all **210 trained MLLMs**, including results on 11 downstream tasks, are bundled with this repository. 
 
-**Feature caches.** Run each pretrained vision encoder over the dataset once and save its features for reuse. RAVEL also needs caption features from the target LLM, in the same sample order. Set cache paths in `configs/local.yaml`; `ravel_paper` uses prepared visual caches and automatically extracts text features. Extraction settings use the supplied defaults.
+## Checkpoints
+
+Our trained MLLM checkpoints are available at [336labs/VisionEncoder-to-MLLM-ModelZoo](https://huggingface.co/336labs/VisionEncoder-to-MLLM-ModelZoo). 
+
+To run downstream MLLM evaluation, download the desired checkpoints and set `paths.trained` in `configs/local.yaml` to your checkpoint root. 
 
 ## Running
 
@@ -68,7 +66,7 @@ bash scripts/reproduce.sh mllm_eval
 
 Add `--check` to inspect required inputs. Results are saved in `runs/`.
 
-## Your Own Metric
+## Try Your Own Metric
 
 ### Option 1: Submit a Prediction CSV
 
@@ -105,10 +103,6 @@ The runner calls your function for all 210 encoder/LLM pairs, saves `predictions
 
 Both options report Spearman and Pearson correlations per LLM. Add `--direction lower` for distance/error metrics, or `--llm qwen25` to evaluate only that LLM's 70 encoders (also use it when generating a CSV template). See [the evaluation protocol](src/resources/BENCHMARK.md).
 
-## Checkpoints
-
-Download trained MLLMs from [336labs/VisionEncoder-to-MLLM-ModelZoo](https://huggingface.co/336labs/VisionEncoder-to-MLLM-ModelZoo) and set `paths.trained` for evaluation.
-
 ## Citation
 
 ```bibtex
@@ -124,4 +118,4 @@ Download trained MLLMs from [336labs/VisionEncoder-to-MLLM-ModelZoo](https://hug
 
 ## Acknowledgement
 
-We thank [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT), [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), [CLIP](https://github.com/openai/CLIP), and [DINOv2](https://github.com/facebookresearch/dinov2).
+We thank the authors and contributors of [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT) and [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) for their MLLM training and evaluation infrastructure, and [CLIP](https://github.com/openai/CLIP) and [DINOv2](https://github.com/facebookresearch/dinov2) for their vision encoder implementations.

@@ -20,7 +20,6 @@ docs/
 tests/
 !/tests/
 /tests/*
-!/tests/benchmark/
 /backup/
 /AGENTS.md
 /tools/
