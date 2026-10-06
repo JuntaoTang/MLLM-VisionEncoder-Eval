@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Given a set of vision encoders and a target LLM, we aim to select the encoder best suited to that LLM for MLLM training. Training and evaluating an MLLM for every candidate is expensive.
+Given a set of vision encoders and a target LLM, how to select the encoder best suited to that LLM for MLLM training? Training and evaluating an MLLM for every candidate is expensive.
 
 MLLM-VisionEncoder-Eval provides a unified framework for this selection problem, bringing together encoder evaluation metrics, baseline comparisons, and downstream MLLM training and evaluation.
 
@@ -19,26 +19,14 @@ MLLM-VisionEncoder-Eval provides a unified framework for this selection problem,
   <sub><sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.</sub>
 </p>
 
-<p align="center">
-  <strong>RAVEL</strong><br>
-  Retrieval-based Assessment of Vision Encoders for Language Models
-</p>
-
 <div align="center">
   <a href="https://arxiv.org/abs/2610.05413"><img src="https://img.shields.io/badge/arXiv-2610.05413-B31B1B?style=flat-square" alt="Paper on arXiv"></a>
   <a href="https://huggingface.co/336labs/VisionEncoder-to-MLLM-ModelZoo"><img src="https://img.shields.io/badge/Hugging%20Face-Checkpoints-FFD21E?style=flat-square" alt="Model checkpoints on Hugging Face"></a>
   <a href="#citation"><img src="https://img.shields.io/badge/BibTeX-Citation-3776AB?style=flat-square" alt="BibTeX citation"></a>
 </div>
 
-<p align="center">
-  <strong>A training-free metric for selecting vision encoders for a target language model.</strong>
-</p>
+RAVEL ranks vision encoders by comparing nearest-neighbor structures in visual and textual representation spaces, enabling training-free assessment that predicts downstream MLLM performance using only paired image-text representations, with no downstream labels or MLLM training required.
 
-**RAVEL** ranks vision encoders by comparing nearest-neighbor structures in visual and textual representation spaces. It combines **stabilized PCA whitening** with **fine-grained patch-level similarity scoring** to predict downstream MLLM performance.
-
-- **Training-free assessment.** Evaluate encoder compatibility with a target LLM using paired image-text representations, without downstream labels or MLLM training.
-- **Stabilized representations.** PCA whitening reduces geometric bias while limiting the amplification of low-variance directions.
-- **Fine-grained visual similarity.** Patch-level scoring preserves information that global pooling can discard.
 
 <p align="center">
   <strong>70 vision encoders &middot; 3 language models &middot; 210 MLLMs &middot; 9 evaluation metrics</strong>
