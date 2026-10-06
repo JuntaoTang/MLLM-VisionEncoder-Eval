@@ -46,6 +46,25 @@ def _build_parser() -> argparse.ArgumentParser:
     ground_truth.add_argument('--import-from', dest='import_from', help='prepare paper labels from an archived table')
     ground_truth.add_argument('--output', help='destination required with --import-from')
 
+    benchmark = subparsers.add_parser("benchmark", help="evaluate custom metrics against the paper ground truth")
+    benchmark_subparsers = benchmark.add_subparsers(dest="benchmark_command", required=True)
+    export = benchmark_subparsers.add_parser("export-ground-truth", help="export all 210 labels as CSV")
+    export.add_argument("--output", required=True)
+    template = benchmark_subparsers.add_parser("template", help="write canonical prediction IDs with empty scores")
+    template.add_argument("--output", required=True)
+    template.add_argument("--llm", action="append", dest="llms", choices=["qwen3", "qwen25", "smollm2"])
+    for name in ("evaluate", "run"):
+        command = benchmark_subparsers.add_parser(name)
+        command.add_argument("--output", required=True, help="report directory")
+        command.add_argument("--llm", action="append", dest="llms", choices=["qwen3", "qwen25", "smollm2"])
+        command.add_argument("--direction", choices=["higher", "lower"], default="higher")
+        if name == "evaluate":
+            command.add_argument("--predictions", required=True, help="CSV with encoder_id,llm,score")
+            command.add_argument("--score-column", default="score")
+            command.add_argument("--metric", default="custom", help="method name recorded in the report")
+        else:
+            command.add_argument("--metric", required=True, help="importable module:function predictor")
+
     methods = subparsers.add_parser("methods", help="inspect registered methods")
     methods.add_argument("action", choices=["list"])
     workers = subparsers.add_parser('workers', help='inspect isolated worker entry points')
@@ -80,6 +99,21 @@ def _resolve(args: argparse.Namespace):
 
 
 def _run(args: argparse.Namespace) -> int:
+    if args.command == "benchmark":
+        from .benchmark import evaluate_file, export_ground_truth, run_metric, write_prediction_template
+        if args.benchmark_command == "export-ground-truth":
+            count = export_ground_truth(args.output)
+            _print_json({"status": "success", "pairs": count, "output": args.output})
+        elif args.benchmark_command == "template":
+            count = write_prediction_template(args.output, llms=args.llms)
+            _print_json({"status": "success", "pairs": count, "output": args.output})
+        elif args.benchmark_command == "evaluate":
+            _print_json(evaluate_file(args.predictions, args.output, llms=args.llms,
+                                     score_column=args.score_column, direction=args.direction, metric=args.metric))
+        else:
+            _print_json(run_metric(args.metric, args.output, llms=args.llms, direction=args.direction))
+        return 0
+
     if args.command=='config' and args.config_command=='feature-panel':
         from .config.feature_panel import generate_feature_panel
         _print_json(generate_feature_panel(args.manifest,args.output))

@@ -15,6 +15,10 @@ dependencies = [
 test = [
   "pytest>=8,<9",
 ]
+benchmark = [
+  "numpy>=1.26,<3",
+  "scipy>=1.10,<2",
+]
 methods = [
   "numpy>=1.26,<3",
   "scipy>=1.10,<2",

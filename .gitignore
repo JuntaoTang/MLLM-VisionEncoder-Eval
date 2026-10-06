@@ -18,6 +18,9 @@ artifacts/
 # Local refactor documentation, tests, backups, and migration helpers.
 docs/
 tests/
+!/tests/
+/tests/*
+!/tests/benchmark/
 /backup/
 /AGENTS.md
 /tools/
