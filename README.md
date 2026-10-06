@@ -1,82 +1,71 @@
-# VisualTokenizerBench / RAVEL
+# MLLM-VisionEncoder-Eval
 
-Evaluate visual encoders with RAVEL and baseline methods using cached features.
+## Paper
 
-## Run RAVEL
+**A Strong Baseline for Evaluating Vision Encoders in Multimodal Large Language Models**
 
-Python 3.10+ is required. From the repository root:
+Yilin Yang<sup>*</sup>, Jun-Tao Tang<sup>*</sup>, Kengyi Wang, Siyuan Su, Gaoyong Luo, Mingda Chen<sup>&dagger;</sup>
+
+<sup>*</sup> Equal contribution. <sup>&dagger;</sup> Corresponding author.
+
+[Paper](https://arxiv.org/pdf/2610.05413) | [Checkpoints](https://huggingface.co/336labs/VisionEncoder-to-MLLM-ModelZoo)
+
+## Introduction
+
+Given a set of vision encoders and a target LLM, we aim to select the encoder best suited to that LLM for MLLM training. Training and evaluating an MLLM for every candidate is expensive.
+
+RAVEL (Retrieval-based Assessment of Vision Encoders for Language Models) ranks candidate encoders for the target LLM through cross-modal nearest-neighbor retrieval, without MLLM training. This repository includes RAVEL, evaluation baselines, and MLLM training and evaluation for 70 vision encoders and 3 language models.
+
+## Requirements
+
+**Environment.** Python 3.10+. From the repository root:
 
 ```bash
 bash scripts/setup.sh
-bash scripts/reproduce.sh --init-local --data-root /path/to/vision_encoder_eval_data
 .venv/bin/python -m pip install -e '.[paper]'
-bash scripts/reproduce.sh ravel_paper --check
+bash scripts/reproduce.sh --init-local --data-root /path/to/vision_encoder_eval_data
+```
+
+**Data and weights.** Prepare aligned visual/text feature caches for RAVEL. MLLM training uses LLaVA-LCS-558K and LLaVA-665K; evaluation uses 11 benchmarks. Set dataset, weight, feature, and worker Python paths in `configs/local.yaml` ([template](configs/local.example.yaml)). See the [data inventory](docs/DATASET_AUDIT.md) and [feature guide](docs/FEATURE_PANEL_REPRODUCTION.md) for details.
+
+## Running
+
+Run RAVEL with prepared caches (defaults to CLIP-L/14 + Qwen2.5):
+
+```bash
+bash scripts/reproduce.sh ravel --check
+bash scripts/reproduce.sh ravel
+```
+
+Run the paper's 70-encoder x 3-LLM RAVEL evaluation, or other experiments:
+
+```bash
 bash scripts/reproduce.sh ravel_paper
-```
-
-Table 1 uses 70 encoders x 3 LLMs, 1,000 aligned LCS pairs, final-layer visual
-patches without special tokens, penultimate text states averaged over valid
-tokens, k=100 and full-rank PCA whitening with epsilon=1e-4. The runner extracts
-text from the original frozen backbones and writes `scores.csv` and
-`correlations.json` under `runs/ravel_paper/`.
-
-Visual audits must verify `feature_layer: final` (or `-1`) and the ordered sample
-manifest. Check the extraction source before adding this field; legacy audits
-without layer provenance must be verified or the features re-extracted.
-To attempt reproduction with existing patches whose layer is unverified, use
-`ravel_paper --use-existing-visual-cache`; reports retain that limitation.
-
-On this server, the three LLMs and aligned caches are already prepared.
-Run the complete 210-pair evaluation with the existing visual features:
-
-```bash
-HF_HUB_OFFLINE=1 bash scripts/reproduce.sh ravel_paper --use-existing-visual-cache
-```
-
-The data root is `/cache/vision_encoder_eval_data`; `configs/local.yaml` selects
-an audited copy that restores one corrupt UniAR scalar from its official encoder.
-The original cache is preserved. Initialization is needed only once. CUDA is
-used when available; add `--device cpu` for CPU execution.
-
-With verified final-layer visual and penultimate mean-pooled text caches:
-
-```bash
-bash scripts/reproduce.sh ravel --encoder dino_vits16 --text-encoder qwen3
-bash scripts/reproduce.sh ravel --encoder all --text-encoder all
-```
-
-The full panel contains 70 visual encoders x 3 text encoders and can take time.
-The launcher verifies cache audits and sample order; it never falls back to
-last-token text. The cached `ravel` command defaults to CLIP-L/14 + Qwen2.5.
-
-For your own features, supply patch `[N,T,D]` and text `[N,D]` arrays,
-plus a JSON list of unique sample IDs in their shared row order:
-
-```bash
-bash scripts/reproduce.sh ravel --patches /path/patches.npy \
-  --text /path/text.npy --sample-ids /path/sample_ids.json
-```
-
-Results and logs are under `runs/`; suites include CSV/JSON reports.
-Repeated unchanged runs reuse successful results. Local paths are configured
-in `configs/local.yaml` and are not committed.
-
-The paper's 210 downstream labels (70 encoders x 3 LLMs, 11 benchmarks)
-are bundled in `src/resources/ground_truth.json`; validate with
-`.venv/bin/vision-encoder-eval data ground-truth`.
-
-## Other Experiments
-
-```bash
-bash scripts/reproduce.sh --list
-bash scripts/reproduce.sh knn                 # 70 cached models, six shot counts
-bash scripts/reproduce.sh linear_probe --check
+bash scripts/reproduce.sh knn
 bash scripts/reproduce.sh mllm_train
 bash scripts/reproduce.sh mllm_eval
+bash scripts/reproduce.sh --list
 ```
 
-Add `--check` to inspect required inputs/dependencies, or `--dry-run` to
-inspect the plan. Other baselines and MLLM pipelines require their datasets,
-checkpoints and worker environments; configure them in `configs/local.yaml`.
-RAVEL cached-score evaluation does not retrain MLLMs or reproduce every paper
-experiment. Source modules live directly in `src/`; recipes are in `configs/`.
+Paper runs require verified final-layer visual patches. For existing caches with unverified layer provenance, add `--use-existing-visual-cache`; the output records this limitation. Add `--check` to inspect required paths and dependencies. Results are saved in `runs/`.
+
+## Checkpoints
+
+MLLM checkpoints are available at [336labs/VisionEncoder-to-MLLM-ModelZoo](https://huggingface.co/336labs/VisionEncoder-to-MLLM-ModelZoo).
+
+## Citation
+
+```bibtex
+@misc{yang2026strong,
+  title={A Strong Baseline for Evaluating Vision Encoders in Multimodal Large Language Models},
+  author={Yang, Yilin and Tang, Jun-Tao and Wang, Kengyi and Su, Siyuan and Luo, Gaoyong and Chen, Mingda},
+  year={2026},
+  eprint={2610.05413},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+```
+
+## Acknowledgement
+
+We thank [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT), [VLMEvalKit](https://github.com/open-compass/VLMEvalKit), [CLIP](https://github.com/openai/CLIP), and [DINOv2](https://github.com/facebookresearch/dinov2) for their open-source code.
