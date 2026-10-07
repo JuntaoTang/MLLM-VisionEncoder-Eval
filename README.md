@@ -43,9 +43,9 @@ Set dataset, weight, feature, and worker Python paths in `configs/local.yaml` ([
 
 ## Data
 
-We provide precomputed features for reproducing **RAVEL and other vision encoder evaluation metrics** at [336labs/VisionEncoder-Features](https://huggingface.co/datasets/336labs/VisionEncoder-Features). Download the features required by your experiment and configure the corresponding cache paths in `configs/local.yaml` ([template](configs/local.example.yaml)). Preserve the accompanying metadata and image/text sample order.
+[336labs/VisionEncoder-Eval-ReproData](https://huggingface.co/datasets/336labs/VisionEncoder-Eval-ReproData) provides datasets for downstream MLLM evaluation, and reproducing all vision encoder evaluation methods (we released precomputed image features from all vision encoders). Download the required data and set the paths in `configs/local.yaml` ([template](configs/local.example.yaml)).
 
-The [ground-truth scores](src/resources/ground_truth.json) for all **210 trained MLLMs**, including results on 11 downstream tasks, are bundled with this repository. 
+[Ground-truth scores](src/resources/ground_truth.json) for all **210 trained MLLMs** across 11 downstream tasks are included in this repository.
 
 ## Checkpoints
 
