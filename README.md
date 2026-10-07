@@ -1,6 +1,10 @@
 # MLLM-VisionEncoder-Eval
 
-Given a set of vision encoders and a target LLM, how to select the encoder best suited to that LLM for MLLM training? Training and evaluating an MLLM for every candidate is expensive.
+## Introduction
+
+**Given a set of vision encoders and a target LLM, how to select the encoder best suited to that LLM for MLLM training?**
+
+Training and evaluating an MLLM for every candidate in order to choose the best one is expensive.
 
 MLLM-VisionEncoder-Eval provides a unified framework for this selection problem, bringing together encoder evaluation metrics, baseline comparisons, and downstream MLLM training and evaluation.
 
